@@ -38,13 +38,13 @@ nav {
 }
 
 .header-nav .nav-link:hover::after {
-  content: ""; /* Ensures the pseudo-element is created */
+  content: ""; 
   position: absolute;
-  bottom: -2px; /* Adjusts position relative to the text */
-  left: 50%; /* Starts the border from the center */
-  transform: translateX(-50%); /* Centers the border */
-  width: 30%; /* Adjusts the length of the border */
-  border-bottom: 3px solid #424b1b; /* Border thickness and color */
+  bottom: -2px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 30%; 
+  border-bottom: 3px solid #424b1b; 
 }
 
 .navbar-end-section {
