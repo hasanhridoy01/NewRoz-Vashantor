@@ -1,0 +1,27 @@
+.hero {
+  background-color: #f0f0d3;
+  width: 100%;
+  height: 960px;
+  padding: 156px 0px 0px 0px;
+  gap: 120px;
+}
+.hero-title {
+  /* Text styles */
+  font-size: 64px; /* Adjust as needed for your design */
+  font-weight: 900;
+  text-align: center; /* Center text if needed */
+  text-transform: uppercase;
+
+  /* Background gradient text */
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari */
+  color: transparent;
+  background-image: linear-gradient(to right, #a9ac25, #455507);
+}
+.hero-title-two {
+  text-align: center;
+  font-size: 56px; /* Adjust as needed for your design */
+  font-weight: 400;
+  line-height: 67px;
+  text-align: center; /* Center text if needed */
+}
