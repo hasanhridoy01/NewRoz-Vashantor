@@ -1,0 +1,147 @@
+.header {
+  background-color: #f0f0d3;
+  padding: 20px 20px;
+  height: 79px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  margin-right: 20px;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+}
+
+.header-logo {
+  height: 31px;
+  width: 180px;
+}
+
+.header-nav .nav-link {
+  margin-left: 28px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 470;
+  line-height: 19px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.header-nav .nav-link:hover::after {
+  content: ""; /* Ensures the pseudo-element is created */
+  position: absolute;
+  bottom: -2px; /* Adjusts position relative to the text */
+  left: 50%; /* Starts the border from the center */
+  transform: translateX(-50%); /* Centers the border */
+  width: 30%; /* Adjusts the length of the border */
+  border-bottom: 3px solid #424b1b; /* Border thickness and color */
+}
+
+.navbar-end-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-section {
+  display: flex;
+}
+
+/* DropDown Style */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: #ffffe9;
+  border: none;
+  height: 44px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #424b1b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures text and icon are spaced apart */
+  gap: 10px; /* Optional: Adjusts space between text and icon */
+}
+
+.dropdown-button svg {
+  flex-shrink: 0; /* Prevents the icon from shrinking */
+}
+
+.dropdown-menu {
+  display: block;
+  position: absolute;
+  background-color: #ffffe9;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-top: 13px;
+  width: 140px;
+  z-index: 1;
+}
+
+.dropdown-item {
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  text-align: start;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* talk-button */
+.talk-button {
+  background-color: #ffffe9;
+  border: none;
+  height: 44px;
+  width: 143px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #424b1b;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 15px;
+}
+
+.talk-button svg {
+  flex-shrink: 0; /* Prevents the icon from shrinking */
+}
+
+/* user-button */
+.user-button {
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent; /* Or any desired background color */
+  border: none; /* Remove default button border */
+  cursor: pointer;
+  background-color: #687535; /* Set icon color */
+  margin-left: 15px;
+  border-radius: 10px;
+  color: white;
+}
+
+.user-button svg {
+  width: 24px; /* Set desired SVG width */
+  height: 25px; /* Set desired SVG height */
+}
