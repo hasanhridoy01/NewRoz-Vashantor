@@ -4,7 +4,7 @@ import './Home.css';
 
 const Home = () => {
     return (
-        <div>
+        <div style={{ backgroundColor: '#F0F0D3' }}>
             <Header />
             <Hero />
         </div>

@@ -1,5 +1,5 @@
 import "./Hero.css";
-import img1 from '../../../public/Images/hero/body.png'
+import img1 from "../../../public/Images/hero/body.png";
 
 const Hero = () => {
   return (
@@ -17,8 +17,9 @@ const Hero = () => {
         <button className="book-button">Book A Meeting</button>
         <button className="quick-button">Quick Demo Video</button>
       </div>
-      <div className="body-images">
-        <img src={img1} alt="" />
+      
+      <div className="body-images hidden lg:flex">
+        <img src={img1} alt="Hero Illustration" />
       </div>
     </div>
   );

@@ -22,14 +22,14 @@ const Header = () => {
         </div>
         <div className="navbar-end-section">
 
-          <nav className={`header-nav ${isOpen ? 'show' : ''}`}>
+          <nav className={`header-nav ${isOpenSection ? 'block' : 'hidden'} md:flex`}>
             <a href="#home" className="nav-link">Home</a>
             <a href="#about" className="nav-link">Service</a>
             <a href="#services" className="nav-link">Pricing</a>
             <a href="#contact" className="nav-link">Contact</a>
           </nav>
 
-          <div className={`button-section ${isOpen ? 'show' : ''}`}>
+          <div className={`button-section ${isOpenSection ? 'block' : 'hidden'} md:flex space-x-2`}>
             <div className="dropdown-container">
               <button className="dropdown-button" onClick={toggleDropdown}>
                 English
@@ -116,7 +116,7 @@ const Header = () => {
             </button>
           </div>
 
-          <button className="collapse-button" onClick={toggleMenu}>
+          <button className="collapse-button md:hidden p-2" onClick={toggleMenu}>
             <svg
               width="44"
               height="45"

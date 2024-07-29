@@ -1,12 +1,14 @@
 .hero {
-  background-color: #f0f0d3;
+  background-image: url(../../../public/Images/hero/Background.png);
+  background-position: center top; /* Adjust as needed */
+  background-size: cover; /* Ensure the image covers the element */
   width: 100%;
   height: 1060px;
-  padding: 156px 0px 0px 0px;
-  gap: 120px;
-  position: relative;
+  padding: 150px 0px 0px 0px;
   margin-bottom: 100px;
+  position: relative;
 }
+
 .hero-title {
   /* Text styles */
   font-size: 64px; /* Adjust as needed for your design */
@@ -84,21 +86,12 @@
   transform: translateX(-50%);
   width: 954px;
   margin-top: 30px;
-  display: none;
 }
 
 .body-images img {
   width: 100%;
   height: auto;
   box-shadow: none;
-}
-
-/* Responsive Styles for Tablets and Up */
-@media (min-width: 600px) {
-
-  .body-images {
-    display: flex; /* Show on larger screens */
-  }
 }
 
 /* Responsive Styles for Small Devices */
