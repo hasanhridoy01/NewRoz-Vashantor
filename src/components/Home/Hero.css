@@ -1,3 +1,5 @@
+@tailwind utilities;
+
 .hero {
   background-image: url(../../../public/Images/hero/Background.png);
   background-position: center top; /* Adjust as needed */
@@ -99,5 +101,147 @@
   .hero {
     height: 700px; /* Adjust this value as needed */
     padding: 100px 0px 0px 0px; /* Adjust padding as needed */
+  }
+}
+
+.left-image {
+  position: absolute;
+  left: 27%;
+  top: 57%;
+}
+.left-image-two {
+  position: absolute;
+  left: 17%;
+  top: 66%;
+}
+.right-image {
+  position: absolute;
+  right: 28%;
+  top: 61%;
+}
+.right-image-two {
+  position: absolute;
+  right: 18%;
+  top: 60%;
+}
+
+@layer utilities {
+  @keyframes left-One {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .animate-move {
+    animation: left-One 3s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  @keyframes left-Two {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .animate-move-two {
+    animation: left-Two 3s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  @keyframes left-Three {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(15px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .animate-move-three {
+    animation: left-Three 2s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  @keyframes left-Four {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(30px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .animate-move-four {
+    animation: left-Four 4s ease-in-out infinite;
+  }
+}
+
+.image-over-One {
+  position: absolute;
+  left: 19%;
+  top: 72%;
+  z-index: 100;
+}
+.image-over-Two {
+  position: absolute;
+  right: 15%;
+  top: 75%;
+  z-index: 100;
+}
+
+@layer utilities {
+  @keyframes fade {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .image-over-One {
+    animation: fade 3s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  @keyframes fades-opposite {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .image-over-Two {
+    animation: fades-opposite 3s ease-in-out infinite;
   }
 }

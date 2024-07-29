@@ -1,5 +1,10 @@
 import "./Hero.css";
 import img1 from "../../../public/Images/hero/body.png";
+import img2 from "../../../public/Images/hero/prime_language.svg";
+
+//Extra Images..............!
+import img3 from "../../../public/Images/hero/Title.png";
+import img4 from "../../../public/Images/hero/Hanguages.png";
 
 const Hero = () => {
   return (
@@ -17,7 +22,22 @@ const Hero = () => {
         <button className="book-button">Book A Meeting</button>
         <button className="quick-button">Quick Demo Video</button>
       </div>
-      
+      <div className="hidden lg:flex">
+        <div className="">
+          <img className="left-image animate-move" src={img2} alt="" />
+          <img className="left-image-two animate-move-two" src={img2} alt="" />
+          <img className="right-image animate-move-three" src={img2} alt="" />
+          <img
+            className="right-image-two animate-move-four"
+            src={img2}
+            alt=""
+          />
+        </div>
+        <div className="">
+          <img className="image-over-One" src={img3} alt="" />
+          <img className="image-over-Two" src={img4} alt="" />
+        </div>
+      </div>
       <div className="body-images hidden lg:flex">
         <img src={img1} alt="Hero Illustration" />
       </div>
