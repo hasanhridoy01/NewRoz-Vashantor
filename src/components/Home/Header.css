@@ -1,28 +1,36 @@
+/* Header Styles */
 .header {
   background-color: #f0f0d3;
-  padding: 20px 20px;
+  padding: 20px;
   height: 79px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: sticky;
   top: 0;
-}
-
-nav {
-  margin-right: 20px;
+  z-index: 100;
 }
 
 .header-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .header-logo {
   height: 31px;
-  width: 180px;
+}
+
+.header-logo img {
+  height: 100%;
+  width: auto; /* Maintain aspect ratio */
+}
+
+.header-nav {
+  display: none; /* Hidden by default, shown on larger screens */
 }
 
 .header-nav .nav-link {
@@ -38,26 +46,27 @@ nav {
 }
 
 .header-nav .nav-link:hover::after {
-  content: ""; 
+  content: "";
   position: absolute;
-  bottom: -2px; 
-  left: 50%; 
-  transform: translateX(-50%); 
-  width: 30%; 
-  border-bottom: 3px solid #424b1b; 
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
+  border-bottom: 3px solid #424b1b;
 }
 
 .navbar-end-section {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .button-section {
   display: flex;
+  align-items: center;
+  display: none;
 }
 
-/* DropDown Style */
+/* DropDown Styles */
 .dropdown-container {
   position: relative;
   display: inline-block;
@@ -74,16 +83,16 @@ nav {
   color: #424b1b;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Ensures text and icon are spaced apart */
-  gap: 10px; /* Optional: Adjusts space between text and icon */
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .dropdown-button svg {
-  flex-shrink: 0; /* Prevents the icon from shrinking */
+  flex-shrink: 0;
 }
 
 .dropdown-menu {
-  display: block;
+  display: none; /* Hidden by default, shown when dropdown is active */
   position: absolute;
   background-color: #ffffe9;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -91,6 +100,10 @@ nav {
   margin-top: 13px;
   width: 140px;
   z-index: 1;
+}
+
+.dropdown-container:hover .dropdown-menu {
+  display: block; /* Show dropdown on hover */
 }
 
 .dropdown-item {
@@ -105,12 +118,11 @@ nav {
   background-color: #f1f1f1;
 }
 
-/* talk-button */
+/* Talk Button */
 .talk-button {
   background-color: #ffffe9;
   border: none;
   height: 44px;
-  width: 143px;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
@@ -123,27 +135,94 @@ nav {
 }
 
 .talk-button svg {
-  flex-shrink: 0; /* Prevents the icon from shrinking */
+  flex-shrink: 0;
 }
 
-/* user-button */
+/* User Button */
 .user-button {
   width: 44px;
   height: 44px;
-  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: transparent; /* Or any desired background color */
-  border: none; /* Remove default button border */
+  background-color: #687535;
+  border: none;
   cursor: pointer;
-  background-color: #687535; /* Set icon color */
-  margin-left: 15px;
   border-radius: 10px;
   color: white;
+  margin-left: 15px;
 }
 
 .user-button svg {
-  width: 24px; /* Set desired SVG width */
-  height: 25px; /* Set desired SVG height */
+  width: 24px;
+  height: 25px;
+}
+
+/* collapse-button */
+.collapse-button {
+  background-color: transparent; /* Transparent background */
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Pointer cursor on hover */
+  padding: 10px; /* Add padding for better clickability */
+  display: flex; /* Flexbox for center alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Optional: To style the SVG icon */
+.collapse-button svg {
+  width: 44px; /* Set the desired width */
+  height: 45px; /* Set the desired height */
+}
+
+/* Responsive Styles */
+
+/* Styles for tablets and up */
+@media (min-width: 600px) {
+  .header {
+    padding: 20px;
+  }
+
+  .header-row {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .header-nav {
+    display: flex; /* Show the navigation */
+  }
+
+  .header-nav .nav-link {
+    margin: 0 15px;
+  }
+
+  .button-section {
+    margin-top: 0;
+    display: flex;
+  }
+
+  .collapse-button{
+    display: none;
+  }
+
+  .dropdown-button,
+  .talk-button,
+  .user-button {
+    margin: 0 10px;
+  }
+}
+
+/* Styles for desktops and larger screens */
+@media (min-width: 1024px) {
+  .header-nav .nav-link {
+    margin: 0 20px;
+    font-size: 16px;
+  }
+
+  .dropdown-button,
+  .talk-button,
+  .user-button {
+    font-size: 16px;
+  }
 }

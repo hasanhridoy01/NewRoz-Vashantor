@@ -4,33 +4,32 @@ import { useState } from "react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpenSection, setIsOpenSection] = useState(false);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+
+  const toggleMenu = () => {
+    setIsOpenSection(!isOpenSection);
+  };
+
   return (
     <header className="header">
       <div className="header-row">
         <div className="header-logo">
-          <img src={logo} alt="" />
+          <img src={logo} alt="Logo" />
         </div>
         <div className="navbar-end-section">
-          <nav className="header-nav">
-            <a href="#home" className="nav-link">
-              Home
-            </a>
-            <a href="#about" className="nav-link">
-              Service
-            </a>
-            <a href="#services" className="nav-link">
-              Pricing
-            </a>
-            <a href="#contact" className="nav-link">
-              Contact
-            </a>
+
+          <nav className={`header-nav ${isOpen ? 'show' : ''}`}>
+            <a href="#home" className="nav-link">Home</a>
+            <a href="#about" className="nav-link">Service</a>
+            <a href="#services" className="nav-link">Pricing</a>
+            <a href="#contact" className="nav-link">Contact</a>
           </nav>
 
-          <div className="button-section">
+          <div className={`button-section ${isOpen ? 'show' : ''}`}>
             <div className="dropdown-container">
               <button className="dropdown-button" onClick={toggleDropdown}>
                 English
@@ -52,15 +51,9 @@ const Header = () => {
 
               {isOpen && (
                 <div className="dropdown-menu">
-                  <a href="#option1" className="dropdown-item">
-                    English
-                  </a>
-                  <a href="#option2" className="dropdown-item">
-                    Arabic
-                  </a>
-                  <a href="#option3" className="dropdown-item">
-                    Kurdish
-                  </a>
+                  <a href="#option1" className="dropdown-item">English</a>
+                  <a href="#option2" className="dropdown-item">Arabic</a>
+                  <a href="#option3" className="dropdown-item">Kurdish</a>
                 </div>
               )}
             </div>
@@ -122,6 +115,33 @@ const Header = () => {
               </svg>
             </button>
           </div>
+
+          <button className="collapse-button" onClick={toggleMenu}>
+            <svg
+              width="44"
+              height="45"
+              viewBox="0 0 44 45"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 8.57105C0 4.15277 3.58172 0.571045 8 0.571045H36C40.4183 0.571045 44 4.15277 44 8.57105V36.571C44 40.9893 40.4183 44.571 36 44.571H8C3.58172 44.571 0 40.9893 0 36.571V8.57105Z"
+                fill="#FFFFE9"
+              />
+              <path
+                d="M13 18.571H31"
+                stroke="#687535"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+              />
+              <path
+                d="M19 26.571L31 26.571"
+                stroke="#687535"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </header>
