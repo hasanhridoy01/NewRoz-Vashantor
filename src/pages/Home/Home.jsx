@@ -1,14 +1,14 @@
-import Header from '../../components/Home/Header';
-import Hero from '../../components/Home/Hero';
-import './Home.css';
+import EasyTranslation from "../../components/Home/EasyTranslation";
+import "./Home.css";
 
 const Home = () => {
-    return (
-        <div style={{ backgroundColor: '#F0F0D3' }}>
-            <Header />
-            <Hero />
-        </div>
-    );
+  return (
+    <>
+      <div className="" style={{ backgroundColor: "#f8f8e9" }}>
+        <EasyTranslation />
+      </div>
+    </>
+  );
 };
 
 export default Home;

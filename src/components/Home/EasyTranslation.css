@@ -1,0 +1,24 @@
+.EasyTranslation {
+  background-image: url("../../../public/Images/easy/Ã__Ã£_3_x5F__Ã–Ã†_4.png"),
+    url("../../../public/Images/easy/Ã__Ã£_3_x5F__Ã–Ã.png");
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
+  width: 100%;
+  height: 593px;
+}
+.easy-translation-text{
+    font-family: Barlow;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 67px;
+    text-align: center;
+    color: #424A21;
+}
+.easy-translation-text-two{
+    font-family: Barlow;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #424A21;
+}
