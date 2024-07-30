@@ -96,12 +96,19 @@
 }
 
 /* Responsive Styles for Small Devices */
-@media (max-width: 599px) {
+/* @media (max-width: 599px) {
   .hero {
-    height: 700px; /* Adjust this value as needed */
-    padding: 100px 0px 0px 0px; /* Adjust padding as needed */
+    height: 700px; 
+    padding: 100px 0px 0px 0px; 
   }
 }
+
+@media (max-width: 399px) {
+  .hero {
+    height: 1000px; 
+    padding: 100px 0px 0px 0px; 
+  }
+} */
 
 .left-image {
   position: absolute;

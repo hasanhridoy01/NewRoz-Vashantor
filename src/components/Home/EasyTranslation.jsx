@@ -1,12 +1,12 @@
 import "./EasyTranslation.css";
-import img1 from "../../../public/Images/easy/icon.png";
 import img2 from "../../../public/Images/easy/icon1.png";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 const EasyTranslation = () => {
   return (
     <div className="EasyTranslation">
       <div className="container mx-auto lg:px-14 px-5 lg:py-14 py-5 lg:pt-28 pt-16">
-        <div className="flex flex-col items-center justify-center gap-4">
+        {/* <div className="flex flex-col items-center justify-center gap-4">
           <div className="">
             <img src={img1} alt="" />
           </div>
@@ -20,7 +20,8 @@ const EasyTranslation = () => {
               multiple languages with minimal effort.
             </p>
           </div>
-        </div>
+        </div> */}
+        <SectionTitle title="Easy Translation" textOne='Vashantor offers seamless and easy translations, ensuring that your content is accurately localized across' textTwo='multiple languages with minimal effort.' />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5 gap-10 py-16">
           <div

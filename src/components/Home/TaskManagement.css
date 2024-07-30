@@ -1,14 +1,109 @@
-.task-title{
-    font-family: Barlow;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 67px;
-    color: #424A21;
+@tailwind utilities;
+
+.task-title {
+  font-family: Barlow;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 67px;
+  color: #424a21;
 }
-.task-title-two{
-    font-family: Poppins;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    color: #555555;
+.task-title-two {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #555555;
+}
+.btn-one {
+  width: 170px;
+  height: 36px;
+  border-radius: 4px;
+  padding: 4px 2px 4px 2px;
+  gap: 4px;
+  border: 2px solid #d7d78d;
+  border-width: 0 2px 0px 2px;
+}
+.btn-two {
+  width: 112px;
+  height: 36px;
+  border-radius: 4px;
+  padding: 4px 2px 4px 2px;
+  gap: 4px;
+  border: 2px solid #d7d78d;
+  border-width: 0 2px 0px 2px; /* Apply 0 width to top and bottom, 2px to left and right */
+}
+.btn-three {
+  width: 146px;
+  height: 36px;
+  border-radius: 4px;
+  padding: 4px 2px 4px 2px;
+  gap: 4px;
+  border: 2px solid #d7d78d;
+  border-width: 0 2px 0px 2px; /* Apply 0 width to top and bottom, 2px to left and right */
+}
+
+/* task-right */
+.task-right {
+  background-image: url(../../../public/Images/task/graphics.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 580px;
+  width: 100%;
+}
+
+.task-img-one {
+  position: absolute;
+  width: 352px;
+  height: 470px;
+  top: 28px;
+  left: 100px;
+  border-radius: 9px;
+  padding: 18px;
+  gap: 19px;
+  z-index: 100;
+}
+@layer utilities {
+  @keyframes task-One {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .task-img-one {
+    animation: task-One 4s ease-in-out infinite;
+  }
+}
+.task-img-two {
+  position: absolute;
+  width: 360px;
+  height: 534px;
+  top: 47px;
+  left: 280px;
+  border-radius: 9px;
+  padding: 16px;
+  gap: 22px;
+}
+@layer utilities {
+  @keyframes task-Two {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .task-img-two {
+    animation: task-Two 4s ease-in-out infinite;
+  }
 }
