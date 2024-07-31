@@ -5,6 +5,7 @@ import LanguageSupport from "../../components/Home/LanguageSupport";
 import Plan from "../../components/Home/Plan/Plan";
 import TaskManagement from "../../components/Home/TaskManagement";
 import TechnicalSupport from "../../components/Home/TechnicalSupport";
+import Testimonial from "../../components/Home/Testimonial";
 import "./Home.css";
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
         <LanguageSupport />
         <TechnicalSupport />
         <Plan />
+        <Testimonial />
       </div>
     </>
   );

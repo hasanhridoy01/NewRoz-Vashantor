@@ -23,7 +23,7 @@ const Plan = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-12 items-center justify-center gap-5">
-          <div className="w-[100%] h-[635px] rounded-lg border-1 bg-[#FFFFFF] border-[#F0F0D3] shadow-[#0000000F]">
+          <div className="w-[100%] h-[635px] rounded-lg border-2 bg-[#FFFFFF] border-[#F0F0D3] shadow-[#0000000F]">
             <div className="flex flex-col items-center justify-center pt-10 pb-0">
               <div className="">
                 <img src={img1} alt="" />
@@ -171,7 +171,7 @@ const Plan = () => {
             </div>
           </div>
 
-          <div className="w-[100%] h-[638px] rounded-lg border-2 bg-[#FFFFFF] border-[#687535] shadow-[#0000000F]">
+          <div className="w-[100%] h-[638px] rounded-lg lg:mb-0 mb-1 border-2 bg-[#FFFFFF] border-[#687535] shadow-[#0000000F]">
             <div className="flex flex-col items-center justify-center pt-10 pb-0">
               <div className="">
                 <img src={img2} alt="" />
@@ -319,7 +319,7 @@ const Plan = () => {
             </div>
           </div>
 
-          <div className="w-[100%] h-[635px] rounded-lg border-1 bg-[#FFFFFF] border-[#F0F0D3] shadow-[#0000000F]">
+          <div className="w-[100%] h-[635px] rounded-lg border-2 bg-[#FFFFFF] border-[#F0F0D3] shadow-[#0000000F]">
             <div className="flex flex-col items-center justify-center pt-10 pb-0">
               <div className="">
                 <img src={img3} alt="" />
