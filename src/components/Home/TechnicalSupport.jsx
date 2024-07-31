@@ -1,5 +1,7 @@
 import "./TechnicalSupport.css";
 import logo from "../../../public/Images/technical/icon.png";
+import img1 from '../../../public/Images/technical/Code.png'
+import img2 from '../../../public/Images/technical/Result.png'
 
 const TechnicalSupport = () => {
   return (
@@ -113,8 +115,9 @@ const TechnicalSupport = () => {
               </button>
             </div>
           </div>
-          <div className="">
-            
+          <div className="right-backGround-image lg:h-[573px] h-[417px] lg:w-[617px] w-[398px] relative">
+            <img className="technical-image-one absolute lg:top-[-10px] top-[-7.5px] lg:left-[104px] left-[4px] lg:h-[439px] h-[313px] lg:w-[401px] w-[286px]" src={img1} alt="" />
+            <img className="technical-image-two absolute lg:top-[300px] top-[208px] lg:left-[207px] left-[91px] lg:h-[248px] h-[177px] lg:w-[374px] w-[267px]" src={img2} alt="" />
           </div>
         </div>
       </div>

@@ -1,0 +1,45 @@
+@tailwind utilities;
+
+.right-backGround-image {
+  background-image: url(../../../public/Images/technical/graphics.png);
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #d7d78d;
+}
+
+@layer utilities {
+  @keyframes technical-image-one {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .technical-image-one {
+    animation: technical-image-one 3s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  @keyframes technical-image-two {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .technical-image-two {
+    animation: technical-image-two 3s ease-in-out infinite;
+  }
+}
