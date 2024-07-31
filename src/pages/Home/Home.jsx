@@ -3,6 +3,7 @@ import Expand from "../../components/Home/Expand";
 import KeyFeature from "../../components/Home/KeyFeature";
 import LanguageSupport from "../../components/Home/LanguageSupport";
 import TaskManagement from "../../components/Home/TaskManagement";
+import TechnicalSupport from "../../components/Home/TechnicalSupport";
 import "./Home.css";
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
         <KeyFeature />
         <Expand />
         <LanguageSupport />
+        <TechnicalSupport />
       </div>
     </>
   );

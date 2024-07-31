@@ -22,6 +22,7 @@ const Hero = () => {
         <button className="book-button">Book A Meeting</button>
         <button className="quick-button">Quick Demo Video</button>
       </div>
+
       <div className="hidden lg:flex">
         <div className="">
           <img className="left-image animate-move" src={img2} alt="" />
@@ -41,6 +42,7 @@ const Hero = () => {
       <div className="body-images hidden lg:flex">
         <img src={img1} alt="Hero Illustration" />
       </div>
+      
     </div>
   );
 };

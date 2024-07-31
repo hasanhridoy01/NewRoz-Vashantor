@@ -17,27 +17,27 @@ const LanguageSupport = () => {
         />
         <div className="language-backGround lg:h-[645px] h-[187px] relative">
           <img
-            className="imgOne absolute lg:top-[369px] top-[88px] lg:left-[473px] left-[108px] lg:h-[91px] h-[45px] lg:w-[126px] w-[61px]"
+            className="imgOne absolute lg:top-[362px] top-[88px] lg:left-[468px] left-[108px] lg:h-[91px] h-[45px] lg:w-[126px] w-[61px]"
             src={img1}
             alt=""
           />
           <img
-            className="imgTwo absolute lg:top-[147px] top-[26px] lg:left-[300px] left-[52px] lg:h-[91px] h-[45px] lg:w-[126px] w-[61px] rounded-[6px]"
+            className="imgTwo absolute lg:top-[151px] top-[26px] lg:left-[295px] left-[52px] lg:h-[91px] h-[45px] lg:w-[126px] w-[61px] rounded-[6px]"
             src={img2}
             alt=""
           />
           <img
-            className="imgThree absolute lg:top-[204px] top-[42px] lg:left-[778px] left-[185px] lg:h-[91px] h-[45px] lg:w-[126px] w-[61px]"
+            className="imgThree absolute lg:top-[198px] top-[42px] lg:left-[770px] left-[185px] lg:h-[91px] h-[45px] lg:w-[126px] w-[61px]"
             src={img3}
             alt=""
           />
           <img
-            className="imgFour absolute lg:top-[230px] top-[49px] lg:left-[978px] left-[249px] lg:h-[91px] h-[45px] lg:w-[126px] w-[61px]"
+            className="imgFour absolute lg:top-[232px] top-[49px] lg:left-[966px] left-[249px] lg:h-[91px] h-[45px] lg:w-[126px] w-[61px]"
             src={img4}
             alt=""
           />
           <img
-            className="imgFive absolute lg:top-[141px] top-[26px] lg:left-[1219px] left-[313px] lg:h-[91px] h-[45px] lg:w-[126px] w-[61px]"
+            className="imgFive absolute lg:top-[141px] top-[26px] lg:left-[1205px] left-[313px] lg:h-[91px] h-[45px] lg:w-[126px] w-[61px]"
             src={img5}
             alt=""
           />
