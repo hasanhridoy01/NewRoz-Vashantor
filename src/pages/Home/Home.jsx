@@ -1,6 +1,7 @@
 import EasyTranslation from "../../components/Home/EasyTranslation";
 import Expand from "../../components/Home/Expand";
 import KeyFeature from "../../components/Home/KeyFeature";
+import LanguageSupport from "../../components/Home/LanguageSupport";
 import TaskManagement from "../../components/Home/TaskManagement";
 import "./Home.css";
 
@@ -12,6 +13,7 @@ const Home = () => {
         <TaskManagement />
         <KeyFeature />
         <Expand />
+        <LanguageSupport />
       </div>
     </>
   );
