@@ -44,7 +44,7 @@ const TestimonialCarousel = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className="min-w-[495px] flex flex-col justify-center items-center p-5 lg:mt-0 mt-[0px]"
+              className="min-w-[485px] flex flex-col justify-center items-center p-5 pl-0 lg:mt-0 mt-[0px]"
             >
               <img
                 src={slide.image}
@@ -58,7 +58,7 @@ const TestimonialCarousel = () => {
                 <p className="text-sm text-gray-600">
                   {slide.testimonial.position}
                 </p>
-                <p className="mt-2 text-base italic">
+                <p className="p-0 mt-2 text-base italic">
                   {slide.testimonial.text}
                 </p>
               </div>
@@ -72,7 +72,7 @@ const TestimonialCarousel = () => {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-4 h-4 rounded-full border-1 border-[#687535] ${
+            className={`w-4 h-4 rounded-full border-2 border-[#687535] ${
               index === activeIndex ? "bg-[#687535]" : "bg-[#D2D2D2]"
             }`}
           />

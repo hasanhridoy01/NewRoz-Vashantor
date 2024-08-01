@@ -1,5 +1,6 @@
 import EasyTranslation from "../../components/Home/EasyTranslation";
 import Expand from "../../components/Home/Expand";
+import FastEasyAccurate from "../../components/Home/FastEasyAccurate/FastEasyAccurate";
 import KeyFeature from "../../components/Home/KeyFeature";
 import LanguageSupport from "../../components/Home/LanguageSupport";
 import Plan from "../../components/Home/Plan/Plan";
@@ -20,6 +21,7 @@ const Home = () => {
         <TechnicalSupport />
         <Plan />
         <Testimonial />
+        <FastEasyAccurate />
       </div>
     </>
   );

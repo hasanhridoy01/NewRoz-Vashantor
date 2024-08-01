@@ -1,0 +1,29 @@
+@tailwind utilities;
+
+.Fast-background-image {
+  background-image: url(../../../../public/Images/fasteasy/container.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 553px;
+  width: 1420px;
+}
+@layer utilities {
+  @keyframes fast-section-image {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(12px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .fast-section-image {
+    animation: fast-section-image 2s ease-in-out infinite;
+  }
+}
+.fast-section-image {
+}
