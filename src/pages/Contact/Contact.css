@@ -1,0 +1,27 @@
+.contact-background-image {
+  background-image: url(../../../public/Images/plan/lines.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-text {
+  font-family: Barlow;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  color: #222222;
+}
+.contact-btn {
+  width: 152px;
+  height: 43px;
+  padding: 12px 20px 12px 20px;
+  gap: 8px;
+  border-radius: 10px;
+  opacity: 0px;
+  background-color: #687535;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

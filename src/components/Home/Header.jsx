@@ -12,6 +12,7 @@ const Header = () => {
   const isHomePage = location.pathname.includes("home");
   const isServicePage = location.pathname.includes("service");
   const isPricingPage = location.pathname.includes("pricing");
+  const isContactPage = location.pathname.includes("contact");
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -58,7 +59,10 @@ const Header = () => {
               </a>
             </Link>
             <Link to={"/contact"}>
-              <a href="" className="nav-link">
+              <a
+                href="#"
+                className={`nav-link ${isContactPage ? "nav-link-active" : ""}`}
+              >
                 Contact
               </a>
             </Link>
