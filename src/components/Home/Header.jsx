@@ -11,6 +11,7 @@ const Header = () => {
   //added active page color effect.............!
   const isHomePage = location.pathname.includes("home");
   const isServicePage = location.pathname.includes("service");
+  const isPricingPage = location.pathname.includes("pricing");
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -49,7 +50,10 @@ const Header = () => {
               </a>
             </Link>
             <Link to={"/pricing"}>
-              <a href="" className="nav-link">
+              <a
+                href="#"
+                className={`nav-link ${isPricingPage ? "nav-link-active" : ""}`}
+              >
                 Pricing
               </a>
             </Link>

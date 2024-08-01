@@ -4,7 +4,7 @@ import img from '../../../../public/Images/fasteasy/globe.svg'
 const FastEasyAccurate = () => {
   return (
     <div>
-      <div className="container mx-auto lg:px-14 px-5 lg:py-14 py-5 lg:pt-28 pt-16">
+      <div className="container mx-auto lg:px-14 px-5 lg:py-14 lg:pb-32 py-5 lg:pt-28 pt-16">
         <div className="Fast-background-image relative lg:flex hidden">
           <div className="absolute top-[200px] left-[100px]">
             <p className="font-barlow font-medium text-base leading-tight text-white uppercase">
