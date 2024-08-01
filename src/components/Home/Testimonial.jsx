@@ -4,7 +4,7 @@ import TestimonialCarousel from "./TestimonialCarousel";
 
 const Testimonial = () => {
   return (
-    <div>
+    <div className="lg:flex hidden">
       <div className="container mx-auto lg:px-14 px-5 lg:py-14 py-5 lg:pt-28 pt-16">
         <SectionTitle
           title="Testimonial"

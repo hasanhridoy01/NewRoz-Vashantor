@@ -1,10 +1,14 @@
 import "./Header.css";
 import logo from "../../../public/Images/logo/logo.png";
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenSection, setIsOpenSection] = useState(false);
+
+
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -23,10 +27,10 @@ const Header = () => {
         <div className="navbar-end-section">
 
           <nav className={`header-nav ${isOpenSection ? 'block' : 'hidden'} md:flex`}>
-            <a href="#home" className="nav-link">Home</a>
-            <a href="#about" className="nav-link">Service</a>
-            <a href="#services" className="nav-link">Pricing</a>
-            <a href="#contact" className="nav-link">Contact</a>
+            <Link to={'/home'}><a href="" className="nav-link">Home</a></Link>
+            <Link to={'/service'}><a href="" className="nav-link">Service</a></Link>
+            <Link to={'/pricing'}><a href="" className="nav-link">Pricing</a></Link>
+            <Link to={'/contact'}><a href="" className="nav-link">Contact</a></Link>
           </nav>
 
           <div className={`button-section ${isOpenSection ? 'block' : 'hidden'} md:flex space-x-2`}>

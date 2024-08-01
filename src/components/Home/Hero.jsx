@@ -8,7 +8,7 @@ import img4 from "../../../public/Images/hero/Hanguages.png";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero lg:h-[1060px] h-[960px] lg:px-[0] px-5">
       <h2 className="hero-title">Fast, Easy, & Accurate</h2>
       <h3 className="hero-title-two">online translation portal</h3>
       <h5 className="hero-paragraph">
