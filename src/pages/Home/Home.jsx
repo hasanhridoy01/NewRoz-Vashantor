@@ -1,3 +1,4 @@
+import React from "react";
 import EasyTranslation from "../../components/Home/EasyTranslation";
 import Expand from "../../components/Home/Expand";
 import FastEasyAccurate from "../../components/Home/FastEasyAccurate/FastEasyAccurate";
@@ -10,9 +11,13 @@ import Testimonial from "../../components/Home/Testimonial";
 import "./Home.css";
 
 const Home = () => {
+  //page top on position...............!
+  React.useEffect(() => {
+    window.scrollTo(100, 100);
+  }, []);
   return (
     <>
-      <div className="" style={{ backgroundColor: "#f8f8e9", width: '100%' }}>
+      <div className="" style={{ backgroundColor: "#f8f8e9", width: "100%" }}>
         <EasyTranslation />
         <TaskManagement />
         <KeyFeature />

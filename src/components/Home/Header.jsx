@@ -8,7 +8,9 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenSection, setIsOpenSection] = useState(false);
 
-
+  //added active page color effect.............!
+  const isHomePage = location.pathname.includes("home");
+  const isServicePage = location.pathname.includes("service");
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -25,15 +27,44 @@ const Header = () => {
           <img src={logo} alt="Logo" />
         </div>
         <div className="navbar-end-section">
-
-          <nav className={`header-nav ${isOpenSection ? 'block' : 'hidden'} md:flex`}>
-            <Link to={'/home'}><a href="" className="nav-link">Home</a></Link>
-            <Link to={'/service'}><a href="" className="nav-link">Service</a></Link>
-            <Link to={'/pricing'}><a href="" className="nav-link">Pricing</a></Link>
-            <Link to={'/contact'}><a href="" className="nav-link">Contact</a></Link>
+          <nav
+            className={`header-nav ${
+              isOpenSection ? "block" : "hidden"
+            } md:flex`}
+          >
+            <Link to="/home">
+              <a
+                href="#"
+                className={`nav-link ${isHomePage ? "nav-link-active" : ""}`}
+              >
+                Home
+              </a>
+            </Link>
+            <Link to={"/service"}>
+              <a
+                href="#"
+                className={`nav-link ${isServicePage ? "nav-link-active" : ""}`}
+              >
+                Service
+              </a>
+            </Link>
+            <Link to={"/pricing"}>
+              <a href="" className="nav-link">
+                Pricing
+              </a>
+            </Link>
+            <Link to={"/contact"}>
+              <a href="" className="nav-link">
+                Contact
+              </a>
+            </Link>
           </nav>
 
-          <div className={`button-section ${isOpenSection ? 'block' : 'hidden'} md:flex space-x-2`}>
+          <div
+            className={`button-section ${
+              isOpenSection ? "block" : "hidden"
+            } md:flex space-x-2`}
+          >
             <div className="dropdown-container">
               <button className="dropdown-button" onClick={toggleDropdown}>
                 English
@@ -55,9 +86,15 @@ const Header = () => {
 
               {isOpen && (
                 <div className="dropdown-menu">
-                  <a href="#option1" className="dropdown-item">English</a>
-                  <a href="#option2" className="dropdown-item">Arabic</a>
-                  <a href="#option3" className="dropdown-item">Kurdish</a>
+                  <a href="#option1" className="dropdown-item">
+                    English
+                  </a>
+                  <a href="#option2" className="dropdown-item">
+                    Arabic
+                  </a>
+                  <a href="#option3" className="dropdown-item">
+                    Kurdish
+                  </a>
                 </div>
               )}
             </div>
@@ -120,7 +157,10 @@ const Header = () => {
             </button>
           </div>
 
-          <button className="collapse-button md:hidden p-2" onClick={toggleMenu}>
+          <button
+            className="collapse-button md:hidden p-2"
+            onClick={toggleMenu}
+          >
             <svg
               width="44"
               height="45"
