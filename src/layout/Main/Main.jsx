@@ -6,7 +6,7 @@ import Footer from "../../components/Footer/Footer";
 
 const Main = () => {
   const location = useLocation();
-  const showHeroSection = location.pathname.includes("/");
+  const showHeroSection = location.pathname.includes("/home");
   return (
     <div>
       <div style={{ backgroundColor: "#F0F0D3" }}>
