@@ -1,5 +1,10 @@
 import { useState } from "react";
-import img from "../../../public/Images/expand/icon.png"; // Adjust the path if necessary
+import img from "../../../public/Images/expand/icon.png";
+
+//Extra images show..................!
+import img1 from '../../../public/Images/expand/Screen Mask.png';
+import img2 from '../../../public/Images/expand/Screen Mask1.png';
+import img3 from '../../../public/Images/expand/Screen Mask2.png';
 
 const ExpandCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -51,6 +56,7 @@ const ExpandCarousel = () => {
               alt={slide.title}
               className="absolute inset-0 w-14 h-14 object-cover"
             />
+            {/* <img src={img3} alt="" /> */}
             <div className="relative z-10 text-left lg:text-left lg:p-0 p-0 lg:w-[700px] w-[380px]">
               <h4 className="font-bold lg:text-[48px] text-[18px] leading-[67px]">
                 {slide.title}

@@ -9,7 +9,7 @@ const Header = () => {
   const [isOpenSection, setIsOpenSection] = useState(false);
 
   //added active page color effect.............!
-  const isHomePage = location.pathname.includes("home");
+  const isHomePage = location.pathname.includes("/");
   const isServicePage = location.pathname.includes("service");
   const isPricingPage = location.pathname.includes("pricing");
   const isContactPage = location.pathname.includes("contact");
@@ -34,7 +34,7 @@ const Header = () => {
               isOpenSection ? "block" : "hidden"
             } md:flex`}
           >
-            <Link to="/home">
+            <Link to="/">
               <a
                 href="#"
                 className={`nav-link ${isHomePage ? "nav-link-active" : ""}`}
