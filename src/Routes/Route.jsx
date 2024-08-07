@@ -6,26 +6,30 @@ import Pricing from "../pages/Pricing/Pricing";
 import Contact from "../pages/Contact/Contact";
 
 export const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <Main />,
-        children: [
-            {
-                path: '/home',
-                element: <Home />
-            },
-            {
-                path: '/service',
-                element: <Service />
-            },
-            {
-                path: '/pricing',
-                element: <Pricing />
-            },
-            {
-                path: '/contact',
-                element: <Contact />
-            }
-        ]
-    }
+  {
+    path: "/",
+    element: <Main />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "home",
+        element: <Home />,
+      },
+      {
+        path: "service",
+        element: <Service />,
+      },
+      {
+        path: "pricing",
+        element: <Pricing />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+    ],
+  },
 ]);
