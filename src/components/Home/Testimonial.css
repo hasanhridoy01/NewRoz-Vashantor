@@ -1,6 +1,14 @@
-.testimonial-background-image{
-    background-image: url(../../../public/Images/testimonial/graphic.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.testimonial-background-image {
+  background-image: url(../../../public/Images/testimonial/graphic.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .testimonial-background-image {
+    background-image: none;
+    height: 310px;
+    width: 100%;
+  }
 }

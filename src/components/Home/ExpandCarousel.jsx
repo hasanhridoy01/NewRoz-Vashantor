@@ -56,7 +56,7 @@ const ExpandCarousel = () => {
               alt={slide.title}
               className="absolute inset-0 w-14 h-14 object-cover"
             />
-            {/* <img src={img3} alt="" /> */}
+            {/* <img style={{ position: 'absolute', left: '50%' }} src={img3} alt="" /> */}
             <div className="relative z-10 text-left lg:text-left lg:p-0 p-0 lg:w-[700px] w-[380px]">
               <h4 className="font-bold lg:text-[48px] text-[18px] leading-[67px]">
                 {slide.title}

@@ -34,8 +34,9 @@ const TestimonialCarousel = () => {
   const goToSlide = (index) => {
     setActiveIndex(index);
   };
+
   return (
-    <div className="relative lg:w-[475px] lg:h-[320px] mx-auto">
+    <div className="relative w-full lg:w-[475px] lg:h-[320px] mx-auto">
       <div className="overflow-hidden">
         <div
           className="flex transition-transform ease-in-out duration-500"
@@ -44,12 +45,12 @@ const TestimonialCarousel = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className="min-w-[485px] flex flex-col justify-center items-center p-5 pl-0 lg:mt-0 mt-[0px]"
+              className="min-w-full lg:min-w-[485px] flex flex-col justify-center items-center p-5"
             >
               <img
                 src={slide.image}
                 alt={`Slide ${index + 1}`}
-                className="w-[120px] h-[120px] object-cover mb-4"
+                className="w-24 h-24 lg:w-[120px] lg:h-[120px] object-cover mb-4"
               />
               <div className="text-center">
                 <p className="text-lg font-semibold">
@@ -58,7 +59,7 @@ const TestimonialCarousel = () => {
                 <p className="text-sm text-gray-600">
                   {slide.testimonial.position}
                 </p>
-                <p className="p-0 mt-2 text-base italic">
+                <p className="mt-2 text-base italic">
                   {slide.testimonial.text}
                 </p>
               </div>
