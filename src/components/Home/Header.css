@@ -250,7 +250,7 @@
   }
 
   .header-nav {
-    display: flex; /* Show the navigation */
+    display: flex; 
   }
 
   .header-nav .nav-link {
