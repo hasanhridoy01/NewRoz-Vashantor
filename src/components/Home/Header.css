@@ -121,7 +121,7 @@
   font-family: Barlow;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 10px;
   width: 169px;
 }
@@ -189,6 +189,7 @@
   font-family: Barlow;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   margin-left: 10px;
   width: 169px;
