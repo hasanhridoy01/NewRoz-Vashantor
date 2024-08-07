@@ -273,11 +273,13 @@ const Header = () => {
               Let's Talk
             </button>
           </div>
+
           <div className="flex h-96 flex-col gap-3 items-center justify-center">
             <div className="">
               <Link to="/home">
                 <a
                   href="#"
+                  onClick={toggleDrawer}
                   className={`nav-link-small ${
                     isHomePage ? "nav-link-small-active" : ""
                   }`}
@@ -290,6 +292,7 @@ const Header = () => {
               <Link to={"/service"}>
                 <a
                   href="#"
+                  onClick={toggleDrawer}
                   className={`nav-link-small ${
                     isServicePage ? "nav-link-small-active" : ""
                   }`}
@@ -302,6 +305,7 @@ const Header = () => {
               <Link to={"/pricing"}>
                 <a
                   href="#"
+                  onClick={toggleDrawer}
                   className={`nav-link-small ${
                     isPricingPage ? "nav-link-small-active" : ""
                   }`}
@@ -314,6 +318,7 @@ const Header = () => {
               <Link to={"/contact"}>
                 <a
                   href="#"
+                  onClick={toggleDrawer}
                   className={`nav-link-small ${
                     isContactPage ? "nav-link-small-active" : ""
                   }`}
@@ -323,6 +328,7 @@ const Header = () => {
               </Link>
             </div>
           </div>
+
           <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 flex items-center justify-center">
             <button
               onClick={toggleDrawer}
