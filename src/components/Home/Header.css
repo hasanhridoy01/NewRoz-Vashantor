@@ -307,12 +307,12 @@
   left: 50%;
   transform: translateX(-50%);
   width: 30%;
-  border-bottom: 3px solid #424b1b;
+  border-bottom: 3px solid #FFFFFF;
 }
 
 /* Active link specific styles */
 .nav-link-small-active {
-  color: #424b1b;
+  color: #FFFFFF;
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;

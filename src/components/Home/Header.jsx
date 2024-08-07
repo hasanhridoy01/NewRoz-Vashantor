@@ -170,7 +170,7 @@ const Header = () => {
           </button>
 
           {/* user-button */}
-          <button className="user-button lg:ml-4 ml-1">
+          <button className="user-button lg:ml-2 ml-1">
             <svg
               width="24"
               height="25"
@@ -323,7 +323,7 @@ const Header = () => {
               </Link>
             </div>
           </div>
-          <div className="absolute bottom-1 w-96 flex items-center justify-center">
+          <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 flex items-center justify-center">
             <button
               onClick={toggleDrawer}
               className="text-white text-2xl underline"
@@ -332,9 +332,36 @@ const Header = () => {
                 fontWeight: 600,
                 fontSize: "16px",
                 lineHeight: "19px",
+                height: "44px",
+                width: "44px",
+                padding: "10px",
+                gap: "10px",
+                backgroundColor: "#424B1B",
+                borderRadius: "50%",
               }}
             >
-              Close
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 18.5039L18 6.50391"
+                  stroke="#687535"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18 18.5039L6 6.50391"
+                  stroke="#687535"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </button>
           </div>
         </div>
