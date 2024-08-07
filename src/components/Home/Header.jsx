@@ -6,7 +6,6 @@ import { Link, useLocation } from "react-router-dom";
 const Header = () => {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
-  const [isOpenSection, setIsOpenSection] = useState(false);
 
   //added active page color effect.............!
   const isHomePage = location.pathname.includes("/home");
@@ -18,22 +17,14 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
-  const toggleMenu = () => {
-    setIsOpenSection(!isOpenSection);
-  };
-
   return (
-    <header className="header">
-      <div className="header-row">
+    <header className="bg-[#f0f0d3] p-5 h-[79px] flex items-center justify-center fixed top-0 left-0 right-0 z-[1000] w-full">
+      <div className="flex justify-between items-center w-full max-w-[1440px] mx-auto">
         <div className="header-logo">
           <img src={logo} alt="Logo" />
         </div>
         <div className="navbar-end-section">
-          <nav
-            className={`header-nav ${
-              isOpenSection ? "block" : "hidden"
-            } md:flex`}
-          >
+          <nav className="header-nav">
             <Link to="/home">
               <a
                 href="#"
@@ -69,9 +60,7 @@ const Header = () => {
           </nav>
 
           <div
-            className={`button-section ${
-              isOpenSection ? "block" : "hidden"
-            } md:flex space-x-2`}
+            className="button-section"
           >
             <div className="dropdown-container">
               <button className="dropdown-button" onClick={toggleDropdown}>
@@ -138,37 +127,10 @@ const Header = () => {
               </svg>
               Let's Talk
             </button>
-
-            <button className="user-button">
-              <svg
-                width="24"
-                height="25"
-                viewBox="0 0 24 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 12.075C14.7614 12.075 17 9.83638 17 7.07495C17 4.31353 14.7614 2.07495 12 2.07495C9.23858 2.07495 7 4.31353 7 7.07495C7 9.83638 9.23858 12.075 12 12.075Z"
-                  stroke="currentColor"
-                  strokeWidth="1.2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M20.5901 22.075C20.5901 18.205 16.7402 15.075 12.0002 15.075C7.26015 15.075 3.41016 18.205 3.41016 22.075"
-                  stroke="currentColor"
-                  strokeWidth="1.2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
           </div>
 
-          <button
-            className="collapse-button md:hidden p-2"
-            onClick={toggleMenu}
-          >
+          {/* collapse-button */}
+          <button className="collapse-button md:hidden p-2">
             <svg
               width="44"
               height="45"
@@ -191,6 +153,32 @@ const Header = () => {
                 stroke="#687535"
                 strokeWidth="1.5"
                 strokeLinecap="round"
+              />
+            </svg>
+          </button>
+
+          {/* user-button */}
+          <button className="user-button lg:ml-4 ml-1">
+            <svg
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 12.075C14.7614 12.075 17 9.83638 17 7.07495C17 4.31353 14.7614 2.07495 12 2.07495C9.23858 2.07495 7 4.31353 7 7.07495C7 9.83638 9.23858 12.075 12 12.075Z"
+                stroke="currentColor"
+                strokeWidth="1.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M20.5901 22.075C20.5901 18.205 16.7402 15.075 12.0002 15.075C7.26015 15.075 3.41016 18.205 3.41016 22.075"
+                stroke="currentColor"
+                strokeWidth="1.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </button>
