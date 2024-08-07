@@ -10,10 +10,10 @@ const TechnicalSupport = () => {
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 lg:gap-5 gap-10 py-16">
           <div className="">
             <img src={logo} alt="" />
-            <h1 className="font-barlow font-bold text-[50px] leading-[67px] mt-4 text-[#424A21]">
+            <h1 className="font-bold text-[50px] leading-[67px] mt-4 text-[#424A21]" style={{ fontFamily: 'Barlow' }}>
               Easy integration & technical support
             </h1>
-            <p className="mt-2 font-poppins font-normal text-[14px] leading-[30px] text-[#555555]">
+            <p className="mt-2 font-normal text-[14px] leading-[30px] text-[#555555]" style={{ fontFamily: 'Poppins' }}>
               Vashantor offers seamless integration with your existing systems,
               supporting over 70 file formats and providing APIs for
               customizable workflows. Our dedicated technical support team

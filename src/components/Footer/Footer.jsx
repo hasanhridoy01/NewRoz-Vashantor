@@ -11,7 +11,7 @@ const Footer = () => {
               <img src={logo} alt="Vashantor Logo" />
             </div>
             <div>
-              <p className="font-poppins font-medium text-sm leading-6 text-gray-600 w-[90%]">
+              <p className="font-medium text-sm leading-6 text-gray-600 w-[90%]" style={{ fontFamily: 'Poppins' }}>
                 Vashantor is an advanced localization system designed to
                 effortlessly transform your website or application language. Our
                 platform offers seamless integration and robust translation
@@ -22,7 +22,7 @@ const Footer = () => {
 
           {/* Spacing divs */}
           <div className="col-span-2 space-y-5">
-            <h5 className="font-barlow text-lg font-medium leading-8 text-[#424A21]">
+            <h5 className="text-lg font-medium leading-8 text-[#424A21]" style={{ fontFamily: 'Barlow' }}>
               Vashantor
             </h5>
             <div className="space-y-2">
@@ -35,7 +35,7 @@ const Footer = () => {
           </div>
 
           <div className="col-span-2 space-y-5">
-            <h5 className="font-barlow text-lg font-medium leading-8 text-[#424A21]">
+            <h5 className="text-lg font-medium leading-8 text-[#424A21]" style={{ fontFamily: 'Barlow' }}>
               Support
             </h5>
             <div className="space-y-2">
@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
 
           <div className="col-span-3 space-y-5">
-            <h5 className="font-barlow text-lg font-medium leading-8 text-[#424A21]">
+            <h5 className="text-lg font-medium leading-8 text-[#424A21]"  style={{ fontFamily: 'Barlow' }}>
               Contact Us
             </h5>
             <div className="space-y-2">
@@ -77,12 +77,12 @@ const Footer = () => {
                     fill="#687535"
                   />
                 </svg>
-                <span className="font-poppins font-medium text-base leading-6 text-[#555555]">
+                <span className="font-medium text-base leading-6 text-[#555555]" style={{ fontFamily: 'Poppins' }}>
                   support@vashantor.com
                 </span>
               </h6>
               <div>
-                <p className="font-poppins font-medium text-sm leading-6 text-[#555555]">
+                <p className="font-medium text-sm leading-6 text-[#555555]"  style={{ fontFamily: 'Poppins' }}>
                   Follow us on:
                 </p>
                 <div className="mt-2 flex space-x-2">

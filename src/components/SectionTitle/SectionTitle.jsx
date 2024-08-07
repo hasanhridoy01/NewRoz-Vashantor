@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import img1 from "../../../public/Images/easy/icon.png";
+import './SectionTitle.css'
 
 const SectionTitle = ({ title, textOne, textTwo }) => {
   return (

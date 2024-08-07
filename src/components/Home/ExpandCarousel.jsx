@@ -58,10 +58,10 @@ const ExpandCarousel = () => {
             />
             {/* <img style={{ position: 'absolute', left: '50%' }} src={img3} alt="" /> */}
             <div className="relative z-10 text-left lg:text-left lg:p-0 p-0 lg:w-[700px] w-[380px]">
-              <h4 className="font-bold lg:text-[48px] text-[18px] leading-[67px]">
+              <h4 className="font-bold lg:text-[48px] text-[18px] leading-[67px]" style={{ fontFamily: 'Barlow' }}>
                 {slide.title}
               </h4>
-              <p className="font-poppins font-normal lg:text-[16px] text-[10px] leading-[30px] text-[#555555]">
+              <p className="font-normal lg:text-[16px] text-[10px] leading-[30px] text-[#555555]" style={{ fontFamily: 'Poppins' }}>
                 {slide.text}
               </p>
             </div>

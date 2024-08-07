@@ -53,13 +53,13 @@ const TestimonialCarousel = () => {
                 className="w-24 h-24 lg:w-[120px] lg:h-[120px] object-cover mb-4"
               />
               <div className="text-center">
-                <p className="text-lg font-semibold">
+                <p className="text-lg font-semibold" style={{ fontFamily: 'Poppins' }}>
                   {slide.testimonial.name}
                 </p>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-gray-600" style={{ fontFamily: 'Poppins' }}>
                   {slide.testimonial.position}
                 </p>
-                <p className="mt-2 text-base italic">
+                <p className="mt-2 text-base" style={{ fontFamily: 'Poppins' }}>
                   {slide.testimonial.text}
                 </p>
               </div>

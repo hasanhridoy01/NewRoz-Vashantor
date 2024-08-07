@@ -39,11 +39,12 @@
   text-decoration: none;
   color: #555555;
   font-size: 16px;
-  font-weight: 470;
+  font-weight: 500;
   line-height: 19px;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 2px;
+  font-family: Barlow;
 }
 
 .header-nav .nav-link:hover::after,
@@ -61,10 +62,11 @@
 .header-nav .nav-link-active {
   color: #424B1B;
   font-size: 16px;
-  font-weight: 495;
+  font-weight: 500;
   line-height: 19px;
   text-transform: uppercase;
   padding-bottom: 2px;
+  font-family: Barlow;
 }
 
 .navbar-end-section {
@@ -92,7 +94,9 @@
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  color: #424b1b;
+  color: #424B1B;
+  font-weight: 600;
+  font-family: Barlow;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -139,7 +143,9 @@
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  color: #424b1b;
+  color: #424B1B;
+  font-weight: 600;
+  font-family: Barlow;
   display: flex;
   align-items: center;
   gap: 10px;

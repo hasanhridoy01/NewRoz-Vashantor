@@ -22,6 +22,10 @@
   gap: 4px;
   border: 2px solid #d7d78d;
   border-width: 0 2px 0px 2px;
+  font-family: Barlow;
+  color: #424b1b;
+  font-weight: 600;
+  font-size: 14px;
 }
 .btn-two {
   width: 112px;
@@ -30,7 +34,11 @@
   padding: 4px 2px 4px 2px;
   gap: 4px;
   border: 2px solid #d7d78d;
-  border-width: 0 2px 0px 2px; /* Apply 0 width to top and bottom, 2px to left and right */
+  border-width: 0 2px 0px 2px;
+  font-family: Barlow;
+  color: #424b1b;
+  font-weight: 600;
+  font-size: 14px;
 }
 .btn-three {
   width: 146px;
@@ -39,7 +47,11 @@
   padding: 4px 2px 4px 2px;
   gap: 4px;
   border: 2px solid #d7d78d;
-  border-width: 0 2px 0px 2px; /* Apply 0 width to top and bottom, 2px to left and right */
+  border-width: 0 2px 0px 2px;
+  font-family: Barlow;
+  color: #424b1b;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 /* task-right */

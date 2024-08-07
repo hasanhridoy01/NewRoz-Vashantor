@@ -5,7 +5,7 @@
   background-position: center top; /* Adjust as needed */
   background-size: cover; /* Ensure the image covers the element */
   width: 100%;
-  padding: 200px 0px 0px 0px;
+  padding: 220px 0px 0px 0px;
   position: relative;
 }
 
@@ -15,6 +15,8 @@
   font-weight: 900;
   text-align: center; /* Center text if needed */
   text-transform: uppercase;
+  line-height: 76px;
+  font-family: Barlow;
 
   /* Background gradient text */
   background-clip: text;
@@ -28,8 +30,9 @@
   font-weight: 400;
   line-height: 67px;
   text-align: center;
-  color: #424a21;
-  margin-top: -6px;
+  color: #424A21;
+  margin-top: -2px;
+  font-family: Barlow;
 }
 .hero-paragraph {
   text-align: center;
@@ -66,6 +69,10 @@
   color: white;
   border-radius: 10px;
   margin-top: 20px;
+  font-family: Barlow;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
 }
 .quick-button {
   width: 180px;
@@ -76,6 +83,10 @@
   color: #687535;
   border-radius: 10px;
   margin-top: 20px;
+  font-family: Barlow;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
 }
 
 /* body-images */
