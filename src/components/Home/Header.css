@@ -61,7 +61,7 @@
 
 /* Active link specific styles */
 .header-nav .nav-link-active {
-  color: #424B1B;
+  color: #424b1b;
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
@@ -95,7 +95,7 @@
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  color: #424B1B;
+  color: #424b1b;
   font-weight: 600;
   font-family: Barlow;
   display: flex;
@@ -105,6 +105,28 @@
 }
 
 .dropdown-button svg {
+  flex-shrink: 0;
+}
+
+.dropdown-button-small {
+  background-color: #ffffe9;
+  border: none;
+  height: 44px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #424b1b;
+  font-weight: 600;
+  font-family: Barlow;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 169px;
+}
+
+.dropdown-button-small svg {
   flex-shrink: 0;
 }
 
@@ -144,7 +166,7 @@
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  color: #424B1B;
+  color: #424b1b;
   font-weight: 600;
   font-family: Barlow;
   display: flex;
@@ -152,6 +174,24 @@
   gap: 10px;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.talk-button-small {
+  background-color: #ffffe9;
+  border: none;
+  height: 44px;
+  padding: 20px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #424b1b;
+  font-weight: 600;
+  font-family: Barlow;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+  width: 169px;
 }
 
 .talk-button svg {
@@ -245,4 +285,38 @@
   .user-button {
     font-size: 16px;
   }
+}
+
+.nav-link-small {
+  text-decoration: none;
+  color: #555555;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 2px;
+  font-family: Barlow;
+}
+
+.nav-link-small:hover::after,
+.nav-link-small-active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
+  border-bottom: 3px solid #424b1b;
+}
+
+/* Active link specific styles */
+.nav-link-small-active {
+  color: #424b1b;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+  font-family: Barlow;
 }
