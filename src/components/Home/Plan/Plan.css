@@ -1,5 +1,6 @@
-.plan-background-image{
-    background-image: url(../../../../public/Images/plan/lines.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+.plan-background-image {
+  background-image: url(../../../../public/Images/plan/lines.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps the background image fixed */
 }
