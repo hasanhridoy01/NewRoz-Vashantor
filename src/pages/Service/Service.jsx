@@ -5,6 +5,7 @@ import EasyComponentsTwo from "../../components/Home/EasyTranslationComponents/E
 import EasyComponentsOne from "../../components/Home/EasyTranslationComponents/EasyComponentsOne";
 import EasyComponentsThree from "../../components/Home/EasyTranslationComponents/EasyComponentsThree";
 import EasyComponentsFour from "../../components/Home/EasyTranslationComponents/EasyComponentsFour";
+import { Helmet } from "react-helmet";
 
 const Service = () => {
   //page top on position...............!
@@ -13,6 +14,9 @@ const Service = () => {
   }, []);
   return (
     <div>
+      <Helmet>
+        <title>Vashantor | Service Page</title>
+      </Helmet>
       <div className="" style={{ backgroundColor: "#f8f8e9", width: "100%" }}>
         <div className="container mx-auto lg:pb-14 py-5 lg:pt-64 pt-40 lg:px-14 px-5">
           <SectionTitle

@@ -6,6 +6,7 @@ import "./Contact.css";
 import img1 from "../../../public/Images/contact/Featured icon.png";
 import img2 from "../../../public/Images/contact/Featured icon1.png";
 import img3 from "../../../public/Images/contact/Featured icon2.png";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   //page top on position...............!
@@ -14,6 +15,9 @@ const Contact = () => {
   }, []);
   return (
     <div>
+      <Helmet>
+        <title>Vashantor | Contact Page</title>
+      </Helmet>
       <div className="" style={{ backgroundColor: "#f8f8e9", width: "100%" }}>
         <div className="contact-background-image container mx-auto lg:pb-14 py-5 lg:pt-64 pt-40 lg:px-14 px-5">
           <SectionTitle

@@ -9,6 +9,7 @@ import TaskManagement from "../../components/Home/TaskManagement";
 import TechnicalSupport from "../../components/Home/TechnicalSupport";
 import Testimonial from "../../components/Home/Testimonial";
 import "./Home.css";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   //page top on position...............!
@@ -18,6 +19,9 @@ const Home = () => {
   return (
     <>
       <div className="" style={{ backgroundColor: "#f8f8e9", width: "100%" }}>
+      <Helmet>
+        <title>Vashantor | Home Page</title>
+      </Helmet>
         <EasyTranslation />
         <TaskManagement />
         <KeyFeature />
