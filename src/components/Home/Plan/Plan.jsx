@@ -16,7 +16,7 @@ const Plan = () => {
           textOne="Simple, transparent pricing that grows with you. Try any plan free for 30 days."
           textTwo=" "
         />
-        <div className="flex items-center justify-center mt-5 mb-5 relative w-[408px] mx-auto">
+        <div className="flex items-center justify-center mt-5 mb-5 relative max-w-[408px] mx-auto">
           <button className="w-[208px] h-[51px] rounded-l-[10px] rounded-r-[0px] p-2 bg-[#687535] text-[#FFFFFF] text-center z-10">
             Monthly
           </button>

@@ -241,6 +241,7 @@
 @media (min-width: 600px) {
   .header {
     padding: 20px;
+    background-color: red;
   }
 
   .header-row {
