@@ -6,7 +6,7 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 /* Images Animation */
@@ -23,12 +23,6 @@
     }
   }
 
-  .imgOne {
-    animation: imgOne 3s ease-in-out infinite;
-  }
-}
-
-@layer utilities {
   @keyframes imgTwo {
     0% {
       transform: translateY(0);
@@ -41,11 +35,6 @@
     }
   }
 
-  .imgTwo {
-    animation: imgTwo 3s ease-in-out infinite;
-  }
-}
-@layer utilities {
   @keyframes imgThree {
     0% {
       transform: translateY(0);
@@ -58,11 +47,6 @@
     }
   }
 
-  .imgThree {
-    animation: imgThree 3s ease-in-out infinite;
-  }
-}
-@layer utilities {
   @keyframes imgFour {
     0% {
       transform: translateY(0);
@@ -75,11 +59,6 @@
     }
   }
 
-  .imgFour {
-    animation: imgFour 3s ease-in-out infinite;
-  }
-}
-@layer utilities {
   @keyframes imgFive {
     0% {
       transform: translateY(0);
@@ -92,7 +71,33 @@
     }
   }
 
+  .imgOne {
+    animation: imgOne 3s ease-in-out infinite;
+  }
+
+  .imgTwo {
+    animation: imgTwo 3s ease-in-out infinite;
+  }
+
+  .imgThree {
+    animation: imgThree 3s ease-in-out infinite;
+  }
+
+  .imgFour {
+    animation: imgFour 3s ease-in-out infinite;
+  }
+
   .imgFive {
     animation: imgFive 3s ease-in-out infinite;
+  }
+
+  @media (max-width: 640px) { /* Tailwind's 'sm' breakpoint */
+    .imgOne,
+    .imgTwo,
+    .imgThree,
+    .imgFour,
+    .imgFive {
+      animation: none;
+    }
   }
 }
