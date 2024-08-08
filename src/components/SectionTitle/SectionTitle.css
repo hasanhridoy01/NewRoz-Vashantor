@@ -1,3 +1,5 @@
+@tailwind utilities;
+
 .easy-translation-text {
   font-family: Barlow;
   font-weight: 700;
@@ -13,4 +15,24 @@
   line-height: 30px;
   text-align: center;
   color: #555555;
+}
+
+@layer utilities {
+  @keyframes section-title-image {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(7px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .section-title-image {
+    animation: section-title-image 2s ease-in-out infinite;
+  }
+}
+.section-title-image {
 }

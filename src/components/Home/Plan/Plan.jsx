@@ -4,11 +4,14 @@ import img1 from "../../../../public/Images/plan/Featured icon.png";
 import img2 from "../../../../public/Images/plan/Featured icon1.png";
 import img3 from "../../../../public/Images/plan/Featured icon2.png";
 
+import logo from "../../../../public/Images/plan/icon.png";
+
 const Plan = () => {
   return (
     <div className="plan-background-image">
       <div className="container mx-auto lg:px-14 px-5 lg:py-14 py-5 lg:pt-28 pt-16">
         <SectionTitle
+          img={logo}
           title="Plans for all"
           textOne="Simple, transparent pricing that grows with you. Try any plan free for 30 days."
           textTwo=" "
@@ -22,8 +25,8 @@ const Plan = () => {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-12 items-center justify-center gap-5">
-          <div className="w-[100%] h-[635px] rounded-lg border-2 bg-[#FFFFFF] border-[#F0F0D3] shadow-[#0000000F]">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-12 items-center justify-center lg:gap-5 gap-8">
+          <div className="w-[100%] min-h-[635px] rounded-lg border-2 bg-[#FFFFFF] border-[#F0F0D3] shadow-[#0000000F]">
             <div className="flex flex-col items-center justify-center pt-10 pb-0">
               <div className="">
                 <img src={img1} alt="" />
@@ -171,25 +174,37 @@ const Plan = () => {
             </div>
           </div>
 
-          <div className="w-[100%] h-[638px] rounded-lg lg:mb-0 mb-1 border-2 bg-[#FFFFFF] border-[#687535] shadow-[#0000000F]">
+          <div className="w-[100%] min-h-[638px] rounded-lg lg:mb-0 mb-1 border-2 bg-[#FFFFFF] border-[#687535] shadow-[#0000000F]">
             <div className="flex flex-col items-center justify-center pt-10 pb-0">
               <div className="">
                 <img src={img2} alt="" />
               </div>
               <div className="mt-5">
-                <h5 className="font-semibold text-2xl leading-[30px] text-center text-[#687535]" style={{ fontFamily: 'Barlow' }}>
+                <h5
+                  className="font-semibold text-2xl leading-[30px] text-center text-[#687535]"
+                  style={{ fontFamily: "Barlow" }}
+                >
                   Business plan
                 </h5>
-                <h1 className="font-bold text-5xl leading-[57px] text-center mt-2" style={{ fontFamily: 'Barlow' }}>
+                <h1
+                  className="font-bold text-5xl leading-[57px] text-center mt-2"
+                  style={{ fontFamily: "Barlow" }}
+                >
                   $20/mth
                 </h1>
-                <h4 className="font-bold text-[18px] leading-[30px] text-center mt-3 text-[#555555]" style={{ fontFamily: 'Barlow' }}>
+                <h4
+                  className="font-bold text-[18px] leading-[30px] text-center mt-3 text-[#555555]"
+                  style={{ fontFamily: "Barlow" }}
+                >
                   Billed annually.
                 </h4>
               </div>
 
               <div className="w-full px-12 py-4">
-                <h4 className="flex items-center gap-5 text-left mt-7 text-[18px] font-semibold text-[#555555]" style={{ fontFamily: 'Poppins' }}>
+                <h4
+                  className="flex items-center gap-5 text-left mt-7 text-[18px] font-semibold text-[#555555]"
+                  style={{ fontFamily: "Poppins" }}
+                >
                   <svg
                     width="24"
                     height="25"
@@ -213,7 +228,10 @@ const Plan = () => {
                   </svg>{" "}
                   200+ integrations
                 </h4>
-                <h4 className="flex items-center gap-5 text-left mt-4 text-[18px] font-semibold text-[#555555]" style={{ fontFamily: 'Poppins' }}>
+                <h4
+                  className="flex items-center gap-5 text-left mt-4 text-[18px] font-semibold text-[#555555]"
+                  style={{ fontFamily: "Poppins" }}
+                >
                   <svg
                     width="24"
                     height="25"
@@ -237,7 +255,10 @@ const Plan = () => {
                   </svg>{" "}
                   Advanced reporting & analytics
                 </h4>
-                <h4 className="flex items-center gap-5 text-left mt-4 text-[18px] font-semibold text-[#555555]" style={{ fontFamily: 'Poppins' }}>
+                <h4
+                  className="flex items-center gap-5 text-left mt-4 text-[18px] font-semibold text-[#555555]"
+                  style={{ fontFamily: "Poppins" }}
+                >
                   <svg
                     width="24"
                     height="25"
@@ -261,7 +282,10 @@ const Plan = () => {
                   </svg>{" "}
                   Up to 20 individual users
                 </h4>
-                <h4 className="flex items-center gap-5 text-left mt-4 text-[18px] font-semibold text-[#555555]" style={{ fontFamily: 'Poppins' }}>
+                <h4
+                  className="flex items-center gap-5 text-left mt-4 text-[18px] font-semibold text-[#555555]"
+                  style={{ fontFamily: "Poppins" }}
+                >
                   <svg
                     width="24"
                     height="25"
@@ -285,7 +309,10 @@ const Plan = () => {
                   </svg>{" "}
                   40GB individual data each user
                 </h4>
-                <h4 className="flex items-center gap-5 text-left mt-4 text-[18px] font-semibold text-[#555555]" style={{ fontFamily: 'Poppins' }}>
+                <h4
+                  className="flex items-center gap-5 text-left mt-4 text-[18px] font-semibold text-[#555555]"
+                  style={{ fontFamily: "Poppins" }}
+                >
                   <svg
                     width="24"
                     height="25"
@@ -312,32 +339,47 @@ const Plan = () => {
               </div>
 
               <div className="bg-[#FAFAFA] h-[107px] w-full mt-5 rounded-b-lg flex items-center justify-center">
-                <button className="h-[43px] w-[314px] rounded-lg border-2 px-[20px] py-[12px] border-[#424B1B] shadow-[#1018280D] flex items-center justify-center bg-[#687535] text-[#fff]" style={{ fontFamily: 'Barlow' }}>
+                <button
+                  className="h-[43px] w-[314px] rounded-lg border-2 px-[20px] py-[12px] border-[#424B1B] shadow-[#1018280D] flex items-center justify-center bg-[#687535] text-[#fff]"
+                  style={{ fontFamily: "Barlow" }}
+                >
                   Get started
                 </button>
               </div>
             </div>
           </div>
 
-          <div className="w-[100%] h-[635px] rounded-lg border-2 bg-[#FFFFFF] border-[#F0F0D3] shadow-[#0000000F]">
+          <div className="w-[100%] min-h-[635px] rounded-lg border-2 bg-[#FFFFFF] border-[#F0F0D3] shadow-[#0000000F]">
             <div className="flex flex-col items-center justify-center pt-10 pb-0">
               <div className="">
                 <img src={img3} alt="" />
               </div>
               <div className="mt-5">
-                <h5 className="font-barlow font-semibold text-2xl leading-[30px] text-center text-[#687535]" style={{ fontFamily: 'Barlow' }}>
+                <h5
+                  className="font-barlow font-semibold text-2xl leading-[30px] text-center text-[#687535]"
+                  style={{ fontFamily: "Barlow" }}
+                >
                   Enterprise plan
                 </h5>
-                <h1 className="font-barlow font-bold text-5xl leading-[57px] text-center mt-2" style={{ fontFamily: 'Barlow' }}>
+                <h1
+                  className="font-barlow font-bold text-5xl leading-[57px] text-center mt-2"
+                  style={{ fontFamily: "Barlow" }}
+                >
                   $40/mth
                 </h1>
-                <h4 className="font-barlow font-bold text-[18px] leading-[30px] text-center mt-3 text-[#555555]" style={{ fontFamily: 'Barlow' }}>
+                <h4
+                  className="font-barlow font-bold text-[18px] leading-[30px] text-center mt-3 text-[#555555]"
+                  style={{ fontFamily: "Barlow" }}
+                >
                   Billed annually.
                 </h4>
               </div>
 
               <div className="w-full px-12 py-4">
-                <h4 className="flex items-center gap-5 text-left mt-7 text-[18px] font-semibold text-[#555555]" style={{ fontFamily: 'Poppins' }}>
+                <h4
+                  className="flex items-center gap-5 text-left mt-7 text-[18px] font-semibold text-[#555555]"
+                  style={{ fontFamily: "Poppins" }}
+                >
                   <svg
                     width="24"
                     height="25"
@@ -361,7 +403,10 @@ const Plan = () => {
                   </svg>{" "}
                   Advanced custom fields
                 </h4>
-                <h4 className="flex items-center gap-5 text-left mt-4 text-[18px] font-semibold text-[#555555]" style={{ fontFamily: 'Poppins' }}>
+                <h4
+                  className="flex items-center gap-5 text-left mt-4 text-[18px] font-semibold text-[#555555]"
+                  style={{ fontFamily: "Poppins" }}
+                >
                   <svg
                     width="24"
                     height="25"
@@ -385,7 +430,10 @@ const Plan = () => {
                   </svg>{" "}
                   Audit log and data history
                 </h4>
-                <h4 className="flex items-center gap-5 text-left mt-4 text-[18px] font-semibold text-[#555555]" style={{ fontFamily: 'Poppins' }}>
+                <h4
+                  className="flex items-center gap-5 text-left mt-4 text-[18px] font-semibold text-[#555555]"
+                  style={{ fontFamily: "Poppins" }}
+                >
                   <svg
                     width="24"
                     height="25"
@@ -409,7 +457,10 @@ const Plan = () => {
                   </svg>{" "}
                   Unlimited individual users
                 </h4>
-                <h4 className="flex items-center gap-5 text-left mt-4 text-[18px] font-semibold text-[#555555]" style={{ fontFamily: 'Poppins' }}>
+                <h4
+                  className="flex items-center gap-5 text-left mt-4 text-[18px] font-semibold text-[#555555]"
+                  style={{ fontFamily: "Poppins" }}
+                >
                   <svg
                     width="24"
                     height="25"
@@ -433,7 +484,10 @@ const Plan = () => {
                   </svg>{" "}
                   Unlimited individual data
                 </h4>
-                <h4 className="flex items-center gap-5 text-left mt-4 text-[18px] font-semibold text-[#555555]" style={{ fontFamily: 'Poppins' }}>
+                <h4
+                  className="flex items-center gap-5 text-left mt-4 text-[18px] font-semibold text-[#555555]"
+                  style={{ fontFamily: "Poppins" }}
+                >
                   <svg
                     width="24"
                     height="25"
@@ -460,7 +514,10 @@ const Plan = () => {
               </div>
 
               <div className="bg-[#FAFAFA] h-[107px] w-full mt-7 rounded-b-lg flex items-center justify-center">
-                <button className="h-[43px] w-[314px] rounded-lg border-2 px-[20px] py-[12px] border-[#424B1B] shadow-[#1018280D] flex items-center justify-center" style={{ fontFamily: 'Barlow' }}>
+                <button
+                  className="h-[43px] w-[314px] rounded-lg border-2 px-[20px] py-[12px] border-[#424B1B] shadow-[#1018280D] flex items-center justify-center"
+                  style={{ fontFamily: "Barlow" }}
+                >
                   Get started
                 </button>
               </div>

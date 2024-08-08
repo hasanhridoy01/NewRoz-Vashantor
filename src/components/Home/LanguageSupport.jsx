@@ -7,11 +7,14 @@ import img4 from "../../../public/Images/language/Tooltip3.png";
 import img5 from "../../../public/Images/language/Tooltip4.png";
 import { Link } from "react-router-dom";
 
+import logo from "../../../public/Images/language/icon.png";
+
 const LanguageSupport = () => {
   return (
     <div>
       <div className="container mx-auto lg:px-14 px-5 lg:py-14 py-5 lg:pt-28 pt-16">
         <SectionTitle
+          img={logo}
           title="124 Language Support around the world"
           textOne="Find your desired language to provide more convenient and grow more business."
           textTwo=" "
@@ -45,7 +48,21 @@ const LanguageSupport = () => {
         </div>
       </div>
       <div className="flex items-center justify-center lg:mt-2 mt-5">
-        <Link><a href="" className="underline" style={{ fontFamily: 'Barlow', fontWeight: 600, fontSize: '16px', lineHeight: '19px', color: '#687535', }}>View all supported language</a></Link>
+        <Link>
+          <a
+            href=""
+            className="underline"
+            style={{
+              fontFamily: "Barlow",
+              fontWeight: 600,
+              fontSize: "16px",
+              lineHeight: "19px",
+              color: "#687535",
+            }}
+          >
+            View all supported language
+          </a>
+        </Link>
       </div>
     </div>
   );

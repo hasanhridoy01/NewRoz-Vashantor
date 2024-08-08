@@ -33,7 +33,7 @@
 }
 
 .header-nav {
-  display: none; /* Hidden by default, shown on larger screens */
+  display: none; 
 }
 
 .header-nav .nav-link {

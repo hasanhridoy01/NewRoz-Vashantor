@@ -7,11 +7,14 @@ import img4 from "../../../public/Images/key/icon3.png";
 import img5 from "../../../public/Images/key/icon4.png";
 import img6 from "../../../public/Images/key/icon5.png";
 
+import logo from "../../../public/Images/key/logo/icon.png";
+
 const KeyFeature = () => {
   return (
     <div className="key-feature">
       <div className="container mx-auto lg:px-14 px-5 lg:py-14 py-5 lg:pt-28 pt-16">
         <SectionTitle
+          img={logo}
           title="Key Features"
           textOne="Vashantor has some unique key features for your localization"
           textTwo="which is very effective and secured."
