@@ -5,6 +5,7 @@ import img2 from "../../../public/Images/language/Tooltip1.png";
 import img3 from "../../../public/Images/language/Tooltip2.png";
 import img4 from "../../../public/Images/language/Tooltip3.png";
 import img5 from "../../../public/Images/language/Tooltip4.png";
+import { Link } from "react-router-dom";
 
 const LanguageSupport = () => {
   return (
@@ -42,6 +43,9 @@ const LanguageSupport = () => {
             alt=""
           />
         </div>
+      </div>
+      <div className="flex items-center justify-center lg:mt-2 mt-5">
+        <Link><a href="" className="underline" style={{ fontFamily: 'Barlow', fontWeight: 600, fontSize: '16px', lineHeight: '19px', color: '#687535', }}>View all supported language</a></Link>
       </div>
     </div>
   );
