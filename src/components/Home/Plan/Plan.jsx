@@ -167,7 +167,7 @@ const Plan = () => {
               </div>
 
               <div className="bg-[#FAFAFA] h-[107px] w-full mt-7 rounded-b-lg flex items-center justify-center">
-                <button className="h-[43px] w-[314px] rounded-lg border-2 px-[20px] py-[12px] border-[#424B1B] shadow-[#1018280D] flex items-center justify-center">
+                <button className="h-[43px] lg:w-[314px] w-[90%] rounded-lg border-2 px-[20px] py-[12px] border-[#424B1B] shadow-[#1018280D] flex items-center justify-center">
                   Get started
                 </button>
               </div>
@@ -340,7 +340,7 @@ const Plan = () => {
 
               <div className="bg-[#FAFAFA] h-[107px] w-full mt-5 rounded-b-lg flex items-center justify-center">
                 <button
-                  className="h-[43px] w-[314px] rounded-lg border-2 px-[20px] py-[12px] border-[#424B1B] shadow-[#1018280D] flex items-center justify-center bg-[#687535] text-[#fff]"
+                  className="h-[43px] lg:w-[314px] w-[90%] rounded-lg border-2 px-[20px] py-[12px] border-[#424B1B] shadow-[#1018280D] flex items-center justify-center bg-[#687535] text-[#fff]"
                   style={{ fontFamily: "Barlow" }}
                 >
                   Get started
@@ -515,7 +515,7 @@ const Plan = () => {
 
               <div className="bg-[#FAFAFA] h-[107px] w-full mt-7 rounded-b-lg flex items-center justify-center">
                 <button
-                  className="h-[43px] w-[314px] rounded-lg border-2 px-[20px] py-[12px] border-[#424B1B] shadow-[#1018280D] flex items-center justify-center"
+                  className="h-[43px] lg:w-[314px] w-[90%] rounded-lg border-2 px-[20px] py-[12px] border-[#424B1B] shadow-[#1018280D] flex items-center justify-center"
                   style={{ fontFamily: "Barlow" }}
                 >
                   Get started

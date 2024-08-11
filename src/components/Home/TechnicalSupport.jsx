@@ -1,7 +1,8 @@
 import "./TechnicalSupport.css";
 import logo from "../../../public/Images/technical/icon.png";
-import img1 from '../../../public/Images/technical/Code.png'
-import img2 from '../../../public/Images/technical/Result.png'
+import img1 from "../../../public/Images/technical/Code.png";
+import img2 from "../../../public/Images/technical/Result.png";
+import img3 from '../../../public/Images/technical//Right-Illustration.png'
 
 const TechnicalSupport = () => {
   return (
@@ -9,11 +10,19 @@ const TechnicalSupport = () => {
       <div className="container mx-auto lg:px-14 px-5 lg:py-14 py-5 lg:pt-28 pt-16">
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 lg:gap-5 gap-10 py-16">
           <div className="">
-            <img src={logo} alt="" />
-            <h1 className="font-bold text-[50px] leading-[67px] mt-4 text-[#424A21]" style={{ fontFamily: 'Barlow' }}>
+            <div className="flex lg:items-start items-center lg:justify-start justify-center">
+              <img src={logo} alt="" />
+            </div>
+            <h1
+              className="font-bold lg:text-[50px] text-[32px] lg:leading-[67px] leading-[42px] mt-4 text-[#424A21] text-center lg:text-left"
+              style={{ fontFamily: "Barlow" }}
+            >
               Easy integration & technical support
             </h1>
-            <p className="mt-2 font-normal text-[14px] leading-[30px] text-[#555555]" style={{ fontFamily: 'Poppins' }}>
+            <p
+              className="lg:mt-2 mt-4 font-normal text-[16px] leading-[30px] text-[#555555] lg:text-left text-center"
+              style={{ fontFamily: "Poppins" }}
+            >
               Vashantor offers seamless integration with your existing systems,
               supporting over 70 file formats and providing APIs for
               customizable workflows. Our dedicated technical support team
@@ -21,10 +30,13 @@ const TechnicalSupport = () => {
               localization effortless and efficient. Trust Vashantor to
               transform your website or application's language with ease.
             </p>
-            <p className="mt-4 font-poppins font-bold text-[20px] leading-[30px] text-[#555555]">
+            <p
+              className="mt-4 font-bold lg:text-[20px] text-[18px] lg:leading-[30px] leading-[27px] text-[#555555] lg:text-left text-center"
+              style={{ fontFamily: "Poppins" }}
+            >
               Available platforms
             </p>
-            <div className="mt-5 flex items-center gap-5">
+            <div className="lg:mt-5 mt-6 flex items-center lg:justify-start justify-center gap-5">
               <button aria-label="Web" className="flex items-center gap-2">
                 <svg
                   width="24"
@@ -115,10 +127,26 @@ const TechnicalSupport = () => {
               </button>
             </div>
           </div>
-          <div className="right-backGround-image lg:h-[573px] h-[417px] max-w-[617px] relative lg:mt-0 mt-8">
-            <img className="technical-image-one absolute lg:top-[-10px] top-[-7.5px] lg:left-[104px] left-[4px] lg:h-[439px] h-[313px] lg:w-[401px] w-[286px]" src={img1} alt="" />
-            <img className="technical-image-two absolute lg:top-[300px] top-[208px] lg:left-[207px] left-[91px] lg:h-[248px] h-[177px] lg:w-[374px] w-[267px]" src={img2} alt="" />
+
+          <div className="technical-large-image">
+            <div className="right-backGround-image lg:h-[573px] h-[417px] max-w-[617px] relative lg:mt-0 mt-8">
+              <img
+                className="technical-image-one absolute lg:top-[-10px] top-[-7.5px] lg:left-[104px] left-[4px] lg:h-[439px] h-[313px] lg:w-[401px] w-[286px]"
+                src={img1}
+                alt=""
+              />
+              <img
+                className="technical-image-two absolute lg:top-[300px] top-[208px] lg:left-[207px] left-[91px] lg:h-[248px] h-[177px] lg:w-[374px] w-[267px]"
+                src={img2}
+                alt=""
+              />
+            </div>
           </div>
+
+          <div className="technical-small-image">
+            <img src={img3} alt="" />
+          </div>
+
         </div>
       </div>
     </div>

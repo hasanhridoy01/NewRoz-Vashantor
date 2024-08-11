@@ -13,7 +13,7 @@ const Testimonial = () => {
           textOne="Check out the comments of our happy customers."
           textTwo=" "
         />
-        <div className="flex items-center justify-center mt-16">
+        <div className="flex items-center justify-center lg:mt-16 mt-9">
           <div className="testimonial-background-image lg:h-[650px] h-[310px] lg:w-[1019px] w-full flex lg:items-center justify-center">
             <TestimonialCarousel />
           </div>

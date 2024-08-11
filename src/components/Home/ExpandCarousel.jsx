@@ -2,9 +2,9 @@ import { useState } from "react";
 import img from "../../../public/Images/expand/icon.png";
 
 //Extra images show..................!
-import img1 from '../../../public/Images/expand/Screen Mask.png';
-import img2 from '../../../public/Images/expand/Screen Mask1.png';
-import img3 from '../../../public/Images/expand/Screen Mask2.png';
+import img1 from "../../../public/Images/expand/Screen Mask.png";
+import img2 from "../../../public/Images/expand/Screen Mask1.png";
+import img3 from "../../../public/Images/expand/Screen Mask2.png";
 
 const ExpandCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -41,35 +41,43 @@ const ExpandCarousel = () => {
   };
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto overflow-hidden">
-      <div
-        className="flex transition-transform ease-in-out duration-500"
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-      >
-        {slides.map((slide) => (
-          <div
-            key={slide.id}
-            className="min-w-full flex-shrink-0 flex items-center justify-start lg:justify-start h-96 relative"
-          >
-            <img
-              src={slide.image}
-              alt={slide.title}
-              className="absolute inset-0 w-14 h-14 object-cover"
-            />
-            {/* <img style={{ position: 'absolute', left: '50%' }} src={img3} alt="" /> */}
-            <div className="relative z-10 text-left lg:text-left lg:p-0 p-0 lg:w-[700px] w-[380px]">
-              <h4 className="font-bold lg:text-[48px] text-[18px] leading-[67px]" style={{ fontFamily: 'Barlow' }}>
-                {slide.title}
-              </h4>
-              <p className="font-normal lg:text-[16px] text-[10px] leading-[30px] text-[#555555]" style={{ fontFamily: 'Poppins' }}>
-                {slide.text}
-              </p>
+    <div className="relative w-full">
+      <div className="overflow-hidden">
+        <div
+          className="flex transition-transform ease-in-out duration-500"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
+          {slides.map((slide) => (
+            <div
+              key={slide.id}
+              className="min-w-full flex items-center justify-center lg:justify-start lg:h-96 h-80 relative"
+            >
+              <img
+                src={slide.image}
+                alt={slide.title}
+                className="absolute inset-0 w-14 h-14 object-cover lg:mx-0 mx-auto"
+              />
+              {/* <img style={{ position: 'absolute', left: '50%' }} src={img3} alt="" /> */}
+              <div className="relative z-10 text-center lg:text-left lg:p-0 p-0 lg:w-[700px] w-[380px]">
+                <h4
+                  className="font-bold lg:text-[48px] text-[18px] lg:leading-[67px] leading-[30px]"
+                  style={{ fontFamily: "Barlow" }}
+                >
+                  {slide.title}
+                </h4>
+                <p
+                  className="font-normal lg:text-[16px] text-[10px] leading-[30px] text-[#555555]"
+                  style={{ fontFamily: "Poppins" }}
+                >
+                  {slide.text}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
 
-      <div className="mt-5">
+      <div className="lg:mt-5 mt-0 flex lg:items-start items-start lg:justify-start justify-start relative">
         <button
           onClick={prevSlide}
           className="absolute bottom-4 text-white p-0 rounded-full"

@@ -43,3 +43,14 @@
     animation: technical-image-two 3s ease-in-out infinite;
   }
 }
+.technical-small-image{
+  display: none;
+}
+@media (max-width: 640px) { /* Tailwind's 'sm' breakpoint */
+  .technical-large-image{
+    display: none;
+  }
+  .technical-small-image{
+    display: block;
+  }
+}

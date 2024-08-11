@@ -2,7 +2,6 @@
 
 .language-backGround {
   background-image: url(../../../public/Images/language/Mapwrap.png);
-  width: 100%;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -99,5 +98,16 @@
     .imgFive {
       animation: none;
     }
+  }
+}
+.language-bg-small-image{
+  display: none;
+}
+@media (max-width: 640px) { /* Tailwind's 'sm' breakpoint */
+  .language-bg-large-image{
+    display: none;
+  }
+  .language-bg-small-image{
+    display: block;
   }
 }
