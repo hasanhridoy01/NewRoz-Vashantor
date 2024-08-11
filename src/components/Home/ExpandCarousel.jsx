@@ -77,10 +77,10 @@ const ExpandCarousel = () => {
         </div>
       </div>
 
-      <div className="lg:mt-5 mt-0 flex lg:items-start items-start lg:justify-start justify-start relative">
+      <div className="lg:mt-5 mt-0 flex lg:items-start items-center lg:justify-start justify-center relative">
         <button
           onClick={prevSlide}
-          className="absolute bottom-4 text-white p-0 rounded-full"
+          className="absolute bottom-4 lg:left-0 left-[184px] text-white p-0 rounded-full"
         >
           <svg
             width="40"
@@ -123,7 +123,7 @@ const ExpandCarousel = () => {
 
         <button
           onClick={nextSlide}
-          className="absolute bottom-4 lg:left-16 left-16 text-white p-0 rounded-full "
+          className="absolute bottom-4 lg:left-16 left-[133px] text-white p-0 rounded-full "
         >
           <svg
             width="40"

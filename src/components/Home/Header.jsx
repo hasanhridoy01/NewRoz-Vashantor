@@ -3,11 +3,18 @@ import logo from "../../../public/Images/logo/logo.png";
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
+import img from "../../../public/Images/Map-wrap.png";
+
 // import component 👇
 import Drawer from "react-modern-drawer";
 
 //import styles 👇
 import "react-modern-drawer/dist/index.css";
+
+//modal styles 👇
+import ReactDOM from "react-dom";
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
 
 const Header = () => {
   const location = useLocation();
@@ -27,6 +34,12 @@ const Header = () => {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+
+  //modal
+  const [openModal, setOpenModal] = useState(false);
+
+  const onOpenModal = () => setOpenModal(true);
+  const onCloseModal = () => setOpenModal(false);
 
   return (
     <header className="bg-[#f0f0d3] p-5 h-[79px] flex items-center justify-center fixed top-0 left-0 right-0 z-[1000] min-w-full">
@@ -105,7 +118,7 @@ const Header = () => {
               )}
             </div>
 
-            <button className="talk-button">
+            <button className="talk-button" onClick={onOpenModal}>
               <svg
                 width="24"
                 height="24"
@@ -136,6 +149,139 @@ const Header = () => {
               </svg>
               Let's Talk
             </button>
+
+            {/* modal */}
+            <div className="lg:mt-0 mt-5">
+              <Modal
+                open={openModal}
+                onClose={onCloseModal}
+                center
+                closeIcon={<span></span>}
+                styles={{
+                  modal: {
+                    borderRadius: "10px",
+                    padding: "0px",
+                    overflow: "hidden",
+                    zIndex: "2000",
+                  },
+                }}
+              >
+                <div className="w-full">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="modal-left-side p-5 relative h-auto w-full lg:w-[420px] md:h-[470px] lg:flex hidden bg-[#f0f0d3] flex-col">
+                      <div className="">
+                        <img
+                          className="h-[40px] w-[229px] mb-2 mx-auto mt-10"
+                          src={logo}
+                          alt="Logo"
+                        />
+                      </div>
+                      <p
+                        style={{
+                          fontFamily: "Barlow",
+                          fontWeight: 500,
+                          fontSize: "14px",
+                          lineHeight: "20px",
+                          color: "#555555",
+                          textAlign: "center",
+                        }}
+                      >
+                        Translation has never been this easy.
+                      </p>
+                      <p
+                        style={{
+                          fontFamily: "Barlow",
+                          fontWeight: 500,
+                          fontSize: "14px",
+                          lineHeight: "20px",
+                          color: "#555555",
+                          textAlign: "center",
+                        }}
+                      >
+                        Get started by booking a meeting. It’s FREE!
+                      </p>
+                    </div>
+                    <div className="bg-[#f8f8e9] p-10 pr-11 relative h-auto w-full lg:w-[420px] md:h-[470px]">
+                      <div>
+                        <button
+                          className="absolute lg:top-2 top-3 lg:right-9 right-2 h-[44px] w-[44px] p-[10px] bg-[#F0F0D3] rounded-full"
+                          onClick={onCloseModal}
+                        >
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M6 18L18 6"
+                              stroke="#969696"
+                              stroke-width="1.2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M18 18L6 6"
+                              stroke="#969696"
+                              stroke-width="1.5"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                      <div className="mt-16 p-1">
+                        <h4
+                          className="font-bold lg:text-[38px] text-[22px] leading-[57px] text-[#222222]"
+                          style={{ fontFamily: "Barlow" }}
+                        >
+                          Book A Meeting
+                        </h4>
+                        <div className="w-full mt-1">
+                          <div className="mb-4">
+                            <label
+                              htmlFor="name"
+                              className="block text-sm font-medium text-gray-700"
+                            >
+                              Your Name
+                            </label>
+                            <input
+                              type="text"
+                              id="name"
+                              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                              placeholder="Enter your name"
+                            />
+                          </div>
+                          <div className="mb-4">
+                            <label
+                              htmlFor="message"
+                              className="block text-sm font-medium text-gray-700"
+                            >
+                              Your Message
+                            </label>
+                            <textarea
+                              id="message"
+                              rows="4"
+                              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                              placeholder="Enter your message"
+                            ></textarea>
+                          </div>
+                          <div className="flex justify-start">
+                            <button
+                              className="px-6 py-2 bg-[#687535] text-white font-semibold rounded-lg"
+                              style={{ fontFamily: "Barlow" }}
+                            >
+                              Book!
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Modal>
+            </div>
           </div>
 
           {/* collapse-button */}
@@ -203,7 +349,6 @@ const Header = () => {
         className="!bg-[#101400F5] !bg-opacity-50 !h-screen !w-full !p-3"
       >
         <div className="relative h-full p-3">
-
           <div className="grid grid-cols-2 gap-0 w-full">
             <div className="dropdown-container">
               <button
@@ -243,7 +388,13 @@ const Header = () => {
             </div>
 
             <div className="flex justify-end">
-              <button className="talk-button-small">
+              <button
+                className="talk-button-small"
+                onClick={() => {
+                  onOpenModal();
+                  toggleDrawer();
+                }}
+              >
                 <svg
                   width="24"
                   height="24"

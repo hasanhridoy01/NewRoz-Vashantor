@@ -321,3 +321,12 @@
   padding-bottom: 2px;
   font-family: Barlow;
 }
+
+
+/* modal-left-side */
+.modal-left-side{
+  background-image: url(../../../public/Images/graphics.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
