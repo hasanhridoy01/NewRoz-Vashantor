@@ -148,9 +148,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="absolute left-1/2 lg:w-[1413px] w-[90%] bottom-0 border-t-2 border-[#D7D78D] lg:h-[41px] transform -translate-x-1/2 flex items-center justify-between">
+
+        <div className="absolute left-1/2 lg:w-[1413px] w-[90%] bottom-0 border-t-2 border-[#D7D78D] lg:h-[41px] transform -translate-x-1/2 flex lg:items-center lg:flex-row flex-col items-center lg:justify-between justify-center lg:gap-0 gap-1">
           <p
-            className="text-left"
+            className="text-left lg:mt-0 mt-1"
             style={{
               fontFamily: "Barlow",
               fontWeight: 600,
@@ -174,6 +175,7 @@ const Footer = () => {
             Powered by Newroz Technologies LTD.
           </p>
         </div>
+
       </div>
     </div>
   );

@@ -8,17 +8,24 @@ import img4 from "../../../public/Images/hero/Hanguages.png";
 
 const Hero = () => {
   return (
-    <div className="hero lg:h-[1060px] h-[960px] lg:px-[0] px-5">
-      <h2 className="hero-title">Fast, Easy, & Accurate</h2>
-      <h3 className="hero-title-two">online translation portal</h3>
-      <h5 className="hero-paragraph">
-        Hundreds of companies rely on Vashantor’s platform to accurately
-        translate and localize content
-      </h5>
-      <h5 className="hero-paragraph-two">
-        into any language and any media at scale.
-      </h5>
-      <div className="button-parent">
+    <div className="hero lg:h-[1060px] h-[700px] lg:px-[0] px-5">
+      <h2 className="hero-title lg:text-[64px] text-[56px] lg:leading-[76px] leading-[67px]">
+        Fast, Easy, & Accurate
+      </h2>
+      <h3 className="hero-title-two lg:mt-0 mt-2 lg:text-[56px] text-[40px] lg:leading-[67px] leading-[47px]">
+        online translation portal
+      </h3>
+      <div className="md:flex flex-col lg:items-center lg:justify-center hidden">
+        <h5 className="hero-paragraph">
+          Hundreds of companies rely on Vashantor’s platform to accurately
+          translate and localize content
+        </h5>
+        <h5 className="hero-paragraph-two">
+          into any language and any media at scale.
+        </h5>
+      </div>
+
+      <div className="flex md:flex-row flex-col items-center justify-center lg:gap-5 gap-1 mt-2">
         <button className="book-button">Book A Meeting</button>
         <button className="quick-button">Quick Demo Video</button>
       </div>
@@ -42,7 +49,6 @@ const Hero = () => {
       <div className="body-images hidden lg:flex">
         <img src={img1} alt="Hero Illustration" />
       </div>
-      
     </div>
   );
 };
