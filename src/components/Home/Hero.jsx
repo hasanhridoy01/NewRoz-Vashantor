@@ -33,30 +33,38 @@ const Hero = () => {
       </div>
 
       <div className="flex md:flex-row flex-col items-center justify-center lg:gap-5 gap-1 mt-2">
-        <button className="book-button" onClick={onOpenModal}>Book A Meeting</button>
+        <button className="book-button" onClick={onOpenModal}>
+          Book A Meeting
+        </button>
         {/* modal */}
         <BookModal open={openModal} onClose={onCloseModal} />
         <button className="quick-button">Quick Demo Video</button>
       </div>
 
-      <div className="hidden lg:flex">
-        <div className="">
-          <img className="left-image animate-move" src={img2} alt="" />
-          <img className="left-image-two animate-move-two" src={img2} alt="" />
-          <img className="right-image animate-move-three" src={img2} alt="" />
-          <img
-            className="right-image-two animate-move-four"
-            src={img2}
-            alt=""
-          />
+      <div className="container mx-auto lg:px-14 px-5">
+        <div className="hidden lg:flex">
+          <div className="">
+            <img className="left-image animate-move" src={img2} alt="" />
+            <img
+              className="left-image-two animate-move-two"
+              src={img2}
+              alt=""
+            />
+            <img className="right-image animate-move-three" src={img2} alt="" />
+            <img
+              className="right-image-two animate-move-four"
+              src={img2}
+              alt=""
+            />
+          </div>
+          <div className="">
+            <img className="image-over-One" src={img3} alt="" />
+            <img className="image-over-Two" src={img4} alt="" />
+          </div>
         </div>
-        <div className="">
-          <img className="image-over-One" src={img3} alt="" />
-          <img className="image-over-Two" src={img4} alt="" />
+        <div className="body-images hidden lg:flex">
+          <img src={img1} alt="Hero Illustration" />
         </div>
-      </div>
-      <div className="body-images hidden lg:flex">
-        <img src={img1} alt="Hero Illustration" />
       </div>
     </div>
   );
