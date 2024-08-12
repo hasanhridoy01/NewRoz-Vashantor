@@ -80,7 +80,7 @@ const BookModal = ({ open, onClose }) => {
               <h4 className="font-bold text-2xl md:text-4xl text-[#222222]">
                 Book A Meeting
               </h4>
-              <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-2">
+              <div className="mt-6 grid grid-cols-2 md:grid-cols-2 gap-2">
                 <div className="mb-3">
                   <label
                     htmlFor="name"
@@ -226,7 +226,7 @@ const BookModal = ({ open, onClose }) => {
                   />
                 </div>
 
-                <div className="mb-3 col-span-1 md:col-span-2">
+                <div className="mb-3 col-span-2">
                   <label
                     htmlFor="message"
                     className="block text-sm font-medium"
@@ -249,7 +249,7 @@ const BookModal = ({ open, onClose }) => {
                   ></textarea>
                 </div>
 
-                <div className="flex justify-start md:col-span-2">
+                <div className="flex justify-start col-span-2">
                   <button className="px-6 py-2 bg-[#687535] text-white font-semibold rounded-lg">
                     Book Now
                   </button>
