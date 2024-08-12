@@ -5,56 +5,56 @@ import img from "../../../public/Images/language/page/icon.png";
 import FastEasyAccurate from "../../components/Home/FastEasyAccurate/FastEasyAccurate";
 
 const countries = [
-  { id: 1, name: "Afghanistan" },
-  { id: 2, name: "Albania" },
-  { id: 3, name: "Algeria" },
-  { id: 4, name: "Andorra" },
-  { id: 5, name: "Angola" },
-  { id: 6, name: "Antigua and Barbuda" },
-  { id: 7, name: "Argentina" },
-  { id: 8, name: "Armenia" },
-  { id: 9, name: "Australia" },
-  { id: 10, name: "Austria" },
-  { id: 11, name: "Azerbaijan" },
-  { id: 12, name: "Bahamas" },
-  { id: 13, name: "Bahrain" },
-  { id: 14, name: "Bangladesh" },
-  { id: 15, name: "Barbados" },
-  { id: 16, name: "Belarus" },
-  { id: 17, name: "Belgium" },
-  { id: 18, name: "Belize" },
-  { id: 19, name: "Benin" },
-  { id: 20, name: "Bhutan" },
-  { id: 21, name: "Bolivia" },
-  { id: 22, name: "Bosnia and Herzegovina" },
-  { id: 23, name: "Botswana" },
-  { id: 24, name: "Brazil" },
-  { id: 25, name: "Brunei" },
-  { id: 26, name: "Bulgaria" },
-  { id: 27, name: "Burkina Faso" },
-  { id: 28, name: "Burundi" },
-  { id: 29, name: "Cabo Verde" },
-  { id: 30, name: "Cambodia" },
-  { id: 31, name: "Cameroon" },
-  { id: 32, name: "Canada" },
-  { id: 33, name: "Central African Republic" },
-  { id: 34, name: "Chad" },
-  { id: 35, name: "Chile" },
-  { id: 36, name: "China" },
-  { id: 37, name: "Colombia" },
-  { id: 38, name: "Comoros" },
-  { id: 39, name: "Congo, Democratic Republic of the" },
-  { id: 40, name: "Congo, Republic of the" },
-  { id: 41, name: "Costa Rica" },
-  { id: 42, name: "Croatia" },
-  { id: 43, name: "Cuba" },
-  { id: 44, name: "Cyprus" },
-  { id: 45, name: "Czech Republic" },
-  { id: 46, name: "Denmark" },
-  { id: 47, name: "Djibouti" },
-  { id: 48, name: "Dominica" },
-  { id: 49, name: "Dominican Republic" },
-  { id: 50, name: "Ecuador" },
+  { id: 1, language: "Pashto, Dari" }, // Afghanistan
+  { id: 2, language: "Albanian" }, // Albania
+  { id: 3, language: "Arabic" }, // Algeria
+  { id: 4, language: "Catalan" }, // Andorra
+  { id: 5, language: "Portuguese" }, // Angola
+  { id: 6, language: "English" }, // Antigua and Barbuda
+  { id: 7, language: "Spanish" }, // Argentina
+  { id: 8, language: "Armenian" }, // Armenia
+  { id: 9, language: "English" }, // Australia
+  { id: 10, language: "German" }, // Austria
+  { id: 11, language: "Azerbaijani" }, // Azerbaijan
+  { id: 12, language: "English" }, // Bahamas
+  { id: 13, language: "Arabic" }, // Bahrain
+  { id: 14, language: "Bengali" }, // Bangladesh
+  { id: 15, language: "English" }, // Barbados
+  { id: 16, language: "Belarusian, Russian" }, // Belarus
+  { id: 17, language: "Dutch" }, // Belgium
+  { id: 18, language: "Spanish" }, // Belize
+  { id: 19, language: "French" }, // Benin
+  { id: 20, language: "Dzongkha" }, // Bhutan
+  { id: 21, language: "Spanish" }, // Bolivia
+  { id: 22, language: "Bosnian, Croatian, Serbian" }, // Bosnia and Herzegovina
+  { id: 23, language: "English, Setswana" }, // Botswana
+  { id: 24, language: "Portuguese" }, // Brazil
+  { id: 25, language: "Malay" }, // Brunei
+  { id: 26, language: "Bulgarian" }, // Bulgaria
+  { id: 27, language: "French" }, // Burkina Faso
+  { id: 28, language: "Kirundi" }, // Burundi
+  { id: 29, language: "Portuguese" }, // Cabo Verde
+  { id: 30, language: "Khmer" }, // Cambodia
+  { id: 31, language: "French, English" }, // Cameroon
+  { id: 32, language: "English, French" }, // Canada
+  { id: 33, language: "French" }, // Central African Republic
+  { id: 34, language: "French" }, // Chad
+  { id: 35, language: "Spanish" }, // Chile
+  { id: 36, language: "Chinese (Mandarin)" }, // China
+  { id: 37, language: "Spanish" }, // Colombia
+  { id: 38, language: "Comorian" }, // Comoros
+  { id: 39, language: "French" }, // Congo, Democratic Republic of the
+  { id: 40, language: "French" }, // Congo, Republic of the
+  { id: 41, language: "Spanish" }, // Costa Rica
+  { id: 42, language: "Croatian" }, // Croatia
+  { id: 43, language: "Spanish" }, // Cuba
+  { id: 44, language: "Greek" }, // Cyprus
+  { id: 45, language: "Czech" }, // Czech Republic
+  { id: 46, language: "Danish" }, // Denmark
+  { id: 47, language: "Arabic" }, // Djibouti
+  { id: 48, language: "English" }, // Dominica
+  { id: 49, language: "Spanish" }, // Dominican Republic
+  { id: 50, language: "Spanish" }, // Ecuador
 ];
 
 const Language = () => {
@@ -114,7 +114,7 @@ const Language = () => {
             <div className="overflow-x-auto bg-[#FFFFE9] h-full w-full border-[2.4px] border-[#f0f0d3]">
               <div className="grid grid-cols-1 lg:grid-cols-4 gap-[2.4px] bg-[#f0f0d3]">
                 {countries.map((item) => (
-                  <div key={item.id} className="py-2 px-4 bg-white">
+                  <div key={item.id} className="py-2 px-4 bg-white cursor-pointer">
                     <p
                       style={{
                         fontFamily: "Barlow",
@@ -123,7 +123,7 @@ const Language = () => {
                         color: "#424A21",
                       }}
                     >
-                      {item.name}
+                      {item.language}
                     </p>
                   </div>
                 ))}
