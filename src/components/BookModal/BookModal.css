@@ -1,7 +1,7 @@
 /* modal-left-side */
 .modal-left-side {
   background-image: url(../../../public/Images/graphics.png);
-  background-position: center bottom;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
 }

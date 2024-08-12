@@ -76,42 +76,182 @@ const BookModal = ({ open, onClose }) => {
                 />
               </svg>
             </button>
-            <div className="mt-10 md:mt-12">
+            <div className="mt-10 md:mt-7">
               <h4 className="font-bold text-2xl md:text-4xl text-[#222222]">
                 Book A Meeting
               </h4>
-              <div className="mt-4">
-                <div className="mb-4">
+              <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-2">
+                <div className="mb-3">
                   <label
                     htmlFor="name"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium"
+                    style={{ fontFamily: "Poppins", color: "#222222" }}
                   >
-                    Your Name
+                    Full Name
                   </label>
                   <input
                     type="text"
                     id="name"
-                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-                    placeholder="Enter your name"
+                    className="mt-1 block w-full px-3 py-2 bg-[#F0F0D3] rounded-md"
+                    style={{
+                      fontFamily: "Poppins",
+                      fontSize: "14px",
+                      fontWeight: 500,
+                      lineHeight: "24px",
+                      color: "#969696",
+                    }}
+                    placeholder="Full Name"
                   />
                 </div>
-                <div className="mb-4">
+
+                <div className="mb-3">
+                  <label
+                    htmlFor="country"
+                    className="block text-sm font-medium"
+                    style={{ fontFamily: "Poppins", color: "#222222" }}
+                  >
+                    Country
+                  </label>
+                  <select
+                    id="country"
+                    className="mt-1 block w-full px-3 py-2.5 bg-[#F0F0D3] rounded-md"
+                    style={{
+                      fontFamily: "Poppins",
+                      fontSize: "14px",
+                      fontWeight: 500,
+                      lineHeight: "24px",
+                      color: "#969696",
+                    }}
+                  >
+                    <option value="" disabled selected>
+                      Select country
+                    </option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="gb">United Kingdom</option>
+                    <option value="fr">France</option>
+                    <option value="de">Germany</option>
+                    {/* Add more options as needed */}
+                  </select>
+                </div>
+
+                <div className="mb-3">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium"
+                    style={{ fontFamily: "Poppins", color: "#222222" }}
+                  >
+                    Phone Number
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    className="mt-1 block w-full px-3 py-2 bg-[#F0F0D3] rounded-md"
+                    style={{
+                      fontFamily: "Poppins",
+                      fontSize: "14px",
+                      fontWeight: 500,
+                      lineHeight: "24px",
+                      color: "#969696",
+                    }}
+                    placeholder="Enter Number"
+                  />
+                </div>
+
+                <div className="mb-3">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium"
+                    style={{ fontFamily: "Poppins", color: "#222222" }}
+                  >
+                    Email
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    className="mt-1 block w-full px-3 py-2 bg-[#F0F0D3] rounded-md"
+                    style={{
+                      fontFamily: "Poppins",
+                      fontSize: "14px",
+                      fontWeight: 500,
+                      lineHeight: "24px",
+                      color: "#969696",
+                    }}
+                    placeholder="Enter Email Address"
+                  />
+                </div>
+
+                <div className="mb-3">
+                  <label
+                    htmlFor="time"
+                    className="block text-sm font-medium"
+                    style={{ fontFamily: "Poppins", color: "#222222" }}
+                  >
+                    Time
+                  </label>
+                  <input
+                    type="time"
+                    id="time"
+                    className="mt-1 block w-full px-3 py-2 bg-[#F0F0D3] rounded-md"
+                    style={{
+                      fontFamily: "Poppins",
+                      fontSize: "14px",
+                      fontWeight: 500,
+                      lineHeight: "24px",
+                      color: "#969696",
+                    }}
+                    placeholder="Select time"
+                  />
+                </div>
+
+                <div className="mb-3">
+                  <label
+                    htmlFor="date"
+                    className="block text-sm font-medium"
+                    style={{ fontFamily: "Poppins", color: "#222222" }}
+                  >
+                    Date
+                  </label>
+                  <input
+                    type="date"
+                    id="date"
+                    className="mt-1 block w-full px-3 py-2 bg-[#F0F0D3] rounded-md"
+                    style={{
+                      fontFamily: "Poppins",
+                      fontSize: "14px",
+                      fontWeight: 500,
+                      lineHeight: "24px",
+                      color: "#969696",
+                    }}
+                  />
+                </div>
+
+                <div className="mb-3 col-span-1 md:col-span-2">
                   <label
                     htmlFor="message"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block text-sm font-medium"
+                    style={{ fontFamily: "Poppins", color: "#222222" }}
                   >
-                    Your Message
+                    Meeting Topic
                   </label>
                   <textarea
                     id="message"
-                    rows="4"
-                    className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-                    placeholder="Enter your message"
+                    rows="3"
+                    className="mt-1 block w-full px-3 py-2 bg-[#F0F0D3] rounded-md"
+                    style={{
+                      fontFamily: "Poppins",
+                      fontSize: "14px",
+                      fontWeight: 500,
+                      lineHeight: "24px",
+                      color: "#969696",
+                    }}
+                    placeholder="Write Here"
                   ></textarea>
                 </div>
-                <div className="flex justify-start">
+
+                <div className="flex justify-start md:col-span-2">
                   <button className="px-6 py-2 bg-[#687535] text-white font-semibold rounded-lg">
-                    Book!
+                    Book Now
                   </button>
                 </div>
               </div>
