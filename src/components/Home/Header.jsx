@@ -231,7 +231,7 @@ const Header = () => {
                           </svg>
                         </button>
                       </div>
-                      <div className="lg:mt-16 mt-10 p-1">
+                      <div className="lg:mt-12 mt-10 p-1">
                         <h4
                           className="font-bold lg:text-[38px] text-[22px] leading-[57px] text-[#222222]"
                           style={{ fontFamily: "Barlow" }}

@@ -19,7 +19,7 @@ const Contact = () => {
         <title>Vashantor | Contact Page</title>
       </Helmet>
       <div className="" style={{ backgroundColor: "#f8f8e9", width: "100%" }}>
-        <div className="contact-background-image container mx-auto lg:pb-14 py-5 lg:pt-64 pt-40 lg:px-14 px-5">
+        <div className="container mx-auto lg:pb-14 py-5 lg:pt-64 pt-40 lg:px-14 px-5">
           <SectionTitle
             title="Contact Us"
             textOne="Feel free to reach out with any questions"

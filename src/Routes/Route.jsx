@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home";
 import Service from "../pages/Service/Service";
 import Pricing from "../pages/Pricing/Pricing";
 import Contact from "../pages/Contact/Contact";
+import Language from "../pages/Language/Language";
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
         path: "contact",
         element: <Contact />,
       },
+      {
+        path: 'language',
+        element: <Language />
+      }
     ],
   },
 ]);

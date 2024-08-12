@@ -54,7 +54,7 @@ const LanguageSupport = () => {
         </div>
       </div>
       <div className="flex items-center justify-center lg:mt-2 mt-5">
-        <Link>
+        <Link to={'/language'}>
           <a
             href=""
             className="underline"
