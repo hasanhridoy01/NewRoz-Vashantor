@@ -1,44 +1,25 @@
-import { useState } from "react";
-import img from "../../../public/Images/expand/icon.png";
-
-//Extra images show..................!
-import img1 from "../../../public/Images/expand/Screen Mask.png";
-import img2 from "../../../public/Images/expand/Screen Mask1.png";
-import img3 from "../../../public/Images/expand/Screen Mask2.png";
-
-const ExpandCarousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+const ExpandCarousel = ({ currentIndex, nextSlide, prevSlide }) => {
   const slides = [
     {
       id: 1,
       title: "Expand your reach with a scalable localization platform",
       text: "Organize all your multilingual content in a single place. Upload multiple file formats, incorporate new strings into current files & tailor your localization workflow.",
-      image: img,
+      image: "../../../public/Images/expand/icon.png",
     },
     {
       id: 2,
       title:
         "Manually add or upload keys & Values for seamless language conversion",
       text: "Organize all your multilingual content in a single place. Upload multiple file formats, incorporate new strings into current files & tailor your localization workflow.",
-      image: img,
+      image: "../../../public/Images/expand/icon.png",
     },
     {
       id: 3,
       title: "Manage your Application release versions with minimal effort",
       text: "Organize all your multilingual content in a single place. Upload multiple file formats, incorporate new strings into current files & tailor your localization workflow.",
-      image: img,
+      image: "../../../public/Images/expand/icon.png",
     },
   ];
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + slides.length) % slides.length
-    );
-  };
 
   return (
     <div className="relative w-full">
@@ -57,7 +38,6 @@ const ExpandCarousel = () => {
                 alt={slide.title}
                 className="absolute inset-0 w-14 h-14 object-cover lg:mx-0 mx-auto"
               />
-              {/* <img style={{ position: 'absolute', left: '50%' }} src={img3} alt="" /> */}
               <div className="relative z-10 text-center lg:text-left lg:p-0 p-0 lg:w-[700px] w-[380px]">
                 <h4
                   className="font-bold lg:text-[48px] text-[18px] lg:leading-[67px] leading-[30px]"
@@ -77,10 +57,10 @@ const ExpandCarousel = () => {
         </div>
       </div>
 
-      <div className="lg:mt-5 mt-0 flex lg:items-start items-center lg:justify-start justify-center relative">
+      <div className="mt-[-50px] flex lg:items-start items-center lg:justify-start justify-center relative">
         <button
           onClick={prevSlide}
-          className="absolute bottom-4 lg:left-0 left-[184px] text-white p-0 rounded-full"
+          className="mr-5 text-white p-0 rounded-full"
         >
           <svg
             width="40"
@@ -123,7 +103,7 @@ const ExpandCarousel = () => {
 
         <button
           onClick={nextSlide}
-          className="absolute bottom-4 lg:left-16 left-[133px] text-white p-0 rounded-full "
+          className=" text-white p-0 rounded-full "
         >
           <svg
             width="40"
