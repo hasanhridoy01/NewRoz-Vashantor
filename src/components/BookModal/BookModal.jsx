@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 import "./BookModal.css";
 
 const BookModal = ({ open, onClose }) => {
+  const weekdays = ["SUN", "MON", "TUE", "WEN", "THU", "FRI", "SAT"];
   return (
     <Modal
       open={open}
@@ -37,7 +38,7 @@ const BookModal = ({ open, onClose }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
           <div className="modal-left-side p-5 hidden lg:flex flex-col items-center bg-[#f0f0d3]">
             <img
-              className="h-[40px] w-[229px] mb-2 mt-10"
+              className="h-[40px] w-[229px] mb-2 mt-20"
               src={logo}
               alt="Logo"
             />
@@ -187,7 +188,7 @@ const BookModal = ({ open, onClose }) => {
                     className="block text-sm font-medium"
                     style={{ fontFamily: "Poppins", color: "#222222" }}
                   >
-                    Time
+                    Start Time
                   </label>
                   <input
                     type="time"
@@ -206,15 +207,15 @@ const BookModal = ({ open, onClose }) => {
 
                 <div className="mb-3">
                   <label
-                    htmlFor="date"
+                    htmlFor="time"
                     className="block text-sm font-medium"
                     style={{ fontFamily: "Poppins", color: "#222222" }}
                   >
-                    Date
+                    End Time
                   </label>
                   <input
-                    type="date"
-                    id="date"
+                    type="time"
+                    id="time"
                     className="mt-1 block w-full px-3 py-2 bg-[#F0F0D3] rounded-md"
                     style={{
                       fontFamily: "Poppins",
@@ -223,7 +224,39 @@ const BookModal = ({ open, onClose }) => {
                       lineHeight: "24px",
                       color: "#969696",
                     }}
+                    placeholder="Select time"
                   />
+                </div>
+
+                <div className="mb-3 col-span-2">
+                  <label
+                    htmlFor="weekdays"
+                    className="block text-sm font-medium"
+                    style={{ fontFamily: "Poppins", color: "#222222" }}
+                  >
+                    Select Meeting Day
+                  </label>
+                  <div className="mt-2 flex flex-row gap-2">
+                    {weekdays.map((day) => (
+                      <div
+                        key={day}
+                        className="flex items-center justify-center cursor-pointer border-2 hover:border-2 hover:border-[#424A21]"
+                        style={{
+                          height: "48px",
+                          width: "100%", // Full width for the single column
+                          backgroundColor: "#F0F0D3",
+                          borderRadius: "0.375rem",
+                          fontFamily: "Poppins",
+                          fontSize: "14px",
+                          fontWeight: 500,
+                          lineHeight: "24px",
+                          color: "#969696",
+                        }}
+                      >
+                        {day}
+                      </div>
+                    ))}
+                  </div>
                 </div>
 
                 <div className="mb-3 col-span-2">
