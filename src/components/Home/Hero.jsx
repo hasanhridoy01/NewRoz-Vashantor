@@ -2,11 +2,19 @@ import "./Hero.css";
 import img1 from "../../../public/Images/hero/body.png";
 import img2 from "../../../public/Images/hero/prime_language.svg";
 
-//Extra Images..............!
+// Extra Images
 import img3 from "../../../public/Images/hero/Title.png";
 import img4 from "../../../public/Images/hero/Hanguages.png";
 import { useState } from "react";
 import BookModal from "../BookModal/BookModal";
+
+// Hero Section Extra Images
+import img5 from "../../../public/Images/hero/New-folder/body.png";
+import Ellipse1 from "../../../public/Images/hero/New-folder/Ellipse-1.png";
+import Ellipse2 from "../../../public/Images/hero/New-folder/Ellipse-2.png";
+import Ellipse3 from "../../../public/Images/hero/New-folder/Ellipse-3.png";
+import img9 from "../../../public/Images/hero/New-folder/Hanguages.png";
+import img10 from "../../../public/Images/hero/New-folder/Title.png";
 
 const Hero = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -41,8 +49,8 @@ const Hero = () => {
         <button className="quick-button">Quick Demo Video</button>
       </div>
 
-      <div className="container mx-auto lg:px-14 px-5">
-        <div className="hidden lg:flex">
+      <div className="container lg:flex flex-col hidden mx-auto lg:px-14 px-5 mt-8">
+        <div className="flex flex-col h-80 relative w-full mx-auto">
           <div className="">
             <img className="left-image animate-move" src={img2} alt="" />
             <img
@@ -57,13 +65,25 @@ const Hero = () => {
               alt=""
             />
           </div>
+          <div className="absolute flex items-center justify-center mt-3">
+            <img className="Ellipse3" src={Ellipse3} alt="Ellipse 3" />
+          </div>
+          <div className="absolute flex items-center justify-center mt-11">
+            <img className="Ellipse2" src={Ellipse2} alt="Ellipse 2" />
+          </div>
+          <div className="absolute flex items-center justify-center mt-20">
+            <img className="Ellipse1" src={Ellipse1} alt="Ellipse 1" />
+          </div>
+        </div>
+
+        <div className="">
           <div className="">
             <img className="image-over-One" src={img3} alt="" />
             <img className="image-over-Two" src={img4} alt="" />
           </div>
-        </div>
-        <div className="body-images hidden lg:flex">
-          <img src={img1} alt="Hero Illustration" />
+          <div className="body-images hidden lg:flex justify-center">
+            <img src={img5} alt="Hero Illustration" />
+          </div>
         </div>
       </div>
     </div>

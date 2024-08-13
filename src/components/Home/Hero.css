@@ -1,7 +1,7 @@
 @tailwind utilities;
 
 .hero {
-  background-image: url(../../../public/Images/hero/Background.png);
+  background-image: url(../../../public/Images/hero/New-folder/hero.png);
   background-position: center top; /* Adjust as needed */
   background-size: cover; /* Ensure the image covers the element */
   width: 100%;
@@ -80,6 +80,7 @@
 }
 
 /* body-images */
+
 .body-images {
   position: absolute;
   bottom: 0;
@@ -112,23 +113,23 @@
 
 .left-image {
   position: absolute;
-  left: 27%;
-  top: 57%;
+  left: 22%;
+  top: 14%;
 }
 .left-image-two {
   position: absolute;
-  left: 17%;
-  top: 66%;
+  left: 15%;
+  top: 41%;
 }
 .right-image {
   position: absolute;
-  right: 28%;
-  top: 61%;
+  right: 17%;
+  top: 23%;
 }
 .right-image-two {
   position: absolute;
-  right: 18%;
-  top: 60%;
+  right: 30%;
+  top: 20%;
 }
 
 @layer utilities {
