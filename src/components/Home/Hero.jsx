@@ -15,7 +15,7 @@ const Hero = () => {
   const onCloseModal = () => setOpenModal(false);
 
   return (
-    <div className="hero lg:h-[1060px] h-[700px] lg:px-[0] px-5">
+    <div className="hero lg:h-[1060px] h-auto lg:px-0 px-5 lg:pb-0 pb-20">
       <h2 className="hero-title lg:text-[64px] text-[56px] lg:leading-[76px] leading-[67px]">
         Fast, Easy, & Accurate
       </h2>

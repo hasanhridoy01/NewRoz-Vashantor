@@ -5,8 +5,10 @@ import img2 from "../../../../public/Images/plan/Featured icon1.png";
 import img3 from "../../../../public/Images/plan/Featured icon2.png";
 
 import logo from "../../../../public/Images/plan/icon.png";
+import { useState } from "react";
 
 const Plan = () => {
+  const [active, setActive] = useState("monthly");
   return (
     <div className="plan-background-image">
       <div className="container mx-auto lg:px-14 px-5 lg:py-14 py-5 lg:pt-28 pt-16">
@@ -16,13 +18,36 @@ const Plan = () => {
           textOne="Simple, transparent pricing that grows with you. Try any plan free for 30 days."
           textTwo=" "
         />
+
         <div className="flex items-center justify-center mt-5 mb-5 relative max-w-[408px] mx-auto">
-          <button className="w-[208px] h-[51px] rounded-l-[10px] rounded-r-[0px] p-2 bg-[#687535] text-[#FFFFFF] text-center z-10">
+          <button
+            className={`w-[208px] h-[51px] rounded-l-[10px] p-2 text-center relative transition-all duration-500 font-medium ${
+              active === "monthly"
+                ? "bg-[#4A5D23] text-white"
+                : "bg-white text-[#4A5D23] border border-[#4A5D23]"
+            }`}
+            onClick={() => setActive("monthly")}
+          >
             Monthly
           </button>
-          <button className="w-[200px] h-[51px] rounded-r-[10px] rounded-l-[0] border border-[#687535] bg-white text-[#424B1B]">
+          <button
+            className={`w-[200px] h-[51px] rounded-r-[10px] p-2 text-center relative transition-all duration-500 font-medium ${
+              active === "annual"
+                ? "bg-[#4A5D23] text-white"
+                : "bg-white text-[#4A5D23] border border-[#4A5D23]"
+            }`}
+            onClick={() => setActive("annual")}
+          >
             Annual (save 20%)
           </button>
+          <div
+            className={`absolute w-[50%] h-[51px] bg-transparent rounded-[10px] transition-transform duration-500 ${
+              active === "monthly"
+                ? "transform translate-x-0"
+                : "transform translate-x-[208px]"
+            }`}
+            style={{ left: 0 }}
+          ></div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-12 items-center justify-center lg:gap-5 gap-8">
@@ -340,7 +365,7 @@ const Plan = () => {
 
               <div className="bg-[#FAFAFA] h-[107px] w-full mt-5 rounded-b-lg flex items-center justify-center">
                 <button
-                  className="h-[43px] lg:w-[314px] w-[90%] rounded-lg border-2 px-[20px] py-[12px] border-[#424B1B] shadow-[#1018280D] flex items-center justify-center bg-[#687535] text-[#fff]"
+                  className="h-[43px] lg:w-[314px] w-[90%] rounded-lg px-[20px] py-[12px] shadow-[#1018280D] flex items-center justify-center bg-[#687535] text-[#fff]"
                   style={{ fontFamily: "Barlow" }}
                 >
                   Get started
