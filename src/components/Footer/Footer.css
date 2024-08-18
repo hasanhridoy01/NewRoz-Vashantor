@@ -1,3 +1,8 @@
+.footer-background-image{
+  background-image: url(../../../public/Images/footer/prime_language.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
 .footer-text {
   font-family: Poppins;
   font-size: 14px;

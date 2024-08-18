@@ -3,7 +3,7 @@ import logo from "../../../public/Images/logo/logo.png";
 
 const Footer = () => {
   return (
-    <div style={{ backgroundColor: "#F0F0D3", width: "100%" }}>
+    <div className="footer-background-image" style={{ backgroundColor: "#F0F0D3", width: "100%" }}>
       <div className="container mx-auto px-5 lg:px-14 py-5 lg:py-14 pt-16 lg:pt-20 relative">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-12 gap-5 py-12">
           <div className="col-span-3 space-y-5">
