@@ -18,7 +18,7 @@ const EasyComponentsOne = () => {
               integration across multiple digital platforms.
             </p>
             <button
-              className="flex items-center gap-2 float-right mt-4"
+              className="flex items-center gap-2 float-right lg:mt-4 mt-0"
               style={{ color: "#969696" }}
             >
               More

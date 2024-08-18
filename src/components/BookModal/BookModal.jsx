@@ -1,12 +1,21 @@
-import React from "react";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import logo from "../../../public/Images/logo/logo.png";
 import PropTypes from "prop-types";
 import "./BookModal.css";
+import { useState } from "react";
 
 const BookModal = ({ open, onClose }) => {
   const weekdays = ["SUN", "MON", "TUE", "WEN", "THU", "FRI", "SAT"];
+  const [selectedDays, setSelectedDays] = useState([]);
+
+  const toggleDaySelection = (day) => {
+    if (selectedDays.includes(day)) {
+      setSelectedDays(selectedDays.filter((d) => d !== day));
+    } else {
+      setSelectedDays([...selectedDays, day]);
+    }
+  };
   return (
     <Modal
       open={open}
@@ -236,21 +245,24 @@ const BookModal = ({ open, onClose }) => {
                   >
                     Select Meeting Day
                   </label>
-                  <div className="mt-2 flex flex-row gap-2">
+                  <div className="mt-2 grid grid-cols-2 sm:grid-cols-3 lg:flex lg:flex-row gap-2">
                     {weekdays.map((day) => (
                       <div
                         key={day}
-                        className="flex items-center justify-center cursor-pointer border-2 hover:border-2 hover:border-[#424A21]"
+                        onClick={() => toggleDaySelection(day)}
+                        className={`flex items-center justify-center cursor-pointer border-2 hover:border-[#424A21] ${
+                          selectedDays.includes(day)
+                            ? "bg-[#424A21] text-white"
+                            : "bg-[#F0F0D3] text-[#969696]"
+                        }`}
                         style={{
                           height: "48px",
                           width: "100%", // Full width for the single column
-                          backgroundColor: "#F0F0D3",
                           borderRadius: "0.375rem",
                           fontFamily: "Poppins",
                           fontSize: "14px",
                           fontWeight: 500,
                           lineHeight: "24px",
-                          color: "#969696",
                         }}
                       >
                         {day}
@@ -282,7 +294,7 @@ const BookModal = ({ open, onClose }) => {
                   ></textarea>
                 </div>
 
-                <div className="flex justify-start col-span-2">
+                <div className="flex justify-start lg:col-span-2 col-span-1">
                   <button className="px-6 py-2 bg-[#687535] text-white font-semibold rounded-lg">
                     Book Now
                   </button>

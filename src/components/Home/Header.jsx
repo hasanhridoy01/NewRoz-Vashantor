@@ -211,7 +211,8 @@ const Header = () => {
         open={isOpenDrawer}
         onClose={toggleDrawer}
         direction="top"
-        className="!bg-[#101400F5] !bg-opacity-50 !h-screen !w-full !p-3"
+        className="!bg-opacity-50 !h-screen !w-full !p-3"
+        style={{ backgroundColor: "rgba(16, 20, 0, 0.96)" }}
       >
         <div className="relative h-full p-3 flex flex-col item-center justify-center">
           <div className="grid grid-cols-2 gap-4 w-full absolute top-2 left-1/2 transform -translate-x-1/2">
