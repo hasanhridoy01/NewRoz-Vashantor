@@ -4,10 +4,10 @@ const EasyComponentsOne = () => {
   return (
     <div>
       <div
-        className="-rotate-3 rounded-lg"
+        className="-rotate-3 rounded-lg w-full h-auto"
         style={{ backgroundColor: "#F0F0D3" }}
       >
-        <div className="easy-card rotate-3 cursor-pointer hover:bg-white p-5">
+        <div className="easy-card lg:h-[250px] h-[280px] rotate-3 cursor-pointer hover:bg-white p-5">
           <div className="flex items-center gap-3">
             <img src={img2} alt="" />
             <h4 className="easy-card-text">Multiplatform Support</h4>
