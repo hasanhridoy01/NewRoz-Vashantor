@@ -245,7 +245,7 @@ const BookModal = ({ open, onClose }) => {
                   >
                     Select Meeting Day
                   </label>
-                  <div className="mt-2 grid grid-cols-2 sm:grid-cols-3 lg:flex lg:flex-row gap-2">
+                  <div className="mt-2 grid grid-cols-3 lg:flex lg:flex-row gap-2">
                     {weekdays.map((day) => (
                       <div
                         key={day}
