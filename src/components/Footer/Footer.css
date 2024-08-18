@@ -5,4 +5,8 @@
   line-height: 24px;
   text-align: left;
   color: #555555;
+  cursor: pointer;
+}
+.footer-text:hover{
+  color: #777777;
 }

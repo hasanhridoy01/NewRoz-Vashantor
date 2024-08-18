@@ -239,14 +239,14 @@ const Header = () => {
               </button>
 
               {isOpen && (
-                <div className="dropdown-menu">
-                  <a href="#option1" className="dropdown-item">
+                <div className="dropdown-menu" style={{ backgroundColor: '#424B1B' }}>
+                  <a href="#option1" className="dropdown-item" style={{ color: '#F0F0D3' }}>
                     English
                   </a>
-                  <a href="#option2" className="dropdown-item">
+                  <a href="#option2" className="dropdown-item" style={{ color: '#F0F0D3' }}>
                     Arabic
                   </a>
-                  <a href="#option3" className="dropdown-item">
+                  <a href="#option3" className="dropdown-item" style={{ color: '#F0F0D3' }}>
                     Kurdish
                   </a>
                 </div>

@@ -1,0 +1,31 @@
+.parent {
+  transition: transform 0.3s;
+  background-color: #f0f0d3;
+  border-radius: 0.5rem;
+}
+
+.inner {
+  transition: transform 0.3s;
+}
+
+.clickable {
+  cursor: pointer;
+  padding: 1.25rem;
+  background-color: #f0f0d3;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Handle the hover effect */
+.clickable:hover {
+  background-color: white;
+}
+
+/* Remove rotation when clicked using :has() */
+.parent:has(.clickable:active) .inner {
+  transform: rotate(0deg);
+}
+
+.parent:has(.clickable:active) .clickable {
+  background-color: white;
+  transform: rotate(0deg);
+}

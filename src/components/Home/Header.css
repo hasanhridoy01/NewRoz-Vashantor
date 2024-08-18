@@ -33,7 +33,7 @@
 }
 
 .header-nav {
-  display: none; 
+  display: none;
 }
 
 .header-nav .nav-link {
@@ -44,7 +44,7 @@
   line-height: 19px;
   text-transform: uppercase;
   position: relative;
-  padding-bottom: 2px;
+  padding-bottom: 3px;
   font-family: Barlow;
 }
 
@@ -56,7 +56,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 30%;
-  border-bottom: 3px solid #424b1b;
+  border-bottom: 2px solid #424b1b;
 }
 
 /* Active link specific styles */
@@ -66,7 +66,7 @@
   font-weight: 500;
   line-height: 19px;
   text-transform: uppercase;
-  padding-bottom: 2px;
+  padding-bottom: 3px;
   font-family: Barlow;
 }
 
@@ -102,10 +102,28 @@
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .dropdown-button svg {
-  flex-shrink: 0;
+  flex-shrink: 0; /* Important for controlling SVG color */
+  transition: fill 0.3s;
+}
+
+/* Button hover styles */
+.dropdown-button:hover {
+  background-color: #424b1b;
+  color: #ffffe9;
+}
+
+/* SVG hover styles */
+.dropdown-button svg:hover {
+  fill: #ffffe9;
+}
+
+/* Ensure the SVG changes color when the button is hovered */
+.dropdown-button:hover svg {
+  fill: #ffffe9;
 }
 
 .dropdown-button-small {
@@ -116,7 +134,7 @@
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  color: #F0F0D3;
+  color: #f0f0d3;
   font-weight: 600;
   font-family: Barlow;
   display: flex;
@@ -174,6 +192,23 @@
   gap: 10px;
   margin-left: 10px;
   margin-right: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.talk-button:hover {
+  background-color: #424b1b;
+  color: #ffffe9;
+}
+
+/* SVG hover styles */
+.talk-button svg:hover {
+  fill: #ffffe9;
+  transition: fill 0.3s;
+}
+
+/* Ensure the SVG changes color when the button is hovered */
+.talk-button:hover svg {
+  fill: #ffffe9;
 }
 
 .talk-button-small {
@@ -184,7 +219,7 @@
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  color: #F0F0D3;
+  color: #f0f0d3;
   font-weight: 600;
   font-family: Barlow;
   display: flex;
@@ -251,7 +286,7 @@
   }
 
   .header-nav {
-    display: flex; 
+    display: flex;
   }
 
   .header-nav .nav-link {
@@ -308,12 +343,12 @@
   left: 50%;
   transform: translateX(-50%);
   width: 30%;
-  border-bottom: 3px solid #FFFFFF;
+  border-bottom: 3px solid #ffffff;
 }
 
 /* Active link specific styles */
 .nav-link-small-active {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;

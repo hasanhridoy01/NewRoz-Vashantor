@@ -26,14 +26,108 @@ const TaskManagement = () => {
               </p>
             </div>
 
-            <div className="mt-5 flex lg:flex-row flex-col items-center justify-left">
-              <div className="flex items-center justify-center">
-                <button className="btn-one">Add people or group</button>
-                <button className="btn-two lg:ml-2 ml-3">Assign tasks</button>
+            <div className="mt-5 flex lg:flex-row flex-col items-center justify-left lg:gap-3 gap-0">
+              <div className="flex items-center justify-center gap-5">
+                <button className="btn-one">
+                  <svg
+                    width="9"
+                    height="31"
+                    viewBox="0 0 9 31"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 29.6338H1V1.63379H8"
+                      stroke="#D7D78D"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Add people or group
+                  <svg
+                    width="9"
+                    height="31"
+                    viewBox="0 0 9 31"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 29.6338H8V1.63379H1"
+                      stroke="#D7D78D"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button className="btn-two">
+                  <svg
+                    width="9"
+                    height="31"
+                    viewBox="0 0 9 31"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 29.6338H1V1.63379H8"
+                      stroke="#D7D78D"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Assign tasks{" "}
+                  <svg
+                    width="9"
+                    height="31"
+                    viewBox="0 0 9 31"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 29.6338H8V1.63379H1"
+                      stroke="#D7D78D"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
               </div>
               <div className="flex items-center justify-center lg:mt-0 mt-2">
                 <button className="btn-three lg:ml-2 ml-0 lg:mt-0 mt-3">
+                  <svg
+                    width="9"
+                    height="31"
+                    viewBox="0 0 9 31"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8 29.6338H1V1.63379H8"
+                      stroke="#D7D78D"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                   Role management
+                  <svg
+                    width="9"
+                    height="31"
+                    viewBox="0 0 9 31"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 29.6338H8V1.63379H1"
+                      stroke="#D7D78D"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                 </button>
               </div>
             </div>

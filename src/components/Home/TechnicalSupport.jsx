@@ -36,7 +36,7 @@ const TechnicalSupport = () => {
             >
               Available platforms
             </p>
-            <div className="lg:mt-5 mt-6 flex items-center lg:justify-start justify-center gap-5">
+            <div className="lg:mt-5 mt-6 flex items-center lg:justify-start justify-center gap-11">
               <button aria-label="Web" className="flex items-center gap-2">
                 <svg
                   width="24"

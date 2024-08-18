@@ -63,6 +63,12 @@
   font-size: 16px;
   line-height: 19px;
   font-weight: 600;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.book-button:hover {
+  background-color: #ffffe9;
+  color: #687535;
 }
 .quick-button {
   width: 180px;
@@ -77,6 +83,12 @@
   font-size: 16px;
   line-height: 19px;
   font-weight: 600;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.quick-button:hover {
+  background-color: #687535;
+  color: #ffffe9;
 }
 
 /* body-images */

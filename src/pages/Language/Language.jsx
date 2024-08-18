@@ -75,7 +75,7 @@ const Language = () => {
           textTwo=""
         />
         <div className="mt-5">
-          <div className="relative mt-10 mx-auto bg-[#FFFFE9] rounded-md w-full max-w-[441px] h-[44px] lg:h-[44px] lg:w-[441px]">
+          <div className="relative mt-10 mx-auto bg-[#F0F0D3] rounded-md w-full max-w-[441px] h-[44px] lg:h-[44px] lg:w-[441px]">
             <input
               type="text"
               className="pl-10 pr-4 py-2 w-full h-full border-none bg-transparent rounded-md focus:outline-none"

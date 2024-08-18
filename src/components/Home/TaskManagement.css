@@ -17,13 +17,13 @@
   height: 36px;
   border-radius: 4px;
   padding: 4px 2px 4px 2px;
-  gap: 4px;
-  border: 2px solid #d7d78d;
-  border-width: 0 2px 0px 2px;
   font-family: Barlow;
   color: #424b1b;
   font-weight: 600;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .btn-two {
   width: 112px;
@@ -31,12 +31,13 @@
   border-radius: 4px;
   padding: 4px 2px 4px 2px;
   gap: 4px;
-  border: 2px solid #d7d78d;
-  border-width: 0 2px 0px 2px;
   font-family: Barlow;
   color: #424b1b;
   font-weight: 600;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .btn-three {
   width: 146px;
@@ -44,12 +45,13 @@
   border-radius: 4px;
   padding: 4px 2px 4px 2px;
   gap: 4px;
-  border: 2px solid #d7d78d;
-  border-width: 0 2px 0px 2px;
   font-family: Barlow;
   color: #424b1b;
   font-weight: 600;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* task-right */
@@ -65,7 +67,6 @@
 .task-img-one {
   position: absolute;
   width: 352px;
-  height: 470px;
   top: 28px;
   left: 100px;
   border-radius: 9px;
@@ -79,7 +80,7 @@
       transform: translateY(0);
     }
     50% {
-      transform: translateY(20px);
+      transform: translateY(30px);
     }
     100% {
       transform: translateY(0);
@@ -93,7 +94,6 @@
 .task-img-two {
   position: absolute;
   width: 360px;
-  height: 534px;
   top: 47px;
   left: 280px;
   border-radius: 9px;
@@ -106,7 +106,7 @@
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-20px);
+      transform: translateY(-30px);
     }
     100% {
       transform: translateY(0);

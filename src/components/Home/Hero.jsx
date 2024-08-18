@@ -77,7 +77,7 @@ const Hero = () => {
         </div>
 
         <div className="">
-          <div className="">
+          <div className="relative bottom-32">
             <img className="image-over-One" src={img3} alt="" />
             <img className="image-over-Two" src={img4} alt="" />
           </div>
@@ -85,6 +85,7 @@ const Hero = () => {
             <img src={img5} alt="Hero Illustration" />
           </div>
         </div>
+        
       </div>
     </div>
   );

@@ -1,23 +1,25 @@
+import img from '../../../public/Images/expand/icon.png'
+
 const ExpandCarousel = ({ currentIndex, nextSlide, prevSlide }) => {
   const slides = [
     {
       id: 1,
       title: "Expand your reach with a scalable localization platform",
       text: "Organize all your multilingual content in a single place. Upload multiple file formats, incorporate new strings into current files & tailor your localization workflow.",
-      image: "../../../public/Images/expand/icon.png",
+      image: img,
     },
     {
       id: 2,
       title:
         "Manually add or upload keys & Values for seamless language conversion",
       text: "Organize all your multilingual content in a single place. Upload multiple file formats, incorporate new strings into current files & tailor your localization workflow.",
-      image: "../../../public/Images/expand/icon.png",
+      image: img,
     },
     {
       id: 3,
       title: "Manage your Application release versions with minimal effort",
       text: "Organize all your multilingual content in a single place. Upload multiple file formats, incorporate new strings into current files & tailor your localization workflow.",
-      image: "../../../public/Images/expand/icon.png",
+      image: img,
     },
   ];
 
