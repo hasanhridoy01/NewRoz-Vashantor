@@ -50,6 +50,7 @@ const TestimonialCarousel = () => {
               <img
                 src={slide.image}
                 alt={`Slide ${index + 1}`}
+                loading="lazy"
                 className="w-24 h-24 lg:w-[120px] lg:h-[120px] object-cover mb-4"
               />
               <div className="text-center">

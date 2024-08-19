@@ -6,12 +6,12 @@ import img3 from '../../../public/Images/technical//Right-Illustration.png'
 
 const TechnicalSupport = () => {
   return (
-    <div>
+    <section>
       <div className="container mx-auto lg:px-14 px-5 lg:py-14 py-5 lg:pt-28 pt-16">
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 lg:gap-5 gap-10 py-16">
           <div className="">
             <div className="flex lg:items-start items-center lg:justify-start justify-center">
-              <img src={logo} alt="" />
+              <img src={logo} alt="" loading="lazy" />
             </div>
             <h1
               className="font-bold lg:text-[50px] text-[32px] lg:leading-[67px] leading-[42px] mt-4 text-[#424A21] text-center lg:text-left"
@@ -134,11 +134,13 @@ const TechnicalSupport = () => {
                 className="technical-image-one absolute lg:top-[-10px] top-[-7.5px] lg:left-[104px] left-[4px] lg:h-[439px] h-[313px] lg:w-[401px] w-[286px]"
                 src={img1}
                 alt=""
+                loading="lazy"
               />
               <img
                 className="technical-image-two absolute lg:top-[300px] top-[208px] lg:left-[207px] left-[91px] lg:h-[248px] h-[177px] lg:w-[374px] w-[267px]"
                 src={img2}
                 alt=""
+                loading="lazy"
               />
             </div>
           </div>
@@ -149,7 +151,7 @@ const TechnicalSupport = () => {
 
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -16,7 +16,7 @@ import { useState } from "react";
 const Plan = () => {
   const [selectedTab, setSelectedTab] = useState("monthly");
   return (
-    <div className="plan-background-image">
+    <section className="plan-background-image">
       <div className="container mx-auto lg:px-14 px-5 lg:py-14 py-5 lg:pt-28 pt-16">
         <SectionTitle
           img={logo}
@@ -87,7 +87,7 @@ const Plan = () => {
               <div className="w-[100%] min-h-[635px] rounded-lg border-2 bg-[#FFFFFF] border-[#F0F0D3] shadow-[#0000000F]">
                 <div className="flex flex-col items-center justify-center pt-10 pb-0">
                   <div className="">
-                    <img src={img1} alt="" />
+                    <img src={img1} alt="" loading="lazy" />
                   </div>
                   <div className="mt-5">
                     <h5
@@ -259,7 +259,7 @@ const Plan = () => {
               <div className="w-[100%] min-h-[638px] rounded-lg lg:mb-0 mb-1 border-2 bg-[#FFFFFF] border-[#687535] shadow-[#0000000F]">
                 <div className="flex flex-col items-center justify-center pt-10 pb-0">
                   <div className="">
-                    <img src={img2} alt="" />
+                    <img src={img2} alt="" loading="lazy" />
                   </div>
                   <div className="mt-5">
                     <h5
@@ -434,7 +434,7 @@ const Plan = () => {
               <div className="w-[100%] min-h-[635px] rounded-lg border-2 bg-[#FFFFFF] border-[#F0F0D3] shadow-[#0000000F]">
                 <div className="flex flex-col items-center justify-center pt-10 pb-0">
                   <div className="">
-                    <img src={img3} alt="" />
+                    <img src={img3} alt="" loading="lazy" />
                   </div>
                   <div className="mt-5">
                     <h5
@@ -613,7 +613,7 @@ const Plan = () => {
               <div className="w-[100%] min-h-[635px] rounded-lg border-2 bg-[#FFFFFF] border-[#F0F0D3] shadow-[#0000000F]">
                 <div className="flex flex-col items-center justify-center pt-10 pb-0">
                   <div className="">
-                    <img src={img1} alt="" />
+                    <img src={img1} alt="" loading="lazy" />
                   </div>
                   <div className="mt-5">
                     <h5
@@ -626,7 +626,7 @@ const Plan = () => {
                       className="font-barlow font-bold text-5xl leading-[57px] text-center mt-2"
                       style={{ fontFamily: "Barlow" }}
                     >
-                      $10/mth
+                      $2/mth
                     </h1>
                     <h4
                       className="font-barlow font-bold text-[18px] leading-[30px] text-center mt-3 text-[#555555]"
@@ -782,10 +782,10 @@ const Plan = () => {
                 </div>
               </div>
 
-              <div className="w-[100%] min-h-[638px] rounded-lg lg:mb-0 mb-1 border-2 bg-[#FFFFFF] border-[crimson] shadow-[#0000000F]">
+              <div className="w-[100%] min-h-[638px] rounded-lg lg:mb-0 mb-1 border-2 bg-[#FFFFFF] border-[#687535] shadow-[#0000000F]">
                 <div className="flex flex-col items-center justify-center pt-10 pb-0">
                   <div className="">
-                    <img src={img2} alt="" />
+                    <img src={img2} alt="" loading="lazy" />
                   </div>
                   <div className="mt-5">
                     <h5
@@ -798,7 +798,7 @@ const Plan = () => {
                       className="font-bold text-5xl leading-[57px] text-center mt-2"
                       style={{ fontFamily: "Barlow" }}
                     >
-                      $20/mth
+                      $4/mth
                     </h1>
                     <h4
                       className="font-bold text-[18px] leading-[30px] text-center mt-3 text-[#555555]"
@@ -960,7 +960,7 @@ const Plan = () => {
               <div className="w-[100%] min-h-[635px] rounded-lg border-2 bg-[#FFFFFF] border-[#F0F0D3] shadow-[#0000000F]">
                 <div className="flex flex-col items-center justify-center pt-10 pb-0">
                   <div className="">
-                    <img src={img3} alt="" />
+                    <img src={img3} alt="" loading="lazy" />
                   </div>
                   <div className="mt-5">
                     <h5
@@ -973,7 +973,7 @@ const Plan = () => {
                       className="font-barlow font-bold text-5xl leading-[57px] text-center mt-2"
                       style={{ fontFamily: "Barlow" }}
                     >
-                      $40/mth
+                      $8/mth
                     </h1>
                     <h4
                       className="font-barlow font-bold text-[18px] leading-[30px] text-center mt-3 text-[#555555]"
@@ -1135,7 +1135,7 @@ const Plan = () => {
           </TabPanel>
         </Tabs>
       </div>
-    </div>
+    </section>
   );
 };
 

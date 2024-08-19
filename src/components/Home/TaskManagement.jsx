@@ -5,11 +5,11 @@ import "./TaskManagement.css";
 
 const TaskManagement = () => {
   return (
-    <div className="container mx-auto lg:px-14 px-5 lg:py-14 py-5 lg:pt-28 pt-16">
+    <section className="container mx-auto lg:px-14 px-5 lg:py-14 py-5 lg:pt-28 pt-16">
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 lg:gap-5 gap-10 py-16 items-center">
         <div className="p-2 task-left">
           <div className="flex lg:items-start items-center lg:justify-start justify-center">
-            <img src={img1} alt="" />
+            <img src={img1} alt="" loading="lazy" />
           </div>
           <div className="mt-4">
             <h2 className="task-title lg:text-left text-center lg:text-[56px] text-[32px] lg:leading-[67px] leading-[38px]">
@@ -135,11 +135,11 @@ const TaskManagement = () => {
         </div>
 
         <div className="task-right lg:flex hidden relative">
-          <img className="task-img-one" src={img2} alt="" />
-          <img className="task-img-two" src={img3} alt="" />
+          <img className="task-img-one" src={img2} loading="lazy" alt="" />
+          <img className="task-img-two" src={img3} loading="lazy" alt="" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -102,13 +102,13 @@ const BookModal = ({ open, onClose }) => {
                   <input
                     type="text"
                     id="name"
-                    className="mt-1 block w-full px-3 py-2 bg-[#F0F0D3] rounded-md"
+                    className="mt-1 block w-full px-3 py-2 bg-[#ffffff] rounded-md focus:outline-none"
                     style={{
                       fontFamily: "Poppins",
                       fontSize: "14px",
                       fontWeight: 500,
                       lineHeight: "24px",
-                      color: "#969696",
+                      color: "#222222",
                     }}
                     placeholder="Full Name"
                   />
@@ -124,13 +124,13 @@ const BookModal = ({ open, onClose }) => {
                   </label>
                   <select
                     id="country"
-                    className="mt-1 block w-full px-3 py-2.5 bg-[#F0F0D3] rounded-md"
+                    className="mt-1 block w-full px-3 py-2.5 bg-[#ffffff] rounded-md"
                     style={{
                       fontFamily: "Poppins",
                       fontSize: "14px",
                       fontWeight: 500,
                       lineHeight: "24px",
-                      color: "#969696",
+                      color: "#222222",
                     }}
                   >
                     <option value="" disabled selected>
@@ -156,13 +156,13 @@ const BookModal = ({ open, onClose }) => {
                   <input
                     type="text"
                     id="name"
-                    className="mt-1 block w-full px-3 py-2 bg-[#F0F0D3] rounded-md"
+                    className="mt-1 block w-full px-3 py-2 bg-[#ffffff] rounded-md focus:outline-none"
                     style={{
                       fontFamily: "Poppins",
                       fontSize: "14px",
                       fontWeight: 500,
                       lineHeight: "24px",
-                      color: "#969696",
+                      color: "#222222",
                     }}
                     placeholder="Enter Number"
                   />
@@ -179,13 +179,13 @@ const BookModal = ({ open, onClose }) => {
                   <input
                     type="text"
                     id="name"
-                    className="mt-1 block w-full px-3 py-2 bg-[#F0F0D3] rounded-md"
+                    className="mt-1 block w-full px-3 py-2 bg-[#ffffff] rounded-md focus:outline-none"
                     style={{
                       fontFamily: "Poppins",
                       fontSize: "14px",
                       fontWeight: 500,
                       lineHeight: "24px",
-                      color: "#969696",
+                      color: "#222222",
                     }}
                     placeholder="Enter Email Address"
                   />
@@ -202,13 +202,13 @@ const BookModal = ({ open, onClose }) => {
                   <input
                     type="time"
                     id="time"
-                    className="mt-1 block w-full px-3 py-2 bg-[#F0F0D3] rounded-md"
+                    className="mt-1 block w-full px-3 py-2 bg-[#ffffff] rounded-md focus:outline-none"
                     style={{
                       fontFamily: "Poppins",
                       fontSize: "14px",
                       fontWeight: 500,
                       lineHeight: "24px",
-                      color: "#969696",
+                      color: "#222222",
                     }}
                     placeholder="Select time"
                   />
@@ -225,13 +225,13 @@ const BookModal = ({ open, onClose }) => {
                   <input
                     type="time"
                     id="time"
-                    className="mt-1 block w-full px-3 py-2 bg-[#F0F0D3] rounded-md"
+                    className="mt-1 block w-full px-3 py-2 bg-[#ffffff] rounded-md focus:outline-none"
                     style={{
                       fontFamily: "Poppins",
                       fontSize: "14px",
                       fontWeight: 500,
                       lineHeight: "24px",
-                      color: "#969696",
+                      color: "#222222",
                     }}
                     placeholder="Select time"
                   />
@@ -253,7 +253,7 @@ const BookModal = ({ open, onClose }) => {
                         className={`flex items-center justify-center cursor-pointer border-2 hover:border-[#424A21] ${
                           selectedDays.includes(day)
                             ? "bg-[#424A21] text-white"
-                            : "bg-[#F0F0D3] text-[#969696]"
+                            : "bg-[#ffffff] text-[#222222]"
                         }`}
                         style={{
                           height: "48px",
@@ -282,13 +282,13 @@ const BookModal = ({ open, onClose }) => {
                   <textarea
                     id="message"
                     rows="3"
-                    className="mt-1 block w-full px-3 py-2 bg-[#F0F0D3] rounded-md"
+                    className="mt-1 block w-full px-3 py-2 bg-[#ffffff] rounded-md focus:outline-none"
                     style={{
                       fontFamily: "Poppins",
                       fontSize: "14px",
                       fontWeight: 500,
                       lineHeight: "24px",
-                      color: "#969696",
+                      color: "#222222",
                     }}
                     placeholder="Write Here"
                   ></textarea>

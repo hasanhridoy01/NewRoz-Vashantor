@@ -96,7 +96,7 @@
   cursor: pointer;
   border-radius: 5px;
   color: #424b1b;
-  font-weight: 600;
+  font-weight: 500;
   font-family: Barlow;
   display: flex;
   align-items: center;
@@ -135,7 +135,7 @@
   cursor: pointer;
   border-radius: 5px;
   color: #f0f0d3;
-  font-weight: 600;
+  font-weight: 500;
   font-family: Barlow;
   display: flex;
   align-items: center;
@@ -185,7 +185,7 @@
   cursor: pointer;
   border-radius: 5px;
   color: #424b1b;
-  font-weight: 600;
+  font-weight: 500;
   font-family: Barlow;
   display: flex;
   align-items: center;
@@ -220,7 +220,7 @@
   cursor: pointer;
   border-radius: 5px;
   color: #f0f0d3;
-  font-weight: 600;
+  font-weight: 500;
   font-family: Barlow;
   display: flex;
   align-items: center;

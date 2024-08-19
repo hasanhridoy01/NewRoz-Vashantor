@@ -75,21 +75,22 @@ const Language = () => {
           textTwo=""
         />
         <div className="mt-5">
-          <div className="relative mt-10 mx-auto bg-[#F0F0D3] rounded-md w-full max-w-[441px] h-[44px] lg:h-[44px] lg:w-[441px]">
+
+          <div className="relative mt-10 mx-auto bg-[#ffffff] rounded-md w-full max-w-[441px] h-[68px] lg:h-[68px] lg:w-[441px]">
             <input
               type="text"
-              className="pl-10 pr-4 py-2 w-full h-full border-none bg-transparent rounded-md focus:outline-none"
+              className="pl-10 pr-4 py-2 w-full h-full border-2 border-[#9B9D40] bg-transparent rounded-md focus:outline-none"
               style={{
                 fontFamily: "Barlow",
                 fontWeight: 600,
-                fontSize: "16px",
+                fontSize: "18px",
                 lineHeight: "19px",
-                color: "#969696",
+                color: "#222222",
               }}
               placeholder="Search language"
             />
             <svg
-              className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-[#969696]"
+              className="absolute left-3 top-1/2 transform -translate-y-1/2 w-6 h-6 text-[#969696]"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 21 21"
@@ -110,6 +111,7 @@ const Language = () => {
               />
             </svg>
           </div>
+
           <div className="mt-7">
             <div className="overflow-x-auto bg-[#FFFFE9] h-full w-full border-[2.4px] border-[#f0f0d3]">
               <div className="grid grid-cols-1 lg:grid-cols-4 gap-[2.4px] bg-[#f0f0d3]">

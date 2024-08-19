@@ -16,3 +16,8 @@
 .footer-text:hover {
   color: #777777;
 }
+.background-shadow-image{
+  background-image: url(../../../public/Images/footer/shade.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+}

@@ -22,7 +22,7 @@ const Expand = () => {
   };
 
   return (
-    <div
+    <section
       className=""
       style={{
         background: "linear-gradient(90deg, #EFEFD2 0%, #EFEFD2 100%)",
@@ -43,11 +43,12 @@ const Expand = () => {
               className="bg-transparent"
               src={images[currentIndex]}
               alt="GIF Image"
+              loading="lazy"
             />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

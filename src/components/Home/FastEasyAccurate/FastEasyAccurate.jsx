@@ -10,7 +10,7 @@ const FastEasyAccurate = () => {
   const onCloseModal = () => setOpenModal(false);
 
   return (
-    <div>
+    <section>
       <div className="container mx-auto lg:px-14 px-5 lg:py-14 lg:pb-32 py-5 lg:pt-28 pt-16">
         <div className="Fast-background-image relative lg:flex hidden">
           <div className="absolute top-[200px] left-[100px]">
@@ -30,11 +30,11 @@ const FastEasyAccurate = () => {
             <button className="quick-button ml-4">Quick Demo Video</button>
           </div>
           <div className="absolute top-[334px] right-[365px]">
-            <img className="fast-section-image" src={img} alt="" />
+            <img className="fast-section-image" src={img} alt="" loading="lazy" />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -26,31 +26,36 @@ const LanguageSupport = () => {
               className="imgOne absolute lg:top-[362px] top-[88px] lg:left-[468px] left-[108px] lg:h-[91px] h-[45px] lg:w-[126px] w-[61px]"
               src={img1}
               alt=""
+              loading="lazy"
             />
             <img
               className="imgTwo absolute lg:top-[151px] top-[26px] lg:left-[295px] left-[52px] lg:h-[91px] h-[45px] lg:w-[126px] w-[61px] rounded-[6px]"
               src={img2}
               alt=""
+              loading="lazy"
             />
             <img
               className="imgThree absolute lg:top-[198px] top-[42px] lg:left-[770px] left-[185px] lg:h-[91px] h-[45px] lg:w-[126px] w-[61px]"
               src={img3}
               alt=""
+              loading="lazy"
             />
             <img
               className="imgFour absolute lg:top-[232px] top-[49px] lg:left-[966px] left-[249px] lg:h-[91px] h-[45px] lg:w-[126px] w-[61px]"
               src={img4}
               alt=""
+              loading="lazy"
             />
             <img
               className="imgFive absolute lg:top-[141px] top-[26px] lg:left-[1205px] left-[313px] lg:h-[91px] h-[45px] lg:w-[126px] w-[61px]"
               src={img5}
               alt=""
+              loading="lazy"
             />
           </div>
         </div>
         <div className="language-bg-small-image mt-4">
-          <img src={img6} alt="" />
+          <img src={img6} alt="" loading="lazy" />
         </div>
       </div>
       <div className="flex items-center justify-center lg:mt-2 mt-5">

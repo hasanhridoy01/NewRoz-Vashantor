@@ -133,37 +133,39 @@ const Hero = () => {
       <div className="container lg:flex flex-col hidden mx-auto lg:px-14 px-5 mt-8">
         <div className="flex flex-col h-80 relative w-full mx-auto">
           <div className="">
-            <img className="left-image animate-move" src={img2} alt="" />
+            <img className="left-image animate-move" src={img2} alt="" loading="lazy" />
             <img
               className="left-image-two animate-move-two"
               src={img2}
               alt=""
+              loading="lazy"
             />
-            <img className="right-image animate-move-three" src={img2} alt="" />
+            <img className="right-image animate-move-three" src={img2} loading="lazy" alt="" />
             <img
               className="right-image-two animate-move-four"
               src={img2}
               alt=""
+              loading="lazy"
             />
           </div>
           <div className="absolute flex items-center justify-center mt-3">
-            <img className="Ellipse3" src={Ellipse3} alt="Ellipse 3" />
+            <img className="Ellipse3" src={Ellipse3} loading="lazy" alt="Ellipse 3" />
           </div>
           <div className="absolute flex items-center justify-center mt-11">
-            <img className="Ellipse2" src={Ellipse2} alt="Ellipse 2" />
+            <img className="Ellipse2" src={Ellipse2} loading="lazy" alt="Ellipse 2" />
           </div>
           <div className="absolute flex items-center justify-center mt-20">
-            <img className="Ellipse1" src={Ellipse1} alt="Ellipse 1" />
+            <img className="Ellipse1" src={Ellipse1} loading="lazy" alt="Ellipse 1" />
           </div>
         </div>
 
         <div className="">
           <div className="relative bottom-32">
-            <img className="image-over-One" src={img3} alt="" />
-            <img className="image-over-Two" src={img4} alt="" />
+            <img className="image-over-One" src={img3} loading="lazy" alt="" />
+            <img className="image-over-Two" src={img4} loading="lazy" alt="" />
           </div>
           <div className="body-images hidden lg:flex justify-center">
-            <img src={img5} alt="Hero Illustration" />
+            <img src={img5} loading="lazy" alt="Hero Illustration" />
           </div>
         </div>
       </div>

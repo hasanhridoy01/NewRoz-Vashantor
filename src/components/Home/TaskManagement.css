@@ -24,6 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  pointer-events: none;
 }
 .btn-two {
   width: 112px;
@@ -38,6 +39,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  pointer-events: none;
 }
 .btn-three {
   width: 146px;
@@ -52,6 +54,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  pointer-events: none;
 }
 
 /* task-right */

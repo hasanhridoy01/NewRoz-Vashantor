@@ -11,7 +11,7 @@ import logo from "../../../public/Images/key/logo/icon.png";
 
 const KeyFeature = () => {
   return (
-    <div className="key-feature">
+    <section className="key-feature">
       <div className="container mx-auto lg:px-14 px-5 lg:py-14 py-5 lg:pt-28 pt-16">
         <SectionTitle
           img={logo}
@@ -22,7 +22,7 @@ const KeyFeature = () => {
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-16 items-center">
           <div className="key-feature-col-one">
             <div className="flex flex-col items-center justify-center">
-              <img src={img1} alt="" />
+              <img src={img1} alt="" loading="lazy" />
               <h5 className="key-title">Multi-Format File Upload</h5>
               <p className="key-title-one">
                 Supports multiple file formats for
@@ -33,7 +33,7 @@ const KeyFeature = () => {
 
           <div className="key-feature-col-two">
             <div className="flex flex-col items-center justify-center">
-              <img src={img2} alt="" />
+              <img src={img2} alt="" loading="lazy" />
               <h5 className="key-title">String Management</h5>
               <p className="key-title-one">
                 Easily add new strings to existing files
@@ -44,7 +44,7 @@ const KeyFeature = () => {
 
           <div className="key-feature-col-three">
             <div className="flex flex-col items-center justify-center">
-              <img src={img3} alt="" />
+              <img src={img3} alt="" loading="lazy" />
               <h5 className="key-title">Automated Translation</h5>
               <p className="key-title-one">Leverages machine translation to</p>
               <p className="key-title-two">
@@ -55,7 +55,7 @@ const KeyFeature = () => {
 
           <div className="key-feature-col-four">
             <div className="flex flex-col items-center justify-center">
-              <img src={img4} alt="" />
+              <img src={img4} alt="" loading="lazy" />
               <h5 className="key-title">Add Comment</h5>
               <p className="key-title-one">A system of adding comments of</p>
               <p className="key-title-two">collaborators on individual keys.</p>
@@ -64,7 +64,7 @@ const KeyFeature = () => {
 
           <div className="key-feature-col-five">
             <div className="flex flex-col items-center justify-center">
-              <img src={img5} alt="" />
+              <img src={img5} alt="" loading="lazy" />
               <h5 className="key-title">Version Control</h5>
               <p className="key-title-one">
                 Keeps track of changes & updates to{" "}
@@ -76,7 +76,7 @@ const KeyFeature = () => {
 
           <div className="key-feature-col-six">
             <div className="flex flex-col items-center justify-center">
-              <img src={img6} alt="" />
+              <img src={img6} alt="" loading="lazy" />
               <h5 className="key-title">Secure Data Management</h5>
               <p className="key-title-one">
                 Ensures that all data is securely stored
@@ -87,7 +87,7 @@ const KeyFeature = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

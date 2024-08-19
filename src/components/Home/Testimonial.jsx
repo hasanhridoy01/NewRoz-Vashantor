@@ -5,7 +5,7 @@ import logo from "../../../public/Images/testimonial/icon.png";
 
 const Testimonial = () => {
   return (
-    <div className="">
+    <section className="">
       <div className="container mx-auto lg:px-14 px-5 lg:py-14 py-5 lg:pt-28 pt-16">
         <SectionTitle
           img={logo}
@@ -19,7 +19,7 @@ const Testimonial = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

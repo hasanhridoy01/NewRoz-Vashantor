@@ -43,7 +43,7 @@ const Header = () => {
           <img src={logo} alt="Logo" />
         </div>
         <div className="navbar-end-section">
-          <nav className="header-nav">
+          <nav className="header-nav" role="navigation">
             <Link to="/home">
               <a
                 href="#"

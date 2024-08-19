@@ -10,7 +10,7 @@ import img from '../../../public/Images/easy/icon.png';
 
 const EasyTranslation = () => {
   return (
-    <div className="EasyTranslation">
+    <section className="EasyTranslation">
       <div className="container mx-auto lg:px-14 px-5 lg:py-14 py-5 lg:pt-28 pt-16">
         <SectionTitle img={img} title="Easy Translation" textOne='Vashantor offers seamless and easy translations, ensuring that your content is accurately localized across' textTwo='multiple languages with minimal effort.' />
 
@@ -24,7 +24,7 @@ const EasyTranslation = () => {
         </div>
 
       </div>
-    </div>
+    </section>
   );
 };
 
