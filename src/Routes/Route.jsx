@@ -5,6 +5,7 @@ import Service from "../pages/Service/Service";
 import Pricing from "../pages/Pricing/Pricing";
 import Contact from "../pages/Contact/Contact";
 import Language from "../pages/Language/Language";
+import EasyTranslationDetails from "../pages/EasyTranslationDetails/EasyTranslationDetails";
 
 export const router = createBrowserRouter([
   {
@@ -32,9 +33,13 @@ export const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: 'language',
-        element: <Language />
-      }
+        path: "language",
+        element: <Language />,
+      },
+      {
+        path: "easyTranslation",
+        element: <EasyTranslationDetails />,
+      },
     ],
   },
 ]);
