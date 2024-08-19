@@ -3,7 +3,18 @@ import logo from "../../../public/Images/logo/logo.png";
 
 const Footer = () => {
   return (
-    <div className="footer-background-image" style={{ backgroundColor: "#F0F0D3", width: "100%" }}>
+    <div
+      className="footer-background-image"
+      style={{
+      //   background: `linear-gradient(
+      //   to right,
+      //   rgba(241, 241, 212, 1),
+      //   rgba(241, 241, 214, 1),
+      //   rgba(249, 249, 223, 1)
+      // )`,
+      backgroundColor: "rgba(249, 249, 223, 1)"
+      }}
+    >
       <div className="container mx-auto px-5 lg:px-14 py-5 lg:py-14 pt-16 lg:pt-20 relative">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-12 gap-5 py-12">
           <div className="col-span-3 space-y-5">
@@ -11,7 +22,10 @@ const Footer = () => {
               <img src={logo} alt="Vashantor Logo" />
             </div>
             <div>
-              <p className="font-medium text-sm leading-6 text-gray-600 w-[90%]" style={{ fontFamily: 'Poppins' }}>
+              <p
+                className="font-medium text-sm leading-6 text-gray-600 w-[90%]"
+                style={{ fontFamily: "Poppins" }}
+              >
                 Vashantor is an advanced localization system designed to
                 effortlessly transform your website or application language. Our
                 platform offers seamless integration and robust translation
@@ -22,7 +36,10 @@ const Footer = () => {
 
           {/* Spacing divs */}
           <div className="col-span-2 space-y-5">
-            <h5 className="text-lg font-medium leading-8 text-[#424A21]" style={{ fontFamily: 'Barlow' }}>
+            <h5
+              className="text-lg font-medium leading-8 text-[#424A21]"
+              style={{ fontFamily: "Barlow" }}
+            >
               Vashantor
             </h5>
             <div className="space-y-2">
@@ -35,7 +52,10 @@ const Footer = () => {
           </div>
 
           <div className="col-span-2 space-y-5">
-            <h5 className="text-lg font-medium leading-8 text-[#424A21]" style={{ fontFamily: 'Barlow' }}>
+            <h5
+              className="text-lg font-medium leading-8 text-[#424A21]"
+              style={{ fontFamily: "Barlow" }}
+            >
               Support
             </h5>
             <div className="space-y-2">
@@ -57,7 +77,10 @@ const Footer = () => {
           </div>
 
           <div className="col-span-3 space-y-5">
-            <h5 className="text-lg font-medium leading-8 text-[#424A21]"  style={{ fontFamily: 'Barlow' }}>
+            <h5
+              className="text-lg font-medium leading-8 text-[#424A21]"
+              style={{ fontFamily: "Barlow" }}
+            >
               Contact Us
             </h5>
             <div className="space-y-2">
@@ -77,12 +100,18 @@ const Footer = () => {
                     fill="#687535"
                   />
                 </svg>
-                <span className="font-medium text-base leading-6 text-[#555555]" style={{ fontFamily: 'Poppins' }}>
+                <span
+                  className="font-medium text-base leading-6 text-[#555555]"
+                  style={{ fontFamily: "Poppins" }}
+                >
                   support@vashantor.com
                 </span>
               </h6>
               <div>
-                <p className="font-medium text-sm leading-6 text-[#555555]"  style={{ fontFamily: 'Poppins' }}>
+                <p
+                  className="font-medium text-sm leading-6 text-[#555555]"
+                  style={{ fontFamily: "Poppins" }}
+                >
                   Follow us on:
                 </p>
                 <div className="mt-2 flex space-x-2">
@@ -175,7 +204,6 @@ const Footer = () => {
             Powered by Newroz Technologies LTD.
           </p>
         </div>
-
       </div>
     </div>
   );

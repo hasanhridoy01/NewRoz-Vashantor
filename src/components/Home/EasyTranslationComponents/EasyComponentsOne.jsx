@@ -3,11 +3,8 @@ import img2 from "../../../../public/Images/easy/icon1.png";
 const EasyComponentsOne = () => {
   return (
     <div>
-      <div
-        className="-rotate-3 rounded-lg w-full h-auto"
-        style={{ backgroundColor: "#F0F0D3" }}
-      >
-        <div className="easy-card lg:h-[250px] h-[280px] rotate-3 cursor-pointer hover:bg-white p-5">
+      <div className="-rotate-3 rounded-lg w-full h-auto cursor-pointer bg-[#F0F0D3] hover:bg-[#f8f8e9]">
+        <div className="easy-card lg:h-[250px] h-[280px] rotate-3 hover:bg-white p-5">
           <div className="flex items-center gap-3">
             <img src={img2} alt="" />
             <h4 className="easy-card-text">Multiplatform Support</h4>
