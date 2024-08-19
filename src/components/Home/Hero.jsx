@@ -5,7 +5,7 @@ import img2 from "../../../public/Images/hero/prime_language.svg";
 // Extra Images
 import img3 from "../../../public/Images/hero/Title.png";
 import img4 from "../../../public/Images/hero/Hanguages.png";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import BookModal from "../BookModal/BookModal";
 
 // Hero Section Extra Images
@@ -15,12 +15,46 @@ import Ellipse2 from "../../../public/Images/hero/New-folder/Ellipse-2.png";
 import Ellipse3 from "../../../public/Images/hero/New-folder/Ellipse-3.png";
 import img9 from "../../../public/Images/hero/New-folder/Hanguages.png";
 import img10 from "../../../public/Images/hero/New-folder/Title.png";
+import VideoPlayer from "../VideoPlayer/VideoPlayer";
+import { Modal } from "react-responsive-modal";
+import "react-responsive-modal/styles.css";
 
 const Hero = () => {
   const [openModal, setOpenModal] = useState(false);
+  const [openVideo, setOpenVideo] = useState(false);
 
   const onOpenModal = () => setOpenModal(true);
   const onCloseModal = () => setOpenModal(false);
+
+  const onOpenVideo = () => setOpenVideo(true);
+  const onCloseVideo = () => setOpenVideo(false);
+
+  const videoPlayerRef = useRef(null);
+
+  const handlePlayClick = () => {
+    if (videoPlayerRef.current) {
+      videoPlayerRef.current.playVideo();
+    }
+    onOpenVideo();
+  };
+
+  const modalStyles = {
+    modal: {
+      width: "80%" /* Adjust width as needed */,
+      maxWidth: "800px" /* Maximum width */,
+      height: "70%" /* Adjust height as needed */,
+      maxHeight: "600px" /* Maximum height */,
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    modalContent: {
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      height: "100%",
+    },
+  };
 
   return (
     <div className="hero lg:h-[1060px] h-auto lg:px-0 px-5 lg:pb-0 pb-20">
@@ -46,8 +80,55 @@ const Hero = () => {
         </button>
         {/* modal */}
         <BookModal open={openModal} onClose={onCloseModal} />
-        <button className="quick-button">Quick Demo Video</button>
+
+        <button className="quick-button" onClick={handlePlayClick}>
+          Quick Demo Video
+        </button>
       </div>
+
+      {/* Video Modal */}
+      <Modal
+        open={openVideo}
+        onClose={onCloseVideo}
+        center
+        classNames={{
+          modal: modalStyles.modal,
+          closeIcon: modalStyles.closeButton,
+        }}
+        closeIcon={<span></span>}
+      >
+        <div style={modalStyles.modalContent}>
+          <button
+            className="absolute top-4 right-3 h-[44px] w-[44px] p-[10px] z-10"
+            style={{ color: '#fff' }}
+            onClick={onCloseVideo}
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 18L18 6"
+                stroke="#969696"
+                strokeWidth="1.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M18 18L6 6"
+                stroke="#969696"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+          <VideoPlayer ref={videoPlayerRef} />
+        </div>
+      </Modal>
 
       <div className="container lg:flex flex-col hidden mx-auto lg:px-14 px-5 mt-8">
         <div className="flex flex-col h-80 relative w-full mx-auto">
@@ -85,7 +166,6 @@ const Hero = () => {
             <img src={img5} alt="Hero Illustration" />
           </div>
         </div>
-        
       </div>
     </div>
   );
