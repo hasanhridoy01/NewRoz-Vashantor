@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import img from "../../../public/Images/language/page/icon.png";
@@ -59,10 +59,20 @@ const countries = [
 
 const Language = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const filteredCountries = countries.filter((country) =>
     country.language.toLowerCase().includes(searchQuery.toLowerCase())
   );
+
+  useEffect(() => {
+    setLoading(true);
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 500); // Simulates a delay
+
+    return () => clearTimeout(timer);
+  }, [searchQuery]);
 
   //page top on position...............!
   React.useEffect(() => {
@@ -118,6 +128,30 @@ const Language = () => {
                 strokeLinejoin="round"
               />
             </svg>
+            {loading && (
+              <div className="absolute right-4 top-1/2 transform -translate-y-1/2">
+                <svg
+                  className="w-6 h-6 text-[#969696] animate-spin"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                    fill="none"
+                  />
+                  <path
+                    className="opacity-75"
+                    fill="none"
+                    d="M4 12a8 8 0 1 1 16 0A8 8 0 0 1 4 12z"
+                  />
+                </svg>
+              </div>
+            )}
           </div>
 
           <div className="mt-7">
