@@ -105,7 +105,7 @@ const ExpandCarousel = ({ currentIndex, nextSlide, prevSlide }) => {
 
         <button
           onClick={nextSlide}
-          className=" text-white p-0 rounded-full "
+          className=" text-white p-0 rounded-full"
         >
           <svg
             width="40"

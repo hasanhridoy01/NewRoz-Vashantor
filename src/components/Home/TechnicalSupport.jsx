@@ -37,7 +37,7 @@ const TechnicalSupport = () => {
               Available platforms
             </p>
             <div className="lg:mt-5 mt-6 flex items-center lg:justify-start justify-center gap-11">
-              <button aria-label="Web" className="flex items-center gap-2">
+              <button aria-label="Web" className="flex items-center gap-2" style={{ pointerEvents: 'none' }}>
                 <svg
                   width="24"
                   height="24"
@@ -69,7 +69,7 @@ const TechnicalSupport = () => {
                 </svg>
                 Web
               </button>
-              <button aria-label="Web" className="flex items-center gap-2">
+              <button aria-label="Web" className="flex items-center gap-2" style={{ pointerEvents: 'none' }}>
                 <svg
                   width="24"
                   height="25"
@@ -104,7 +104,7 @@ const TechnicalSupport = () => {
                 </svg>
                 Android
               </button>
-              <button aria-label="Web" className="flex items-center gap-2">
+              <button aria-label="Web" className="flex items-center gap-2" style={{ pointerEvents: 'none' }}>
                 <svg
                   width="24"
                   height="25"
