@@ -37,7 +37,7 @@ const Header = () => {
   const onCloseModal = () => setOpenModal(false);
 
   return (
-    <header className="bg-[#f0f0d3] p-5 h-[79px] flex items-center justify-center fixed top-0 left-0 right-0 z-[1000] min-w-full">
+    <header className="p-5 h-[79px] flex items-center justify-center fixed top-0 left-0 right-0 z-[1000] min-w-full header-filter">
       <div className="flex justify-between items-center w-full max-w-[1440px] mx-auto">
         <div className="header-logo">
           <img src={logo} alt="Logo" />
