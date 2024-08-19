@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import img from "../../../public/Images/language/page/icon.png";
@@ -58,9 +58,11 @@ const countries = [
 ];
 
 const Language = () => {
-  React.useEffect(() => {
-    window.scrollTo(100, 100);
-  }, []);
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const filteredCountries = countries.filter((country) =>
+    country.language.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
     <div className="bg-[#f8f8e9] w-full">
@@ -71,11 +73,10 @@ const Language = () => {
         <SectionTitle
           img={img}
           title="124 Language Support around the world"
-          textOne="Find your desired language to provide more convenient and grow more business."
+          textOne="Find your desired language to provide more convenience and grow more business."
           textTwo=""
         />
         <div className="mt-5">
-
           <div className="relative mt-10 mx-auto bg-[#ffffff] rounded-md w-full max-w-[441px] h-[68px] lg:h-[68px] lg:w-[441px]">
             <input
               type="text"
@@ -88,6 +89,8 @@ const Language = () => {
                 color: "#222222",
               }}
               placeholder="Search language"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
             />
             <svg
               className="absolute left-3 top-1/2 transform -translate-y-1/2 w-6 h-6 text-[#969696]"
@@ -115,20 +118,29 @@ const Language = () => {
           <div className="mt-7">
             <div className="overflow-x-auto bg-[#FFFFE9] h-full w-full border-[2.4px] border-[#f0f0d3]">
               <div className="grid grid-cols-1 lg:grid-cols-4 gap-[2.4px] bg-[#f0f0d3]">
-                {countries.map((item) => (
-                  <div key={item.id} className="py-2 px-4 bg-white cursor-pointer">
-                    <p
-                      style={{
-                        fontFamily: "Barlow",
-                        fontSize: "18px",
-                        lineHeight: "30px",
-                        color: "#424A21",
-                      }}
+                {filteredCountries.length > 0 ? (
+                  filteredCountries.map((item) => (
+                    <div
+                      key={item.id}
+                      className="py-2 px-4 bg-white cursor-pointer"
                     >
-                      {item.language}
-                    </p>
-                  </div>
-                ))}
+                      <p
+                        style={{
+                          fontFamily: "Barlow",
+                          fontSize: "18px",
+                          lineHeight: "30px",
+                          color: "#424A21",
+                        }}
+                      >
+                        {item.language}
+                      </p>
+                    </div>
+                  ))
+                ) : (
+                  <p className="text-center col-span-full py-4 text-[#424A21]">
+                    No languages found.
+                  </p>
+                )}
               </div>
             </div>
           </div>
