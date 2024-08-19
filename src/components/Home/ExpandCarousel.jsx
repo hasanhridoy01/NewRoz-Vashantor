@@ -62,7 +62,7 @@ const ExpandCarousel = ({ currentIndex, nextSlide, prevSlide }) => {
       <div className="mt-[-50px] flex lg:items-start items-center lg:justify-start justify-center relative">
         <button
           onClick={prevSlide}
-          className="mr-5 text-white p-0 rounded-full"
+          className="mr-5 text-white p-0 rounded-full border-2 border-[#f1f1e9] hover:border-[#687535] transition-colors duration-300"
         >
           <svg
             width="40"
@@ -105,7 +105,7 @@ const ExpandCarousel = ({ currentIndex, nextSlide, prevSlide }) => {
 
         <button
           onClick={nextSlide}
-          className=" text-white p-0 rounded-full"
+          className=" text-white p-0 rounded-full border-2 border-[#f1f1e9] hover:border-[#687535] transition-colors duration-300"
         >
           <svg
             width="40"

@@ -19,7 +19,7 @@ const KeyFeature = () => {
           textOne="Vashantor has some unique key features for your localization"
           textTwo="which is very effective and secured."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-16 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-16 items-center">
           <div className="key-feature-col-one">
             <div className="flex flex-col items-center justify-center">
               <img src={img1} alt="" loading="lazy" />
