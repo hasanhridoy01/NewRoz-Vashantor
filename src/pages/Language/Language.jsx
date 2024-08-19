@@ -64,6 +64,11 @@ const Language = () => {
     country.language.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  //page top on position...............!
+  React.useEffect(() => {
+    window.scrollTo(100, 100);
+  }, []);
+
   return (
     <div className="bg-[#f8f8e9] w-full">
       <Helmet>
