@@ -68,7 +68,7 @@ const FAQ = () => {
         />
         <div className="mt-5 lg:mb-7 mb-5">
           {/* FAQ Section */}
-          <div className="lg:container lg:mx-auto lg:py-16 md:py-12 md:px-6 py-12 px-4">
+          <div className="">
             <h1 className="text-center dark:text-white lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 font-semibold">
               FAQ's
             </h1>

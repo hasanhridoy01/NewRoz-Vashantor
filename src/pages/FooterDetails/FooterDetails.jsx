@@ -31,7 +31,7 @@ const FooterDetails = () => {
               <h4 className="easy-card-text">{title}</h4>
             </div>
             <div className="mt-5">
-              <p className="easy-card-text-two justify-center">{description}</p>
+              <p className="easy-card-text-two justify-center">{description}, Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ad autem laborum provident, earum voluptate nostrum? Nobis sed ratione sint unde quisquam aliquam vitae quasi eius et. Cupiditate corrupti delectus laudantium, totam quidem mollitia optio enim quis fugit architecto esse dolores repudiandae sed itaque tempore placeat voluptates ducimus ipsum exercitationem ut quas dignissimos. Maiores repellat saepe possimus reiciendis similique vero ratione? Illum reprehenderit similique facere perferendis? Adipisci sint temporibus pariatur obcaecati maxime itaque numquam repellat? Quis, ut maxime. Fuga odit quia maxime ullam neque dolores harum eum nisi quod optio unde, nam eligendi ex ipsa debitis, provident tenetur. Fuga, rem.</p>
             </div>
           </div>
         </div>

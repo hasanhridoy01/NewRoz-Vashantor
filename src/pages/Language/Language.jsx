@@ -176,7 +176,7 @@ const Language = () => {
                     </div>
                   ))
                 ) : (
-                  <p className="text-center col-span-full py-4 text-[#424A21]">
+                  <p className="text-center lg:text-[20px] text-[18px] col-span-full py-4 text-[#424A21]">
                     No languages found.
                   </p>
                 )}
