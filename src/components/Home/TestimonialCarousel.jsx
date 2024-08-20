@@ -29,7 +29,7 @@ const slides = [
   {
     image: img,
     testimonial: {
-      name: "Emily Johnson",
+      name: "Emily John",
       position: "Product Manager at Widget Co.",
       text: "Excellent value for money. The quality of the product exceeded our expectations.",
     },

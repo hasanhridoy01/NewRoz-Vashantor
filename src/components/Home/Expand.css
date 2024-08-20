@@ -1,0 +1,10 @@
+.expand-bg-image {
+  background-image: url(../../../public/Images/footer/shade.svg);
+  background-position: left left;
+  background-repeat: no-repeat;
+}
+@media (max-width: 640px) {
+  .expand-bg-image {
+    background-image: none;
+  }
+}
