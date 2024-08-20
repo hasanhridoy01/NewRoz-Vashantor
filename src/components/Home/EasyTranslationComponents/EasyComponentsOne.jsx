@@ -28,7 +28,7 @@ const EasyComponentsOne = () => {
               Supports multiple platforms and file formats for seamless
               integration across multiple digital platforms.
             </p>
-                                    <button
+            <button
               onClick={handleNavigation}
               className="flex items-center gap-2 float-right lg:mt-4 mt-0"
               style={{ color: "#969696" }}

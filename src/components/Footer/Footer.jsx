@@ -1,8 +1,58 @@
 import "./Footer.css";
 import logo from "../../../public/Images/logo/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  // Data for each section
+  const data = {
+    "Why Vashantor?": {
+      title: "Why Vashantor?",
+      description: `Description for "Why Vashantor?"`,
+    },
+    "Vashantor features": {
+      title: "Vashantor features",
+      description: `Description for "Vashantor features"`,
+    },
+    "Book a meeting": {
+      title: "Book a meeting",
+      description: `Description for "Book a meeting"`,
+    },
+    "Request a demo": {
+      title: "Request a demo",
+      description: `Description for "Request a demo"`,
+    },
+    "Price plans": {
+      title: "Price plans",
+      description: `Description for "Price plans"`,
+    },
+    "Help center": {
+      title: "Help center",
+      description: `Description for "Help center"`,
+    },
+    "Status": {
+      title: "Status",
+      description: `Description for "Status"`,
+    },
+    "Privacy Policy": {
+      title: "Privacy Policy",
+      description: `Description for "Privacy Policy"`,
+    },
+    "Terms of Service": {
+      title: "Status",
+      description: `Description for "Terms of Service"`,
+    },
+    "Security": {
+      title: "Security",
+      description: `Description for "Security"`,
+    },
+  };
+
+  // Handle navigation with specific data
+  const handleNavigation = (section) => {
+    navigate(`/footerDetails/${section}`, { state: data[section] });
+  };
   return (
     <footer>
       <div
@@ -45,11 +95,36 @@ const Footer = () => {
                 Vashantor
               </h5>
               <div className="space-y-2">
-                <h6 className="footer-text">Why Vashantor?</h6>
-                <h6 className="footer-text">Vashantor features</h6>
-                <h6 className="footer-text">Book a meeting</h6>
-                <h6 className="footer-text">Request a demo</h6>
-                <h6 className="footer-text">Price plans</h6>
+                <h6
+                  className="footer-text"
+                  onClick={() => handleNavigation("Why Vashantor?")}
+                >
+                  Why Vashantor?
+                </h6>
+                <h6
+                  className="footer-text"
+                  onClick={() => handleNavigation("Vashantor features")}
+                >
+                  Vashantor features
+                </h6>
+                <h6
+                  className="footer-text"
+                  onClick={() => handleNavigation("Book a meeting")}
+                >
+                  Book a meeting
+                </h6>
+                <h6
+                  className="footer-text"
+                  onClick={() => handleNavigation("Request a demo")}
+                >
+                  Request a demo
+                </h6>
+                <h6
+                  className="footer-text"
+                  onClick={() => handleNavigation("Price plans")}
+                >
+                  Price plans
+                </h6>
               </div>
             </div>
 
@@ -61,12 +136,10 @@ const Footer = () => {
                 Support
               </h5>
               <div className="space-y-2">
-                <h6 className="footer-text">Help center</h6>
-                <h6 className="footer-text">Status</h6>
+                <h6 className="footer-text" onClick={() => handleNavigation("Help center")}>Help center</h6>
+                <h6 className="footer-text" onClick={() => handleNavigation("Status")}>Status</h6>
                 <h6 className="footer-text">
-                  <Link to={"FAQ"}>
-                    FAQ
-                  </Link>
+                  <Link to={"FAQ"}>FAQ</Link>
                 </h6>
               </div>
             </div>
@@ -76,9 +149,9 @@ const Footer = () => {
                 Legal
               </h5>
               <div className="space-y-2">
-                <h6 className="footer-text">Privacy Policy</h6>
-                <h6 className="footer-text">Terms of Service</h6>
-                <h6 className="footer-text">Security</h6>
+                <h6 className="footer-text" onClick={() => handleNavigation("Privacy Policy")}>Privacy Policy</h6>
+                <h6 className="footer-text" onClick={() => handleNavigation("Terms of Service")}>Terms of Service</h6>
+                <h6 className="footer-text" onClick={() => handleNavigation("Security")}>Security</h6>
               </div>
             </div>
 

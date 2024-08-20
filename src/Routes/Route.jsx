@@ -7,6 +7,7 @@ import Contact from "../pages/Contact/Contact";
 import Language from "../pages/Language/Language";
 import EasyTranslationDetails from "../pages/EasyTranslationDetails/EasyTranslationDetails";
 import FAQ from "../pages/FAQ/FAQ";
+import FooterDetails from "../pages/FooterDetails/FooterDetails";
 
 export const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ export const router = createBrowserRouter([
       {
         path: "FAQ",
         element: <FAQ />
+      },
+      {
+        path: "/footerDetails/:section",
+        element: <FooterDetails />
       }
     ],
   },

@@ -1,4 +1,4 @@
-import { forwardRef, useImperativeHandle, useRef } from 'react';
+import { forwardRef, useImperativeHandle, useRef } from "react";
 
 const VideoPlayer = forwardRef((props, ref) => {
   const videoRef = useRef(null);
@@ -14,13 +14,13 @@ const VideoPlayer = forwardRef((props, ref) => {
       if (videoRef.current) {
         videoRef.current.pause();
       }
-    }
+    },
   }));
 
   return (
     <div>
       <video ref={videoRef} width="700px" controls>
-        <source src="path-to-your-video.mp4" type="video/mp4" />
+        <source src="../../../public/Images/vasantor-logo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
