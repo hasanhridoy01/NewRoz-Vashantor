@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import img from "../../../public/Images/testimonial/Item.png";
 
 const slides = [
@@ -26,6 +26,14 @@ const slides = [
       text: "Excellent value for money. The quality of the product exceeded our expectations.",
     },
   },
+  {
+    image: img,
+    testimonial: {
+      name: "Emily Johnson",
+      position: "Product Manager at Widget Co.",
+      text: "Excellent value for money. The quality of the product exceeded our expectations.",
+    },
+  },
 ];
 
 const TestimonialCarousel = () => {
@@ -34,6 +42,16 @@ const TestimonialCarousel = () => {
   const goToSlide = (index) => {
     setActiveIndex(index);
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) =>
+        prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000); // Adjust the interval time (in milliseconds) as needed
+
+    return () => clearInterval(interval);
+  }, [activeIndex]);
 
   return (
     <div className="relative w-full lg:w-[475px] lg:h-[320px] mx-auto">
@@ -45,22 +63,28 @@ const TestimonialCarousel = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className="min-w-full lg:min-w-[485px] flex flex-col justify-center items-center p-5"
+              className="min-w-full lg:min-w-[475px] flex flex-col"
             >
               <img
                 src={slide.image}
                 alt={`Slide ${index + 1}`}
                 loading="lazy"
-                className="w-24 h-24 lg:w-[120px] lg:h-[120px] object-cover mb-4"
+                className="w-24 h-24 lg:w-[120px] lg:h-[120px] object-cover mb-4 mx-auto"
               />
               <div className="text-center">
-                <p className="text-lg font-semibold" style={{ fontFamily: 'Poppins' }}>
+                <p
+                  className="text-lg font-semibold"
+                  style={{ fontFamily: "Poppins" }}
+                >
                   {slide.testimonial.name}
                 </p>
-                <p className="text-sm text-gray-600" style={{ fontFamily: 'Poppins' }}>
+                <p
+                  className="text-sm text-gray-600"
+                  style={{ fontFamily: "Poppins" }}
+                >
                   {slide.testimonial.position}
                 </p>
-                <p className="mt-2 text-base" style={{ fontFamily: 'Poppins' }}>
+                <p className="mt-2 text-base" style={{ fontFamily: "Poppins" }}>
                   {slide.testimonial.text}
                 </p>
               </div>
@@ -69,7 +93,7 @@ const TestimonialCarousel = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+      <div className="lg:mt-8 mt-5 bottom-4 left-0 right-0 flex items-center justify-center space-x-2">
         {slides.map((_, index) => (
           <button
             key={index}
