@@ -79,7 +79,7 @@ const FAQ = () => {
                   <h2 className="font-medium dark:text-white text-xl leading-5 text-gray-800 lg:mb-2 mb-4">
                     Questions
                   </h2>
-                  <p className="font-normal dark:text-gray-300 text-sm leading-5 text-gray-600 md:w-8/12 md:ml-0 w-11/12 mx-auto">
+                  <p className="font-normal dark:text-gray-300 lg:text-[15px] text-sm leading-5 text-gray-600 md:w-8/12 md:ml-0 w-11/12 mx-auto">
                     If you don’t find your answer, Please contact us or Leave a
                     Message, we’ll be more than happy to assist you.
                   </p>
@@ -109,15 +109,15 @@ const FAQ = () => {
                 filteredFaqData.map((item, index) => (
                   <div key={index}>
                     <hr className="w-full lg:mt-10 md:mt-12 md:mb-8 my-8" />
-                    <div className="w-full md:px-6">
+                    <div className="w-full px-4 md:px-6">
                       <div
                         id="mainHeading"
-                        className="flex justify-between items-center w-full"
+                        className="flex justify-between items-center w-full cursor-pointer"
                         onClick={() => toggleQuestion(index)}
                       >
-                        <div>
-                          <p className="flex justify-center items-center dark:text-white font-medium text-base leading-6 md:leading-4 text-gray-800">
-                            <span className="lg:mr-6 mr-4 dark:text-white lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">
+                        <div className="flex-1">
+                          <p className="flex items-center text-gray-800 dark:text-white font-medium text-sm md:text-lg leading-6">
+                            <span className="mr-4 text-lg font-semibold lg:text-xl md:text-lg">
                               Q{index + 1}.
                             </span>
                             {item.question}
@@ -125,31 +125,26 @@ const FAQ = () => {
                         </div>
                         <button
                           aria-label="toggler"
-                          className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                          className="w-8 h-8 flex items-center justify-center flex-shrink-0 transition-transform duration-300 bg-[#687535] text-[#f1f1e9] rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                          onClick={() => toggleQuestion(index)}
                         >
                           <img
-                            className={`transform ${
+                            className={`w-4 h-4 transform ${
                               openQuestionIndex === index ? "rotate-180" : ""
-                            } dark:hidden`}
+                            }`}
                             src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg"
-                            alt="toggler"
-                          />
-                          <img
-                            className={`transform ${
-                              openQuestionIndex === index ? "rotate-180" : ""
-                            } dark:block hidden`}
-                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg"
                             alt="toggler"
                           />
                         </button>
                       </div>
+
                       <div
                         id="menu"
-                        className={`mt-6 w-full ${
+                        className={`mt-4 ${
                           openQuestionIndex === index ? "" : "hidden"
                         }`}
                       >
-                        <p className="text-base leading-6 text-gray-600 dark:text-gray-300 font-normal">
+                        <p className="text-gray-600 dark:text-gray-300 text-sm md:text-lg leading-6">
                           {item.answer}
                         </p>
                       </div>
@@ -157,7 +152,7 @@ const FAQ = () => {
                   </div>
                 ))
               ) : (
-                <p className="text-center text-[20px] text-gray-600 dark:text-gray-300 mt-10">
+                <p className="text-center lg:text-[20px] text-[18px] text-gray-600 dark:text-gray-300 mt-10">
                   No matching questions found.
                 </p>
               )}
