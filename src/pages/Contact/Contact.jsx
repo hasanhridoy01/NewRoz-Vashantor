@@ -52,7 +52,7 @@ const Contact = () => {
                 </linearGradient>
               </defs>
             </svg>
-            <span className="text-bold text-[18px] text-[#424B1B]">
+            <span className="text-bold text-[18px] text-[#424B1B] cursor-pointer">
               support@vashantor.com
             </span>
           </p>
@@ -60,7 +60,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-16 gap-0 py-16 items-center justify-center">
             <div className="col-span-1 lg:mb-0 mb-16">
               <div className="grid grid-cols-1 grid-flow-row space-y-4">
-                <div className="w-full h-[143px] rounded-[8px] py-6 gap-[5px] bg-white flex flex-col items-center justify-center">
+                <div className="w-full h-[143px] rounded-[8px] py-6 gap-[5px] bg-white flex flex-col items-center justify-center cursor-pointer">
                   <div className="">
                     <img src={img1} alt="" />
                   </div>
@@ -69,7 +69,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="w-full h-[143px] rounded-[8px] py-6 gap-[5px] bg-white flex flex-col items-center justify-center">
+                <div className="w-full h-[143px] rounded-[8px] py-6 gap-[5px] bg-white flex flex-col items-center justify-center cursor-pointer">
                   <div className="">
                     <img src={img2} alt="" />
                   </div>
@@ -78,7 +78,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="w-full h-[143px] rounded-[8px] py-6 gap-[5px] bg-white flex flex-col items-center justify-center">
+                <div className="w-full h-[143px] rounded-[8px] py-6 gap-[5px] bg-white flex flex-col items-center justify-center cursor-pointer">
                   <div className="">
                     <img src={img3} alt="" />
                   </div>

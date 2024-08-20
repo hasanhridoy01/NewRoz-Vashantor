@@ -1,13 +1,15 @@
 import "./Footer.css";
 import logo from "../../../public/Images/logo/logo.png";
 import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import BookModal from "../BookModal/BookModal";
 
 const Footer = () => {
   const navigate = useNavigate();
 
   // Data for each section
   const data = {
-    "Why Vashantor?": {
+    "Why-Vashantor?": {
       title: "Why Vashantor?",
       description: `Description for "Why Vashantor?"`,
     },
@@ -27,23 +29,23 @@ const Footer = () => {
       title: "Price plans",
       description: `Description for "Price plans"`,
     },
-    "Help center": {
+    "Help-center": {
       title: "Help center",
       description: `Description for "Help center"`,
     },
-    "Status": {
+    Status: {
       title: "Status",
       description: `Description for "Status"`,
     },
-    "Privacy Policy": {
+    "Privacy-Policy": {
       title: "Privacy Policy",
       description: `Description for "Privacy Policy"`,
     },
-    "Terms of Service": {
+    "Terms-of-Service": {
       title: "Status",
       description: `Description for "Terms of Service"`,
     },
-    "Security": {
+    Security: {
       title: "Security",
       description: `Description for "Security"`,
     },
@@ -53,6 +55,23 @@ const Footer = () => {
   const handleNavigation = (section) => {
     navigate(`/footerDetails/${section}`, { state: data[section] });
   };
+
+  // handleNavigationServices
+  const handleNavigationServices = () => {
+    navigate("/service");
+  };
+
+  // handleNavigationPricing
+  const handleNavigationPricing = () => {
+    navigate("/pricing");
+  };
+
+  //handleBookingModal
+  const [openModal, setOpenModal] = useState(false);
+
+  const onOpenModal = () => setOpenModal(true);
+  const onCloseModal = () => setOpenModal(false);
+
   return (
     <footer>
       <div
@@ -97,31 +116,23 @@ const Footer = () => {
               <div className="space-y-2">
                 <h6
                   className="footer-text"
-                  onClick={() => handleNavigation("Why Vashantor?")}
+                  onClick={() => handleNavigation("Why-Vashantor?")}
                 >
                   Why Vashantor?
                 </h6>
                 <h6
                   className="footer-text"
-                  onClick={() => handleNavigation("Vashantor features")}
+                  onClick={() => handleNavigationServices()}
                 >
                   Vashantor features
                 </h6>
-                <h6
-                  className="footer-text"
-                  onClick={() => handleNavigation("Book a meeting")}
-                >
+                <BookModal open={openModal} onClose={onCloseModal} />
+                <h6 className="footer-text" onClick={onOpenModal}>
                   Book a meeting
                 </h6>
                 <h6
                   className="footer-text"
-                  onClick={() => handleNavigation("Request a demo")}
-                >
-                  Request a demo
-                </h6>
-                <h6
-                  className="footer-text"
-                  onClick={() => handleNavigation("Price plans")}
+                  onClick={() => handleNavigationPricing()}
                 >
                   Price plans
                 </h6>
@@ -136,8 +147,18 @@ const Footer = () => {
                 Support
               </h5>
               <div className="space-y-2">
-                <h6 className="footer-text" onClick={() => handleNavigation("Help center")}>Help center</h6>
-                <h6 className="footer-text" onClick={() => handleNavigation("Status")}>Status</h6>
+                <h6
+                  className="footer-text"
+                  onClick={() => handleNavigation("Help-center")}
+                >
+                  Help center
+                </h6>
+                <h6
+                  className="footer-text"
+                  onClick={() => handleNavigation("Status")}
+                >
+                  Status
+                </h6>
                 <h6 className="footer-text">
                   <Link to={"FAQ"}>FAQ</Link>
                 </h6>
@@ -149,9 +170,24 @@ const Footer = () => {
                 Legal
               </h5>
               <div className="space-y-2">
-                <h6 className="footer-text" onClick={() => handleNavigation("Privacy Policy")}>Privacy Policy</h6>
-                <h6 className="footer-text" onClick={() => handleNavigation("Terms of Service")}>Terms of Service</h6>
-                <h6 className="footer-text" onClick={() => handleNavigation("Security")}>Security</h6>
+                <h6
+                  className="footer-text"
+                  onClick={() => handleNavigation("Privacy-Policy")}
+                >
+                  Privacy Policy
+                </h6>
+                <h6
+                  className="footer-text"
+                  onClick={() => handleNavigation("Terms-of-Service")}
+                >
+                  Terms of Service
+                </h6>
+                <h6
+                  className="footer-text"
+                  onClick={() => handleNavigation("Security")}
+                >
+                  Security
+                </h6>
               </div>
             </div>
 
