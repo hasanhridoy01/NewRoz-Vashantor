@@ -125,7 +125,7 @@ const FAQ = () => {
                         </div>
                         <button
                           aria-label="toggler"
-                          className="w-8 h-8 flex items-center justify-center flex-shrink-0 transition-transform duration-300 bg-[#687535] text-[#f1f1e9] rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                          className="w-8 h-8 flex items-center justify-center flex-shrink-0 transition-transform duration-300 bg-[#F0F0D3] text-[#f1f1e9] rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#687535]"
                           onClick={() => toggleQuestion(index)}
                         >
                           <img
