@@ -109,11 +109,10 @@ const FAQ = () => {
                 filteredFaqData.map((item, index) => (
                   <div key={index}>
                     <hr className="w-full lg:mt-10 md:mt-12 md:mb-8 my-8" />
-                    <div className="w-full px-4 md:px-6">
+                    <div className="w-full px-4 md:px-6" onClick={() => toggleQuestion(index)}>
                       <div
                         id="mainHeading"
                         className="flex justify-between items-center w-full cursor-pointer"
-                        onClick={() => toggleQuestion(index)}
                       >
                         <div className="flex-1">
                           <p className="flex items-center text-gray-800 dark:text-white font-medium text-sm md:text-lg leading-6">
