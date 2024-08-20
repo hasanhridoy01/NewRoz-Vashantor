@@ -6,6 +6,7 @@ import Pricing from "../pages/Pricing/Pricing";
 import Contact from "../pages/Contact/Contact";
 import Language from "../pages/Language/Language";
 import EasyTranslationDetails from "../pages/EasyTranslationDetails/EasyTranslationDetails";
+import FAQ from "../pages/FAQ/FAQ";
 
 export const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ export const router = createBrowserRouter([
         path: "easyTranslation",
         element: <EasyTranslationDetails />,
       },
+      {
+        path: "FAQ",
+        element: <FAQ />
+      }
     ],
   },
 ]);

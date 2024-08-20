@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import "./EasyTranslationDetails.css";
+import FastEasyAccurate from "../../components/Home/FastEasyAccurate/FastEasyAccurate";
 
 const EasyTranslationDetails = () => {
   // Get the passed data using the useLocation hook
@@ -25,7 +26,7 @@ const EasyTranslationDetails = () => {
           textOne="Find your desired language to provide more convenience and grow more business."
           textTwo=""
         />
-        <div className="grid grid-cols-1 gap-5 lg:mt-20 mt-10 lg:mb-10 mb-5">
+        <div className="grid grid-cols-1 gap-5 lg:mt-20 mt-10 lg:mb-7 mb-5">
           <div className="easy-card h-full w-full bg-white p-5">
             <div className="flex items-center gap-3">
               <img src={image} alt={title} loading="lazy" />
@@ -37,6 +38,7 @@ const EasyTranslationDetails = () => {
           </div>
         </div>
       </div>
+      <FastEasyAccurate />
     </section>
   );
 };

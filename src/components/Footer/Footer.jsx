@@ -1,5 +1,6 @@
 import "./Footer.css";
 import logo from "../../../public/Images/logo/logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -62,7 +63,11 @@ const Footer = () => {
               <div className="space-y-2">
                 <h6 className="footer-text">Help center</h6>
                 <h6 className="footer-text">Status</h6>
-                <h6 className="footer-text">FAQ</h6>
+                <h6 className="footer-text">
+                  <Link to={"FAQ"}>
+                    FAQ
+                  </Link>
+                </h6>
               </div>
             </div>
 

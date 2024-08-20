@@ -626,7 +626,7 @@ const Plan = () => {
                       className="font-barlow font-bold text-5xl leading-[57px] text-center mt-2"
                       style={{ fontFamily: "Barlow" }}
                     >
-                      $2/mth
+                      $8/mth
                     </h1>
                     <h4
                       className="font-barlow font-bold text-[18px] leading-[30px] text-center mt-3 text-[#555555]"
@@ -798,7 +798,7 @@ const Plan = () => {
                       className="font-bold text-5xl leading-[57px] text-center mt-2"
                       style={{ fontFamily: "Barlow" }}
                     >
-                      $4/mth
+                      $16/mth
                     </h1>
                     <h4
                       className="font-bold text-[18px] leading-[30px] text-center mt-3 text-[#555555]"
@@ -973,7 +973,7 @@ const Plan = () => {
                       className="font-barlow font-bold text-5xl leading-[57px] text-center mt-2"
                       style={{ fontFamily: "Barlow" }}
                     >
-                      $8/mth
+                      $32/mth
                     </h1>
                     <h4
                       className="font-barlow font-bold text-[18px] leading-[30px] text-center mt-3 text-[#555555]"
