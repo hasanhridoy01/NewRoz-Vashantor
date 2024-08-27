@@ -313,7 +313,7 @@ const Footer = () => {
             >
               © 2024 and All Rights Reserved Vashantor.
             </p>
-            <p
+            <a
               className="text-right"
               style={{
                 fontFamily: "Barlow",
@@ -321,10 +321,13 @@ const Footer = () => {
                 fontSize: "14px",
                 lineHeight: "16px",
                 color: "#555555",
+                cursor: "pointer",
               }}
+              target="_bank"
+              href="https://www.newroztech.com/"
             >
               Powered by Newroz Technologies LTD.
-            </p>
+            </a>
           </div>
         </div>
       </div>
