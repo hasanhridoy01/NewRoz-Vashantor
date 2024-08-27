@@ -66,6 +66,12 @@ const Footer = () => {
     navigate("/pricing");
   };
 
+  //ExternalTab
+  const ExternalTab = () => {
+    // Open the URL in a new tab
+    window.open("", "_blank");
+  };
+
   //handleBookingModal
   const [openModal, setOpenModal] = useState(false);
 
@@ -199,11 +205,11 @@ const Footer = () => {
                 Contact Us
               </h5>
               <div className="space-y-2">
-                <h6 className="footer-text lg:w-[50%] w-[90%]">
+                <h6 className="footer-text lg:w-[50%] w-[90%] cursor-text">
                   For any suggestions, queries or complaints please contact us
                   at:
                 </h6>
-                <h6 className="footer-text flex items-center gap-2">
+                <a className="footer-text flex items-center gap-2">
                   <svg
                     width="24"
                     height="25"
@@ -222,7 +228,7 @@ const Footer = () => {
                   >
                     support@vashantor.com
                   </span>
-                </h6>
+                </a>
                 <div>
                   <p
                     className="font-medium text-sm leading-6 text-[#555555]"
@@ -231,7 +237,7 @@ const Footer = () => {
                     Follow us on:
                   </p>
                   <div className="mt-2 flex space-x-2">
-                    <button>
+                    <button onClick={ExternalTab}>
                       <svg
                         width="24"
                         height="25"
@@ -247,7 +253,7 @@ const Footer = () => {
                         />
                       </svg>
                     </button>
-                    <button>
+                    <button onClick={ExternalTab}>
                       <svg
                         width="24"
                         height="25"
@@ -263,7 +269,7 @@ const Footer = () => {
                         />
                       </svg>
                     </button>
-                    <button>
+                    <button onClick={ExternalTab}>
                       <svg
                         width="24"
                         height="25"

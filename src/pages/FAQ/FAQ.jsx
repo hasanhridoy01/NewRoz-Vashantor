@@ -73,13 +73,13 @@ const FAQ = () => {
               FAQ's
             </h1>
 
-            <div className="lg:mt-12 bg-[#F0F0D3] dark:bg-gray-800 md:mt-10 mt-8 lg:py-7 lg:px-6 md:p-6 py-6 px-4 w-full mx-auto rounded-md">
+            <div className="lg:mt-12 bg-[#F0F0D3] md:mt-10 mt-8 lg:py-7 lg:px-6 md:p-6 py-6 px-4 w-full mx-auto rounded-md">
               <div className="flex justify-between md:flex-row flex-col">
                 <div className="md:mb-0 mb-8 md:text-left text-center">
-                  <h2 className="font-medium dark:text-white text-xl leading-5 text-gray-800 lg:mb-2 mb-4">
+                  <h2 className="font-medium text-xl leading-5 text-gray-800 lg:mb-2 mb-4">
                     Questions
                   </h2>
-                  <p className="font-normal dark:text-gray-300 lg:text-[15px] text-sm leading-5 text-gray-600 md:w-8/12 md:ml-0 w-11/12 mx-auto">
+                  <p className="font-normal lg:text-[15px] text-sm leading-5 text-gray-600 md:w-8/12 md:ml-0 w-11/12 mx-auto">
                     If you don’t find your answer, Please contact us or Leave a
                     Message, we’ll be more than happy to assist you.
                   </p>
@@ -115,7 +115,7 @@ const FAQ = () => {
                         className="flex justify-between items-center w-full cursor-pointer"
                       >
                         <div className="flex-1">
-                          <p className="flex items-center text-gray-800 dark:text-white font-medium text-sm md:text-lg leading-6">
+                          <p className="flex items-center text-gray-800 font-medium text-sm md:text-lg leading-6">
                             <span className="mr-4 text-lg font-semibold lg:text-xl md:text-lg">
                               Q{index + 1}.
                             </span>
@@ -143,7 +143,7 @@ const FAQ = () => {
                           openQuestionIndex === index ? "" : "hidden"
                         }`}
                       >
-                        <p className="text-gray-600 dark:text-gray-300 text-sm md:text-lg leading-6">
+                        <p className="text-gray-600 text-sm md:text-lg leading-6">
                           {item.answer}
                         </p>
                       </div>
@@ -151,7 +151,7 @@ const FAQ = () => {
                   </div>
                 ))
               ) : (
-                <p className="text-center lg:text-[20px] text-[18px] text-gray-600 dark:text-gray-300 mt-10">
+                <p className="text-center lg:text-[20px] text-[18px] text-gray-600 mt-10">
                   No matching questions found.
                 </p>
               )}
