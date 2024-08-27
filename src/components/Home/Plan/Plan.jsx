@@ -9,12 +9,25 @@ import logo from "../../../../public/Images/plan/icon.png";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { useState } from "react";
+import PlanModal from "../../PlanModal/PlanModal";
 
 // import React, { Component } from "react";
 // import Switch from "react-switch";
 
 const Plan = () => {
   const [selectedTab, setSelectedTab] = useState("monthly");
+  const [openPlanModal, setOpenPlanModal] = useState(false);
+  const [modalText, setModalText] = useState("");
+
+  //handleModal
+  const handleModal = (text) => {
+    setModalText(text);
+    setOpenPlanModal(true);
+  };
+  const onClosePlanModal = () => {
+    setOpenPlanModal(false);
+  };
+
   return (
     <section className="plan-background-image">
       <div className="container mx-auto lg:px-14 px-5 lg:py-14 py-5 lg:pt-28 pt-16">
@@ -81,6 +94,13 @@ const Plan = () => {
               </Tab>
             </div> */}
           </TabList>
+
+          {/* openPlanModal */}
+          <PlanModal
+            open={openPlanModal}
+            onClose={onClosePlanModal}
+            modalText={modalText}
+          />
 
           <TabPanel>
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-12 items-center justify-center lg:gap-5 gap-8">
@@ -249,7 +269,10 @@ const Plan = () => {
                   </div>
 
                   <div className="bg-[#FAFAFA] h-[107px] w-full mt-7 rounded-b-lg flex items-center justify-center">
-                    <button className="h-[43px] lg:w-[314px] w-[90%] rounded-lg border-2 px-[20px] py-[12px] border-[#424B1B] shadow-[#1018280D] flex items-center justify-center">
+                    <button
+                      className="h-[43px] lg:w-[314px] w-[90%] rounded-lg border-2 px-[20px] py-[12px] border-[#424B1B] shadow-[#1018280D] flex items-center justify-center"
+                      onClick={() => handleModal("Basic plan")}
+                    >
                       Get started
                     </button>
                   </div>
@@ -424,6 +447,7 @@ const Plan = () => {
                     <button
                       className="h-[43px] lg:w-[314px] w-[90%] rounded-lg px-[20px] py-[12px] shadow-[#1018280D] flex items-center justify-center bg-[#687535] text-[#fff]"
                       style={{ fontFamily: "Barlow" }}
+                      onClick={() => handleModal("Business plan")}
                     >
                       Get started
                     </button>
@@ -599,6 +623,7 @@ const Plan = () => {
                     <button
                       className="h-[43px] lg:w-[314px] w-[90%] rounded-lg border-2 px-[20px] py-[12px] border-[#424B1B] shadow-[#1018280D] flex items-center justify-center"
                       style={{ fontFamily: "Barlow" }}
+                      onClick={() => handleModal("Enterprise plan")}
                     >
                       Get started
                     </button>
@@ -775,7 +800,10 @@ const Plan = () => {
                   </div>
 
                   <div className="bg-[#FAFAFA] h-[107px] w-full mt-7 rounded-b-lg flex items-center justify-center">
-                    <button className="h-[43px] lg:w-[314px] w-[90%] rounded-lg border-2 px-[20px] py-[12px] border-[#424B1B] shadow-[#1018280D] flex items-center justify-center">
+                    <button
+                      className="h-[43px] lg:w-[314px] w-[90%] rounded-lg border-2 px-[20px] py-[12px] border-[#424B1B] shadow-[#1018280D] flex items-center justify-center"
+                      onClick={() => handleModal("Basic plan")}
+                    >
                       Get started
                     </button>
                   </div>
@@ -950,6 +978,7 @@ const Plan = () => {
                     <button
                       className="h-[43px] lg:w-[314px] w-[90%] rounded-lg px-[20px] py-[12px] shadow-[#1018280D] flex items-center justify-center bg-[#687535] text-[#fff]"
                       style={{ fontFamily: "Barlow" }}
+                      onClick={() => handleModal("Business plan")}
                     >
                       Get started
                     </button>
@@ -1125,6 +1154,7 @@ const Plan = () => {
                     <button
                       className="h-[43px] lg:w-[314px] w-[90%] rounded-lg border-2 px-[20px] py-[12px] border-[#424B1B] shadow-[#1018280D] flex items-center justify-center"
                       style={{ fontFamily: "Barlow" }}
+                      onClick={() => handleModal("Enterprise plan")}
                     >
                       Get started
                     </button>

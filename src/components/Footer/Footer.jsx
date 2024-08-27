@@ -7,6 +7,9 @@ import BookModal from "../BookModal/BookModal";
 const Footer = () => {
   const navigate = useNavigate();
 
+  const currentYear = new Date().getFullYear();
+  const pastYear = currentYear - 2; 
+
   // Data for each section
   const data = {
     "Why-Vashantor?": {
@@ -311,7 +314,7 @@ const Footer = () => {
                 color: "#555555",
               }}
             >
-              © 2024 and All Rights Reserved Vashantor.
+              © {pastYear}-{currentYear} and All Rights Reserved Vashantor.
             </p>
             <a
               className="text-right"
