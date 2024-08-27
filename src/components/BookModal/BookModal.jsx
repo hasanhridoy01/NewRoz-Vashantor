@@ -22,6 +22,8 @@ const BookModal = ({ open, onClose }) => {
       onClose={onClose}
       center
       closeIcon={<span></span>}
+      blockScroll={true} // Prevents scrolling when the modal is open
+      closeOnOverlayClick={false}
       styles={{
         modal: {
           borderRadius: "10px",

@@ -1,5 +1,4 @@
 import "./Hero.css";
-import img1 from "../../../public/Images/hero/body.png";
 import img2 from "../../../public/Images/hero/prime_language.svg";
 
 // Extra Images
@@ -13,8 +12,6 @@ import img5 from "../../../public/Images/hero/New-folder/body.png";
 import Ellipse1 from "../../../public/Images/hero/New-folder/Ellipse-1.png";
 import Ellipse2 from "../../../public/Images/hero/New-folder/Ellipse-2.png";
 import Ellipse3 from "../../../public/Images/hero/New-folder/Ellipse-3.png";
-import img9 from "../../../public/Images/hero/New-folder/Hanguages.png";
-import img10 from "../../../public/Images/hero/New-folder/Title.png";
 import VideoPlayer from "../VideoPlayer/VideoPlayer";
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
@@ -96,11 +93,13 @@ const Hero = () => {
           closeIcon: modalStyles.closeButton,
         }}
         closeIcon={<span></span>}
+        blockScroll={true} // Prevents scrolling when the modal is open
+        closeOnOverlayClick={false}
       >
         <div style={modalStyles.modalContent}>
           <button
             className="absolute top-4 right-3 h-[44px] w-[44px] p-[10px] z-10"
-            style={{ color: '#fff' }}
+            style={{ color: "#fff" }}
             onClick={onCloseVideo}
           >
             <svg
@@ -133,14 +132,24 @@ const Hero = () => {
       <div className="container lg:flex flex-col hidden mx-auto lg:px-14 px-5 mt-8">
         <div className="flex flex-col h-80 relative w-full mx-auto">
           <div className="">
-            <img className="left-image animate-move" src={img2} alt="" loading="lazy" />
+            <img
+              className="left-image animate-move"
+              src={img2}
+              alt=""
+              loading="lazy"
+            />
             <img
               className="left-image-two animate-move-two"
               src={img2}
               alt=""
               loading="lazy"
             />
-            <img className="right-image animate-move-three" src={img2} loading="lazy" alt="" />
+            <img
+              className="right-image animate-move-three"
+              src={img2}
+              loading="lazy"
+              alt=""
+            />
             <img
               className="right-image-two animate-move-four"
               src={img2}
@@ -149,13 +158,28 @@ const Hero = () => {
             />
           </div>
           <div className="absolute flex items-center justify-center mt-3">
-            <img className="Ellipse3" src={Ellipse3} loading="lazy" alt="Ellipse 3" />
+            <img
+              className="Ellipse3"
+              src={Ellipse3}
+              loading="lazy"
+              alt="Ellipse 3"
+            />
           </div>
           <div className="absolute flex items-center justify-center mt-11">
-            <img className="Ellipse2" src={Ellipse2} loading="lazy" alt="Ellipse 2" />
+            <img
+              className="Ellipse2"
+              src={Ellipse2}
+              loading="lazy"
+              alt="Ellipse 2"
+            />
           </div>
           <div className="absolute flex items-center justify-center mt-20">
-            <img className="Ellipse1" src={Ellipse1} loading="lazy" alt="Ellipse 1" />
+            <img
+              className="Ellipse1"
+              src={Ellipse1}
+              loading="lazy"
+              alt="Ellipse 1"
+            />
           </div>
         </div>
 
