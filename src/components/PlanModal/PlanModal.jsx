@@ -1,14 +1,58 @@
 import { Modal } from "react-responsive-modal";
 import PropTypes from "prop-types";
+import Swal from "sweetalert2";
+import "./PlanModal.css";
 
 const PlanModal = ({ open, onClose, modalText }) => {
+  const handleBooking = async () => {
+    try {
+      // Simulate a booking process, e.g., API call
+      const response = await fakeBookingApiCall();
+
+      if (response.success) {
+        Swal.fire({
+          title: "Success!",
+          text: "Thank you for subscribing to our vashantor(language translation service). Your request has been received and is being processed. We will notify you via email once your subscription is active. If we need any further information, our team will contact you directly. We appreciate your trust in our service.",
+          icon: "success",
+          confirmButtonText: "OK",
+          customClass: {
+            popup: "custom-swal-popup",
+            title: "custom-swal-title",
+            content: "custom-swal-text",
+          },
+        });
+      } else {
+        throw new Error(response.error);
+      }
+    } catch (error) {
+      Swal.fire({
+        title: "Error!",
+        text: "Something went wrong. Please try again.",
+        icon: "error",
+        confirmButtonText: "OK",
+        customClass: {
+          popup: "custom-swal-popup",
+        },
+      });
+    }
+  };
+
+  const fakeBookingApiCall = () => {
+    // Simulate a successful or failed booking API call
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve({ success: true });
+      }, 100);
+    });
+  };
+
   return (
     <Modal
       open={open}
       onClose={onClose}
       center
       closeIcon={<span></span>}
-      blockScroll={true} // Prevents scrolling when the modal is open
+      blockScroll={true}
       closeOnOverlayClick={false}
       styles={{
         modal: {
@@ -16,9 +60,9 @@ const PlanModal = ({ open, onClose, modalText }) => {
           padding: "0",
           overflow: "hidden",
           zIndex: "2000",
-          width: "90%", // Adjust width for responsiveness
-          maxWidth: "700px", // Maximum width
-          height: "auto", // Auto height
+          width: "90%",
+          maxWidth: "700px",
+          height: "auto",
         },
         overlay: {
           background: "rgba(0, 0, 0, 0.5)",
@@ -32,7 +76,7 @@ const PlanModal = ({ open, onClose, modalText }) => {
       }}
     >
       <div className="w-full h-full">
-        <div className="grid grid-cols-1  gap-0">
+        <div className="grid grid-cols-1 gap-0">
           <div className="bg-[#f8f8e9] p-5 md:p-10 relative">
             <button
               className="absolute top-2 right-2 h-[44px] w-[44px] p-[10px] bg-[#F0F0D3] rounded-full"
@@ -135,7 +179,10 @@ const PlanModal = ({ open, onClose, modalText }) => {
                 </div>
 
                 <div className="flex justify-start lg:col-span-2 col-span-1">
-                  <button className="px-6 py-2 bg-[#687535] text-white font-semibold rounded-lg">
+                  <button
+                    className="px-6 py-2 bg-[#687535] text-white font-semibold rounded-lg"
+                    onClick={handleBooking}
+                  >
                     Book Now
                   </button>
                 </div>

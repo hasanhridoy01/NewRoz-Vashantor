@@ -1,0 +1,22 @@
+.custom-swal-popup {
+  width: 80% !important; /* Adjust the percentage as needed */
+  max-width: 400px; /* Ensure it doesn't get too wide on larger screens */
+}
+
+@media (max-width: 640px) {
+  .custom-swal-popup {
+    width: 90% !important;
+  }
+}
+
+.custom-swal-title {
+  font-size: 24px; /* Adjust the title font size */
+}
+
+.custom-swal-text {
+  font-size: 14px; /* Adjust the text font size */
+}
+
+.custom-swal-popup {
+  padding: 20px; /* Adjust the padding inside the popup */
+}
