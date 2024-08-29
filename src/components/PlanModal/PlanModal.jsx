@@ -21,6 +21,7 @@ const PlanModal = ({ open, onClose, modalText }) => {
             content: "custom-swal-text",
           },
         });
+        onClose();
       } else {
         throw new Error(response.error);
       }
