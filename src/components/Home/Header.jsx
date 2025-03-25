@@ -1,7 +1,7 @@
 import "./Header.css";
 import logo from "../../../public/Images/logo/logo.png";
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 // import component 👇
 import Drawer from "react-modern-drawer";
@@ -16,6 +16,7 @@ const Header = () => {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenDrawer, setIsOpenDrawer] = React.useState(false);
+  const navigate = useNavigate();
 
   const toggleDrawer = () => {
     setIsOpenDrawer((prevState) => !prevState);
@@ -40,7 +41,12 @@ const Header = () => {
     <header className="p-5 h-[79px] flex items-center justify-center fixed top-0 left-0 right-0 z-[1000] min-w-full header-filter">
       <div className="flex justify-between items-center w-full max-w-[1440px] mx-auto">
         <div className="header-logo">
-          <img src={logo} alt="Logo" />
+          <img
+            src={logo}
+            alt="Logo"
+            className="cursor-pointer"
+            onClick={() => navigate("/home")}
+          />
         </div>
         <div className="navbar-end-section">
           <nav className="header-nav" role="navigation">

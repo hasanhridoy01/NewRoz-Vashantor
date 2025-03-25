@@ -1,4 +1,4 @@
-import img from '../../../public/Images/expand/icon.png'
+import img from "../../../public/Images/expand/icon.png";
 
 const ExpandCarousel = ({ currentIndex, nextSlide, prevSlide }) => {
   const slides = [
@@ -26,29 +26,28 @@ const ExpandCarousel = ({ currentIndex, nextSlide, prevSlide }) => {
   return (
     <div className="relative w-full">
       <div className="overflow-hidden">
+        <img
+          src={img}
+          className="absolute inset-0 object-cover mx-auto mb-1 w-14 h-14 lg:mx-0 section-title-image"
+        />
         <div
-          className="flex transition-transform ease-in-out duration-500"
+          className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {slides.map((slide) => (
             <div
               key={slide.id}
-              className="min-w-full flex items-center justify-center lg:justify-start lg:h-96 h-80 relative"
+              className="relative flex items-center justify-center min-w-full lg:justify-start lg:h-96 h-80"
             >
-              <img
-                src={slide.image}
-                alt={slide.title}
-                className="absolute inset-0 w-14 h-14 object-cover lg:mx-0 mx-auto"
-              />
               <div className="relative z-10 text-center lg:text-left lg:p-0 p-0 lg:w-[700px] w-[380px]">
                 <h4
-                  className="font-bold lg:text-[48px] text-[18px] lg:leading-[67px] leading-[30px]"
+                  className="font-bold lg:text-[48px] text-[18px] lg:leading-[50px] leading-[26px] lg:mb-5 mb-2"
                   style={{ fontFamily: "Barlow" }}
                 >
                   {slide.title}
                 </h4>
                 <p
-                  className="font-normal lg:text-[16px] text-[10px] leading-[30px] text-[#555555]"
+                  className="font-normal lg:text-[16px] text-[10px] leading-[22px] lg:leading-[30px] text-[#555555]"
                   style={{ fontFamily: "Poppins" }}
                 >
                   {slide.text}
