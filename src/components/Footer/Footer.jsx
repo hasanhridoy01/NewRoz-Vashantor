@@ -95,8 +95,8 @@ const Footer = () => {
           backgroundColor: "#F0F0D3",
         }}
       >
-        <div className="container mx-auto px-5 lg:px-14 py-5 lg:py-14 pt-16 lg:pt-20 relative background-shadow-image">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-12 gap-5 py-12">
+        <div className="container relative px-5 py-5 pt-16 mx-auto lg:px-14 lg:py-14 lg:pt-20 background-shadow-image">
+          <div className="grid grid-cols-1 gap-5 py-12 sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-12">
             <div className="col-span-3 space-y-5">
               <div className="">
                 <img src={logo} alt="Vashantor Logo" />
@@ -212,7 +212,7 @@ const Footer = () => {
                   For any suggestions, queries or complaints please contact us
                   at:
                 </h6>
-                <a className="footer-text flex items-center gap-2">
+                <a className="flex items-center gap-2 footer-text">
                   <svg
                     width="24"
                     height="25"
@@ -239,7 +239,7 @@ const Footer = () => {
                   >
                     Follow us on:
                   </p>
-                  <div className="mt-2 flex space-x-2">
+                  <div className="flex mt-2 space-x-2">
                     <button onClick={ExternalTab}>
                       <svg
                         width="24"
@@ -305,7 +305,7 @@ const Footer = () => {
 
           <div className="absolute left-1/2 lg:w-[1413px] w-[90%] bottom-0 border-t-2 border-[#D7D78D] lg:h-[41px] transform -translate-x-1/2 flex lg:items-center lg:flex-row flex-col items-center lg:justify-between justify-center lg:gap-0 gap-1 lg:mb-0 mb-1">
             <p
-              className="text-left lg:mt-0 mt-1"
+              className="mt-1 text-left lg:mt-0"
               style={{
                 fontFamily: "Barlow",
                 fontWeight: 600,
@@ -329,7 +329,7 @@ const Footer = () => {
               target="_bank"
               href="https://www.newroztech.com/"
             >
-              Powered by Newroz Technologies LTD.
+              Powered by FinioTech Technologies LTD.
             </a>
           </div>
         </div>

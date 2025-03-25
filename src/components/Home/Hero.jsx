@@ -54,14 +54,14 @@ const Hero = () => {
   };
 
   return (
-    <div className="hero lg:h-[1060px] h-auto lg:px-0 px-5 lg:pb-0 pb-20">
+    <div className="hero lg:h-[1030px] h-auto lg:px-0 px-5 lg:pb-0 pb-20">
       <h2 className="hero-title lg:text-[64px] text-[56px] lg:leading-[76px] leading-[67px]">
         Fast, Easy, & Accurate
       </h2>
       <h3 className="hero-title-two lg:mt-0 mt-2 lg:text-[56px] text-[40px] lg:leading-[67px] leading-[47px]">
-        online translation portal
+        Online legalization portal
       </h3>
-      <div className="md:flex flex-col lg:items-center lg:justify-center hidden">
+      <div className="flex-col hidden md:flex lg:items-center lg:justify-center">
         <h5 className="hero-paragraph">
           Hundreds of companies rely on Vashantor’s platform to accurately
           translate and localize content
@@ -71,17 +71,16 @@ const Hero = () => {
         </h5>
       </div>
 
-      <div className="flex md:flex-row flex-col items-center justify-center lg:gap-5 gap-1 mt-2">
+      {/* <div className="flex flex-col items-center justify-center gap-1 mt-2 md:flex-row lg:gap-5">
         <button className="book-button" onClick={onOpenModal}>
           Book A Meeting
         </button>
-        {/* modal */}
         <BookModal open={openModal} onClose={onCloseModal} />
 
         <button className="quick-button" onClick={handlePlayClick}>
           Quick Demo Video
         </button>
-      </div>
+      </div> */}
 
       {/* Video Modal */}
       <Modal
@@ -129,8 +128,8 @@ const Hero = () => {
         </div>
       </Modal>
 
-      <div className="container lg:flex flex-col hidden mx-auto lg:px-14 px-5 mt-8">
-        <div className="flex flex-col h-80 relative w-full mx-auto">
+      <div className="container flex-col hidden px-5 mx-auto mt-24 lg:flex lg:px-14">
+        <div className="relative flex flex-col w-full mx-auto h-80">
           <div className="">
             <img
               className="left-image animate-move"
@@ -188,7 +187,7 @@ const Hero = () => {
             <img className="image-over-One" src={img3} loading="lazy" alt="" />
             <img className="image-over-Two" src={img4} loading="lazy" alt="" />
           </div>
-          <div className="body-images hidden lg:flex justify-center">
+          <div className="justify-center hidden body-images lg:flex">
             <img src={img5} loading="lazy" alt="Hero Illustration" />
           </div>
         </div>

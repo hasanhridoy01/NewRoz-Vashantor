@@ -1,0 +1,27 @@
+/* modal-left-side */
+.modal-left-side {
+  background-image: url(../../../public/Images/graphics.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.custom-modal {
+  border-radius: 10px;
+  padding: 0;
+  overflow: hidden;
+  z-index: 2000;
+  width: 1400px !important; /* Adjust as needed */
+  height: 470px; /* Adjust as needed */
+}
+
+.custom-overlay {
+  background: rgba(0, 0, 0, 0.5); /* Customize overlay color and opacity */
+}
+
+.custom-close-icon {
+  color: #000; /* Customize close icon color */
+}
+
+.custom-close-icon:hover {
+  color: #f00; /* Customize close icon hover color */
+}

@@ -1,13 +1,21 @@
 import { Link, useNavigate } from "react-router-dom";
 import img2 from "../../../../public/Images/easy/icon1.png";
+import TranslationModal from "../../TranslationModal/TranslationModal";
+import { useState } from "react";
 
 const EasyComponentsThree = () => {
   const navigate = useNavigate();
+  const [openModal, setOpenModal] = useState(false);
+
+  const onOpenModal = () => setOpenModal(true);
+  const onCloseModal = () => setOpenModal(false);
 
   // Data to pass to the child component
   const easyTranslationData = {
     title: "Translation Memory",
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sint maxime ullam dolores cum, atque laborum adipisci doloribus at odio libero provident harum earum eaque quae architecto ex. Deserunt ex placeat dolorem optio eligendi nostrum culpa quisquam iure quaerat ea, impedit, id illo maxime, laborum ducimus. Sequi porro earum pariatur consequuntur laborum magnam ex labore maiores ipsam perspiciatis eaque sed officia, assumenda impedit at error itaque consequatur. In, tempora dolorum. Adipisci reprehenderit repellat harum eos cupiditate veniam unde impedit voluptate rerum quia. Facere, quo dolor? Consequuntur eius vero provident at omnis, libero reprehenderit? Eos provident nulla laborum sit necessitatibus sunt aut. Error sint corrupti modi illum exercitationem excepturi itaque expedita placeat nam, consectetur dolor sequi id illo optio cupiditate sit nulla aperiam vel nemo hic fugiat iusto ullam animi natus. Ducimus illo amet repudiandae expedita quo delectus consequatur sunt, nisi quia assumenda quibusdam quae veniam facere dolore quisquam accusamus repellat praesentium vero at recusandae reprehenderit? Nisi, numquam. Vel ullam odio, provident blanditiis temporibus, id autem quidem laborum tempore nesciunt illo voluptatum saepe debitis soluta dolore et commodi aliquid iure recusandae porro eius. Quis, suscipit voluptatibus recusandae libero, illum quibusdam assumenda voluptates dicta eum nulla iusto delectus voluptas tenetur quas quaerat possimus laboriosam velit laudantium facere debitis officia dolor. Alias, debitis amet odio repudiandae dolorem, repellat dolores nulla sit hic ab, quidem maiores quam accusamus placeat! Ullam dolorum maiores vel voluptatibus odio error molestiae similique optio quasi eaque deserunt quas, quaerat corrupti velit aut dolor iste ipsa aperiam architecto omnis. Fugit rerum non quidem voluptate obcaecati natus, atque, iste, commodi aperiam necessitatibus tenetur inventore molestiae repudiandae sint! Nobis molestiae non sint fugit ipsam voluptates, cumque sit dolorem pariatur ipsa? Vero, cum saepe magnam sed quidem veritatis. Alias accusamus voluptas quod molestias aspernatur est aliquam, exercitationem aut quibusdam a similique itaque nihil!`,
+    description: `The Translation Memory (TM) feature in Vashantor significantly enhances translation efficiency by storing previously translated content in a database. Whenever a similar sentence or phrase appears in future content, Vashantor automatically suggests the previously used translation, saving time and ensuring consistency. This system eliminates the need for translators to repeat the same work and guarantees that content is translated uniformly across all materials.
+    Translation Memory is not just about reusing translations — it also ensures that your translations are contextually relevant. Vashantor’s TM takes into account the full context of the original content, reducing the risk of misinterpretation or inaccurate translations. As translators continue to add new translations, the system grows smarter, constantly improving its suggestions. The TM database is continuously updated, ensuring that all translations are stored centrally and can be accessed across all projects and languages. This helps maintain consistency in terminology, tone, and style across your entire project.
+    Additionally, Vashantor’s TM reduces translation costs. Since the system reuses previously translated material, there is less need for new translations, lowering the overall expense of localization efforts. The result is a faster, more cost-effective process that ensures high-quality output.`,
     image: img2,
   };
 
@@ -17,19 +25,18 @@ const EasyComponentsThree = () => {
   return (
     <div>
       <div className="-rotate-3 rounded-lg w-full h-auto cursor-pointer bg-[#F0F0D3] hover:bg-[#f8f8e9] transition-all duration-300">
-        <div className="easy-card rotate-3 lg:h-[250px] h-[280px] cursor-pointer hover:bg-white p-5 transition-all duration-300">
+        <div className="easy-card rotate-3 lg:h-[250px] h-[250px] cursor-pointer hover:bg-white p-5 transition-all duration-300">
           <div className="flex items-center gap-3">
-            <img src={img2} alt="" loading="lazy" />
-            <h4 className="easy-card-text">Translation Memory</h4>
+            <img src={easyTranslationData.image} alt="" loading="lazy" />
+            <h4 className="easy-card-text">{easyTranslationData.title}</h4>
           </div>
           <div className="mt-5">
             <p className="easy-card-text-two">
-              Utilizes a translation memory that stores previously translated
-              phrases & sentences to ensure accuracy.
+              {easyTranslationData.description.slice(0, 90)}...
             </p>
             <button
-              onClick={handleNavigation}
-              className="flex items-center gap-2 float-right lg:mt-4 mt-0"
+              onClick={onOpenModal}
+              className="flex items-center float-right gap-2 mt-2 lg:mt-4"
               style={{ color: "#969696" }}
             >
               More
@@ -49,6 +56,12 @@ const EasyComponentsThree = () => {
                 />
               </svg>
             </button>
+            {/* modal */}
+            <TranslationModal
+              open={openModal}
+              onClose={onCloseModal}
+              easyTranslationData={easyTranslationData || {}}
+            />
           </div>
         </div>
       </div>

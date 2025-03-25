@@ -1,13 +1,23 @@
 import { Link, useNavigate } from "react-router-dom";
 import img2 from "../../../../public/Images/easy/icon1.png";
+import TranslationModal from "../../TranslationModal/TranslationModal";
+import { useState } from "react";
 
 const EasyComponentsFour = () => {
   const navigate = useNavigate();
+  const [openModal, setOpenModal] = useState(false);
+
+  const onOpenModal = () => setOpenModal(true);
+  const onCloseModal = () => setOpenModal(false);
 
   // Data to pass to the child component
   const easyTranslationData = {
     title: "Customizable Workflows",
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sint maxime ullam dolores cum, atque laborum adipisci doloribus at odio libero provident harum earum eaque quae architecto ex. Deserunt ex placeat dolorem optio eligendi nostrum culpa quisquam iure quaerat ea, impedit, id illo maxime, laborum ducimus. Sequi porro earum pariatur consequuntur laborum magnam ex labore maiores ipsam perspiciatis eaque sed officia, assumenda impedit at error itaque consequatur. In, tempora dolorum. Adipisci reprehenderit repellat harum eos cupiditate veniam unde impedit voluptate rerum quia. Facere, quo dolor? Consequuntur eius vero provident at omnis, libero reprehenderit? Eos provident nulla laborum sit necessitatibus sunt aut. Error sint corrupti modi illum exercitationem excepturi itaque expedita placeat nam, consectetur dolor sequi id illo optio cupiditate sit nulla aperiam vel nemo hic fugiat iusto ullam animi natus. Ducimus illo amet repudiandae expedita quo delectus consequatur sunt, nisi quia assumenda quibusdam quae veniam facere dolore quisquam accusamus repellat praesentium vero at recusandae reprehenderit? Nisi, numquam. Vel ullam odio, provident blanditiis temporibus, id autem quidem laborum tempore nesciunt illo voluptatum saepe debitis soluta dolore et commodi aliquid iure recusandae porro eius. Quis, suscipit voluptatibus recusandae libero, illum quibusdam assumenda voluptates dicta eum nulla iusto delectus voluptas tenetur quas quaerat possimus laboriosam velit laudantium facere debitis officia dolor. Alias, debitis amet odio repudiandae dolorem, repellat dolores nulla sit hic ab, quidem maiores quam accusamus placeat! Ullam dolorum maiores vel voluptatibus odio error molestiae similique optio quasi eaque deserunt quas, quaerat corrupti velit aut dolor iste ipsa aperiam architecto omnis. Fugit rerum non quidem voluptate obcaecati natus, atque, iste, commodi aperiam necessitatibus tenetur inventore molestiae repudiandae sint! Nobis molestiae non sint fugit ipsam voluptates, cumque sit dolorem pariatur ipsa? Vero, cum saepe magnam sed quidem veritatis. Alias accusamus voluptas quod molestias aspernatur est aliquam, exercitationem aut quibusdam a similique itaque nihil!`,
+    description: `One of Vashantor's standout features is its ability to provide customizable workflows tailored to your specific needs. Localization projects vary widely in scope and complexity, so having the flexibility to define your workflow is essential. Vashantor allows you to design your own translation process, from content extraction to final approval and deployment. This means you can define every stage of the process, from initial translation to review and quality assurance, and assign specific roles to your team members at each stage.
+    The platform also allows for automation of certain steps in the workflow. For example, you can set triggers to automatically assign tasks or notify team members when a certain phase is completed, ensuring that the process flows smoothly without unnecessary delays. Task delegation becomes effortless, with clear visibility into each team member's responsibilities and deadlines. Furthermore, the approval process is highly customizable. You can decide how many rounds of reviews or approvals are necessary before a translation is finalized, ensuring that the process fits your quality standards.
+    With Vashantor, you have full control over the workflow, and it can be adapted for any type of project, whether small or large-scale. This flexibility allows you to streamline the process and ensure that every translation project meets your deadlines and quality expectations, no matter the size or complexity.
+
+`,
     image: img2,
   };
 
@@ -17,19 +27,18 @@ const EasyComponentsFour = () => {
   return (
     <div>
       <div className="-rotate-3 rounded-lg w-full h-auto cursor-pointer bg-[#F0F0D3] hover:bg-[#f8f8e9] transition-all duration-300">
-        <div className="easy-card rotate-3 lg:h-[250px] h-[280px] cursor-pointer hover:bg-white p-5 transition-all duration-300">
+        <div className="easy-card rotate-3 lg:h-[250px] h-[250px] cursor-pointer hover:bg-white p-5 transition-all duration-300">
           <div className="flex items-center gap-3">
-            <img src={img2} alt="" loading="lazy" />
-            <h4 className="easy-card-text">Customizable Workflows</h4>
+            <img src={easyTranslationData.image} alt="" loading="lazy" />
+            <h4 className="easy-card-text">{easyTranslationData.title}</h4>
           </div>
           <div className="mt-5">
             <p className="easy-card-text-two">
-              Offers customizable workflow configurations to enhance flexibility
-              & control over the project lifecycle.
+              {easyTranslationData.description.slice(0, 90)}...
             </p>
             <button
-              onClick={handleNavigation}
-              className="flex items-center gap-2 float-right lg:mt-4 mt-0"
+              onClick={onOpenModal}
+              className="flex items-center float-right gap-2 mt-2 lg:mt-4"
               style={{ color: "#969696" }}
             >
               More
@@ -49,6 +58,12 @@ const EasyComponentsFour = () => {
                 />
               </svg>
             </button>
+            {/* modal */}
+            <TranslationModal
+              open={openModal}
+              onClose={onCloseModal}
+              easyTranslationData={easyTranslationData || {}}
+            />
           </div>
         </div>
       </div>

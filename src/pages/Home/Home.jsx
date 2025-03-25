@@ -23,13 +23,13 @@ const Home = () => {
         <title>Vashantor | Home Page</title>
       </Helmet>
         <EasyTranslation />
-        <TaskManagement />
+        {/* <TaskManagement /> */}
         <KeyFeature />
         <Expand />
         <LanguageSupport />
         <TechnicalSupport />
         <Plan />
-        <Testimonial />
+        {/* <Testimonial /> */}
         <FastEasyAccurate />
       </div>
     </>

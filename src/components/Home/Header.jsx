@@ -79,7 +79,7 @@ const Header = () => {
           </nav>
 
           <div className="button-section">
-            <div className="dropdown-container">
+            {/* <div className="dropdown-container">
               <button className="dropdown-button" onClick={toggleDropdown}>
                 English
                 <svg
@@ -111,7 +111,7 @@ const Header = () => {
                   </a>
                 </div>
               )}
-            </div>
+            </div> */}
 
             <button className="talk-button" onClick={onOpenModal}>
               <svg
@@ -151,7 +151,7 @@ const Header = () => {
 
           {/* collapse-button */}
           <button
-            className="collapse-button md:hidden p-2"
+            className="p-2 collapse-button md:hidden"
             onClick={toggleDrawer}
           >
             <svg
@@ -181,7 +181,7 @@ const Header = () => {
           </button>
 
           {/* user-button */}
-          <button className="user-button lg:ml-2 ml-1">
+          <button className="ml-1 user-button lg:ml-2">
             <svg
               width="24"
               height="25"
@@ -214,11 +214,11 @@ const Header = () => {
         className="!bg-opacity-50 !h-screen !w-full !p-3"
         style={{ backgroundColor: "rgba(16, 20, 0, 0.96)" }}
       >
-        <div className="relative h-full p-3 flex flex-col item-center justify-center">
-          <div className="grid grid-cols-2 gap-4 w-full absolute top-2 left-1/2 transform -translate-x-1/2">
-            <div className="dropdown-container">
+        <div className="relative flex flex-col justify-center h-full p-3 item-center">
+          <div className="absolute grid w-full grid-cols-1 gap-4 transform -translate-x-1/2 top-2 left-1/2">
+            {/* <div className="dropdown-container">
               <button
-                className="dropdown-button-small w-full"
+                className="w-full dropdown-button-small"
                 onClick={toggleDropdown}
               >
                 English
@@ -251,11 +251,11 @@ const Header = () => {
                   </a>
                 </div>
               )}
-            </div>
+            </div> */}
 
             <div className="flex justify-end">
               <button
-                className="talk-button-small w-full"
+                className="w-full talk-button-small"
                 onClick={() => {
                   onOpenModal();
                   toggleDrawer();
@@ -294,7 +294,7 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="flex h-96 flex-col gap-10 items-center justify-center">
+          <div className="flex flex-col items-center justify-center gap-10 h-96">
             <div className="">
               <Link to="/home">
                 <a
@@ -349,10 +349,10 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 flex items-center justify-center">
+          <div className="absolute flex items-center justify-center transform -translate-x-1/2 bottom-1 left-1/2">
             <button
               onClick={toggleDrawer}
-              className="text-white text-2xl underline"
+              className="text-2xl text-white underline"
               style={{
                 fontFamily: "Barlow",
                 fontWeight: 600,
